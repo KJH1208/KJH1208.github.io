@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Hugo Portfolio Theme # Website name
-baseURL: 'https://example.com/' # Website URL
+baseURL: 'hhttps://KJH1208.github.io/' # Website URL
 
 ############################
 ## PAGE OPTIONS
@@ -24,8 +24,8 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: ko
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
