@@ -13,11 +13,11 @@ ko:
 
 en:
   languageCode: en-us
-  weight : 2
+  weight: 2
   contentDir: content/en
-  title: Juhyeon Kang's portfolio
+  title: "Juhyeon Kang's portfolio"
   params:
-    description: Computer Science student at JBNU
+    description: "Computer Science student at JBNU"
   menu:
     main:
       - name: "About"
@@ -27,7 +27,7 @@ en:
         url: "/en/project/"
         weight: 20
       - name: "Contact"
-        url: "/en/contact/""
+        url: "/en/contact/"
         weight: 30
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
