@@ -6,11 +6,11 @@ title: 강주현
 superuser: true
 
 # Role/position
-role: ''
+role: '전북대학교 / 컴퓨터공학과'
 
 # Status emoji
-status:
-  icon: ☕️
+#status:
+#icon:
 
 # Organizations/Affiliations
 #organizations:
@@ -18,7 +18,8 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 분산시스템과 보안, 데이터 파이프라인에 관심이 있으며 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
+
 
 #interests:
 #- Artificial Intelligence
@@ -44,7 +45,7 @@ bio: My research interests include distributed robotics, mobile computing and pr
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
+    link: 'mailto:wkqdl08@jbnu.ac.kr' # For a direct email link, use "mailto:test@example.org".
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/kxngwn04/
@@ -63,8 +64,13 @@ social:
 #email: ""
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+안녕하세요, **강주현**입니다. 전북대학교에서 컴퓨터공학을 공부하고 있고, 백엔드 개발과 시스템 보안, DevOps 자동화에 관심이 많습니다.  
+이번 학기 과제에서는 **HugoBlox 템플릿 + GitHub Actions**으로 포트폴리오 사이트를 구축하고, 다국어(한국어/영어)와 자동 배포 파이프라인을 구성했습니다.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+
+- 전공/관심: 네트워크·시스템, 보안, 데이터 파이프라인, 정적 사이트 자동화  
+- 사용 도구: Git, GitHub Actions, HugoBlox, Markdown  
+- 목표: 실무에서 재사용 가능한 포트폴리오/프로젝트 소개 레이아웃 정착
+
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
