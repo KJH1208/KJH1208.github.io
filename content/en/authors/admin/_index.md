@@ -1,12 +1,12 @@
 ---
 # Display name
-title: 강주현
+title: Juhyeon Kang
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: '전북대학교 / 컴퓨터공학과'
+role: 'Computer Science / JBNU'
 
 # Status emoji
 #status:
@@ -18,7 +18,7 @@ role: '전북대학교 / 컴퓨터공학과'
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 분산시스템과 보안, 데이터 파이프라인에 관심이 있으며 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
+bio: Interested in distributed systems, security, and DevOps automation.
 
 
 #interests:
