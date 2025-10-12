@@ -24,7 +24,7 @@ en:
         url: /en/
         weight: 10
       - name: About
-        url: /en/about/
+        url: /en/about
         weight: 20
       - name: Projects
         url: /en/project/
