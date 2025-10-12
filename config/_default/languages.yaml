@@ -20,14 +20,14 @@ en:
     description: "Computer Science student at JBNU"
   menu:
     main:
-      - name: "Home"
-        url: "/en/"
+      - name: Home
+        url: /en/
         weight: 10
-      - name: "About"
-        url: "/en/about/"
+      - name: About
+        url: /en/about
         weight: 20
-      - name: "Projects"
-        url: "/en/project/"
+      - name: Projects
+        url: /en/project/
         weight: 30
 
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
