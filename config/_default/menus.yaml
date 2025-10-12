@@ -13,3 +13,6 @@ main:
  - name: 프로젝트
    url: /project/ 
    weight: 30
+ - name: 연락처
+   url: /contact/
+   weight: 40
