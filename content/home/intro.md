@@ -8,8 +8,7 @@ headless: true
 # Order that this section will appear in.
 weight: 10
 
-author: KJH
-#design:
+author: admin
 #  background:
 #    color: '#090a0b'
 #    text_color_light: true
