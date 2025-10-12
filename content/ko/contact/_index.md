@@ -2,11 +2,11 @@
 title: "Contact"
 ---
 
-전북대학교 의료 AI 및 계산 수학 연구실(MacsLAB)에 관심 있으시면 아래로 연락 주세요.
+
 
 - {{< icon name="envelope" pack="fas" >}} <a href="mailto:wkqdl08@jbnu.ac.kr">wkqdl08@jbnu.ac.kr</a>  
-- {{< icon name="phone" pack="fas" >}} <a href="tel:+82632702406">+82-63-270-2406</a>  
-- {{< icon name="map-marker-alt" pack="fas" >}} 전북대학교 공과대학 7호관 626호, 전주시, 전라북도 54896
+- {{< icon name="phone" pack="fas" >}} <a href="tel:010-9779-5908">+82-10-9779-5908</a>  
+- {{< icon name="map-marker-alt" pack="fas" >}} 전북대학교 공과대학 7호관, 전주시
 
 <div style="margin-top:16px;">
   <iframe
@@ -16,12 +16,5 @@ title: "Contact"
     scrolling="no"
     marginheight="0"
     marginwidth="0"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=127.118,35.846,127.154,35.872&layer=mapnik&marker=35.859%2C127.136">
-  </iframe>
-  <br/>
-  <small>
-    <a href="https://www.openstreetmap.org/?mlat=35.859&mlon=127.136#map=16/35.859/127.136" target="_blank" rel="noopener">
-      OpenStreetMap에서 크게 보기
-    </a>
-  </small>
+    src=src="https://www.openstreetmap.org/export/embed.html?bbox=127.13403046131135%2C35.845188942490246%2C127.1349933743477%2C35.84701090498632&amp;layer=mapnik&amp;marker=35.84609992897033%2C127.13451191782951" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=35.846100&amp;mlon=127.134512#map=19/35.846100/127.134512">큰 지도 보기</a></small>
 </div>
