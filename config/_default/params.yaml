@@ -35,13 +35,17 @@ header:
   navbar:
     enable: true
     align: r
-    show_logo: false
+    show_logo: true
     show_language: true
 
     show_day_night: true
     show_search: true
     highlight_active_link: false
 
+  logo:
+    image: "media/logo.png"
+    text: false
+    alt: "Kang Juhyeon Logo"
 footer:
   copyright:
     notice: '© {year} Me. This work is licensed under {license}'
