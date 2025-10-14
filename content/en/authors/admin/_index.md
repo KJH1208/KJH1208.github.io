@@ -67,9 +67,8 @@ social:
 Hello, I’m Juhyeon Kang. I’m studying Computer Engineering at Jeonbuk National University, and I’m particularly interested in backend development, system security, and DevOps automation.
 In this semester’s project, I built a personal portfolio website using the HugoBlox template and GitHub Actions, implementing multilingual support (Korean/English) and an automated deployment pipeline.
 
-- 전공/관심: 네트워크·시스템, 보안, 데이터 파이프라인, 정적 사이트 자동화  
-- 사용 도구: Git, GitHub Actions, HugoBlox, Markdown  
-- 목표: 실무에서 재사용 가능한 포트폴리오/프로젝트 소개 레이아웃 정착
-
+	•	Major / Interests: Networks & Systems, Security, Data Pipelines, Static Site Automation
+	•	Tools Used: Git, GitHub Actions, HugoBlox, Markdown
+	•	Goal: Establish a reusable portfolio and project presentation layout applicable to real-world development
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
