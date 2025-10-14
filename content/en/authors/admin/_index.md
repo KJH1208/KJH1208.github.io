@@ -64,9 +64,8 @@ social:
 #email: ""
 ---
 
-안녕하세요, **강주현**입니다. 전북대학교에서 컴퓨터공학을 공부하고 있고, 백엔드 개발과 시스템 보안, DevOps 자동화에 관심이 많습니다.  
-이번 학기 과제에서는 **HugoBlox 템플릿 + GitHub Actions**으로 포트폴리오 사이트를 구축하고, 다국어(한국어/영어)와 자동 배포 파이프라인을 구성했습니다.
-
+Hello, I’m Juhyeon Kang. I’m studying Computer Engineering at Jeonbuk National University, and I’m particularly interested in backend development, system security, and DevOps automation.
+In this semester’s project, I built a personal portfolio website using the HugoBlox template and GitHub Actions, implementing multilingual support (Korean/English) and an automated deployment pipeline.
 
 - 전공/관심: 네트워크·시스템, 보안, 데이터 파이프라인, 정적 사이트 자동화  
 - 사용 도구: Git, GitHub Actions, HugoBlox, Markdown  
