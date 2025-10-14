@@ -10,7 +10,20 @@ ko:
   title: 강주현의 포트폴리오
   params:
     description: 전북대 컴퓨터공학부
-
+  menu:
+    main:
+     - name: "홈"
+       url: "/"
+       weight: 10
+     - name: "자기소개"
+       url: "/about/"        # ← 절대경로 + 끝에 /
+       weight: 20
+     - name: "프로젝트"
+       url: "/project/"
+       weight: 30
+     - name: "연락처"
+       url: "/contact/"
+       weight: 40
 en:
   languageCode: en-us
   weight: 2
@@ -21,14 +34,17 @@ en:
   menu:
     main:
       - name: Home
-        url: /en/
+        url: "/en/"
         weight: 10
-      - name: About
-        url: /en/about
+      - name: "About"
+        url: "/en/about"
         weight: 20
-      - name: Projects
-        url: /en/project/
+      - name: "Projects"
+        url: "/en/project/"
         weight: 30
+      - name: "Contact"
+        url: "/en/contact/"
+        weight: 40
 
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
