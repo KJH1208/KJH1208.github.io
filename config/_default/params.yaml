@@ -17,8 +17,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
+    org_name: 'Jeonbuk National University'
+    description: '전북대학교 컴퓨터공학부 강주현의 포트폴리오 및 프로젝트 사이트입니다.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -43,9 +43,8 @@ header:
     highlight_active_link: false
     
   logo:
-    image: "media/logo.png"
-    text: false
-    alt: "Kang Juhyeon Logo"
+    image: " "
+    text: true
 
 
 footer:
@@ -76,7 +75,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/KJH1208/KJH1208.github.io'
     content_dir: content
     branch: main
   avatar:

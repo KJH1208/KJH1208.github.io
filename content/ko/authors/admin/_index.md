@@ -6,7 +6,7 @@ title: 강주현
 superuser: true
 
 # Role/position
-role: '전북대학교 / 컴퓨터공학과'
+role: '전북대학교 | 컴퓨터공학과'
 
 # Status emoji
 #status:
