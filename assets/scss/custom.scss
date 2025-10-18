@@ -1,6 +1,15 @@
-/* 홈 캐러셀 스타일 */
+/* === Full-bleed slider section === */
+.home-section.fullwidth > .container,
+.section.fullwidth > .container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 캐러셀 높이/자르기 */
 #homeCarousel .carousel-item img {
-  height: 70vh;         /* 원하는 높이 */
+  width: 100%;
+  height: 70vh;        /* 필요하면 80vh 로 키워도 됨 */
   object-fit: cover;
 }
 
