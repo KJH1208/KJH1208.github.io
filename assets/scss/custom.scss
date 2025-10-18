@@ -1,0 +1,15 @@
+/* 홈 캐러셀 스타일 */
+#homeCarousel .carousel-item img {
+  height: 70vh;         /* 원하는 높이 */
+  object-fit: cover;
+}
+
+#homeCarousel .carousel-caption {
+  bottom: 12%;
+  text-shadow: 0 2px 12px rgba(0,0,0,.6);
+}
+
+@media (max-width: 992px) {
+  #homeCarousel .carousel-item img { height: 55vh; }
+  #homeCarousel .carousel-caption { bottom: 8%; }
+}
