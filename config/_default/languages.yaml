@@ -7,7 +7,7 @@ ko:
   languageCode: ko-kr
   weight: 1
   contentDir: content/ko
-  title: 강주현의 포트폴리오
+  title: 강주현
   params:
     description: 전북대 컴퓨터공학부
   menu:
@@ -21,14 +21,14 @@ ko:
      - name: "프로젝트"
        url: "/project/"
        weight: 30
-     - name: "연락처"
+     - name: "연락"
        url: "/contact/"
        weight: 40
 en:
   languageCode: en-us
   weight: 2
   contentDir: content/en
-  title: "Juhyeon Kang's portfolio"
+  title: "kang Juhyeon"
   params:
     description: "Computer Science student at JBNU"
   menu:

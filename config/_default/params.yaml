@@ -43,7 +43,7 @@ header:
     highlight_active_link: false
     
   logo:
-    image: " "
+    image: ""
     text: true
 
 
