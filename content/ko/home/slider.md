@@ -28,7 +28,6 @@ design:
         <a class="btn btn-primary btn-lg" href="/about/">소개 보기</a>
       </div>
     </div>
-
     <!-- 2 -->
     <div class="carousel-item">
       <img src="/media/field.jpg" class="d-block w-100" alt="field" />
@@ -38,7 +37,6 @@ design:
         <a class="btn btn-outline-light btn-lg" href="/post/">여행 기록</a>
       </div>
     </div>
-
     <!-- 3 -->
     <div class="carousel-item">
       <img src="/media/contact.jpg" class="d-block w-100" alt="contact" />
