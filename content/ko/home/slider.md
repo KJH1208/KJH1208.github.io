@@ -123,7 +123,7 @@ design:
         </div>
       </div>
 
-<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/field.jpg');">
+<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/coding.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">취미</h1>
           <p class="lead">여러 가지 취미를 가지며 지치지 않는 일상을 유지합니다.</p>
