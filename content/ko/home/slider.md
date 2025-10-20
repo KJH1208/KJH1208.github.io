@@ -1,13 +1,5 @@
 ---
 widget: markdown
-active: true
-weight: 10
-design:
-  spacing:
-    padding: [0, 0, 0, 0]
----
----
-widget: markdown
 headless: true
 active: true
 weight: 1
@@ -18,7 +10,6 @@ design:
     padding: [0, 0, 0, 0]
 ---
 
-{{% rawhtml %}}
 <style>
 /* full-bleed wrapper so the slider spans edge-to-edge */
 .fullbleed{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;max-width:100vw;overflow:hidden}
@@ -86,4 +77,3 @@ design:
     </button>
   </div>
 </div>
-{{% /rawhtml %}}
