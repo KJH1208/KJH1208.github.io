@@ -33,16 +33,47 @@ design:
   position: relative;
 }
 
-/* 가운데 텍스트 중앙 정렬 */
-#homeCarousel .carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+/* 가운데 텍스트 중앙 정렬 + 기본은 숨김(페이드/애니메이션용) */
+#homeCarousel .carousel-caption{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-42%);
+  width:90%;
   max-width: 900px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, .6);
+  text-shadow:0 2px 12px rgba(0,0,0,.6);
+  opacity:0;                /* inactive 기본 숨김 */
+  transition: opacity .5s ease, transform .6s ease;
 }
+/* 활성 슬라이드에서 캡션 보이기 */
+#homeCarousel .carousel-item.active .carousel-caption{
+  opacity:1;
+  transform:translate(-50%,-50%);
+  animation: none; /* base */
+}
+/* 캡션 자식 단계적 등장 */
+#homeCarousel .carousel-item .carousel-caption h1,
+#homeCarousel .carousel-item .carousel-caption p,
+#homeCarousel .carousel-item .carousel-caption a{
+  opacity:0; transform: translateY(14px);
+}
+#homeCarousel .carousel-item.active .carousel-caption h1{opacity:1; transform:none; transition: all .6s ease .05s;}
+#homeCarousel .carousel-item.active .carousel-caption p{opacity:1; transform:none; transition: all .6s ease .18s;}
+#homeCarousel .carousel-item.active .carousel-caption a{opacity:1; transform:none; transition: all .6s ease .30s;}
+
+/* 부트스트랩 페이드 전환 강화 */
+#homeCarousel.carousel-fade .carousel-item {opacity:0; transition-property: opacity;}
+#homeCarousel.carousel-fade .carousel-item.active,
+#homeCarousel.carousel-fade .carousel-item-next.carousel-item-start,
+#homeCarousel.carousel-fade .carousel-item-prev.carousel-item-end {opacity:1;}
+#homeCarousel.carousel-fade .active.carousel-item-start,
+#homeCarousel.carousel-fade .active.carousel-item-end {opacity:0;}
+
+/* 화살표 클릭 가능 보장 */
+#homeCarousel .carousel-control-prev,
+#homeCarousel .carousel-control-next { z-index: 15; width:10%; pointer-events:auto; }
+#homeCarousel .carousel-control-prev-icon,
+#homeCarousel .carousel-control-next-icon { filter: drop-shadow(0 2px 6px rgba(0,0,0,.6)); }
 
 /* 인디케이터 */
 #homeCarousel .carousel-indicators {
@@ -76,7 +107,7 @@ design:
 </style>
 
 <div class="fullbleed">
-  <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
@@ -124,10 +155,34 @@ design:
 (function(){
   var el = document.getElementById('homeCarousel');
   if(!el) return;
+  function initFallback(){
+    var items = Array.from(el.querySelectorAll('.carousel-item'));
+    var indicators = Array.from(el.querySelectorAll('.carousel-indicators [data-bs-slide-to]'));
+    var prevBtn = el.querySelector('.carousel-control-prev');
+    var nextBtn = el.querySelector('.carousel-control-next');
+    var idx = items.findIndex(function(i){return i.classList.contains('active');});
+    if(idx < 0) idx = 0;
+    function show(i){
+      items[idx].classList.remove('active');
+      indicators[idx] && indicators[idx].classList.remove('active');
+      idx = (i + items.length) % items.length;
+      items[idx].classList.add('active');
+      indicators[idx] && indicators[idx].classList.add('active');
+    }
+    prevBtn && prevBtn.addEventListener('click', function(e){e.preventDefault(); show(idx-1);});
+    nextBtn && nextBtn.addEventListener('click', function(e){e.preventDefault(); show(idx+1);});
+    indicators.forEach(function(btn){ btn.addEventListener('click', function(){ show(parseInt(btn.getAttribute('data-bs-slide-to'),10)); }); });
+    setInterval(function(){ show(idx+1); }, 5000);
+  }
   try {
     if (window.bootstrap && bootstrap.Carousel) {
-      new bootstrap.Carousel(el, { interval: 5000, ride: true, touch: true, pause: false, wrap: true });
+      new bootstrap.Carousel(el, { interval: 5000, ride: 'carousel', touch: true, pause: false, wrap: true });
+    } else {
+      initFallback();
     }
-  } catch (e) { console.warn('Carousel init failed', e); }
+  } catch (e) {
+    console && console.warn && console.warn('Carousel init fallback:', e);
+    initFallback();
+  }
 })();
 </script>
