@@ -4,7 +4,7 @@ widget: slider
 # 활성화 상태
 active: true
 # 페이지 맨 위에 오도록 가중치를 10으로 설정
-weight: 1
+weight: 10
 
 # `content` 블록 안에 `slides` 목록을 정의합니다. (items -> content.slides 로 변경)
 content:

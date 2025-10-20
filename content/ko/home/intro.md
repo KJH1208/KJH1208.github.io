@@ -6,7 +6,7 @@ widget: about.avatar
 headless: true
 
 # Order that this section will appear in.
-weight: 10
+weight: 20
 
 author: admin
 #  background:
