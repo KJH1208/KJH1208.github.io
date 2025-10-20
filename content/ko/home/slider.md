@@ -21,15 +21,22 @@ design:
   background-position:center;
   color:#fff;
   text-align:center;
-  display:flex;align-items:center;justify-content:center;
-  padding:10rem 1rem;
+  position:relative; /* keep Bootstrap's display control; avoid overlapping items */
 }
-#homeCarousel .carousel-caption{position:static;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+#homeCarousel .carousel-caption{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:90%;
+  max-width: 900px;
+  text-shadow:0 2px 12px rgba(0,0,0,.6);
+}
 #homeCarousel .carousel-indicators{bottom:1.25rem;z-index:10}
 #homeCarousel .carousel-indicators [data-bs-target]{background-color:#fff;opacity:.8}
 #homeCarousel .carousel-indicators .active{opacity:1}
 @media (max-width: 992px){
-  #homeCarousel .carousel-item{min-height:55vh;padding:6rem 1rem}
+  #homeCarousel .carousel-item{min-height:55vh}
 }
 </style>
 
