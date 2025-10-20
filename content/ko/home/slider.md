@@ -1,6 +1,6 @@
 ---
 # 위젯 타입을 hero로 지정
-widget: hero
+widget: slider
 # 활성화 상태
 active: true
 # 페이지 맨 위에 오도록 가중치를 10으로 설정
