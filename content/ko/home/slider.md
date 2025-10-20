@@ -35,6 +35,9 @@ design:
 #homeCarousel .carousel-indicators{bottom:1.25rem;z-index:10}
 #homeCarousel .carousel-indicators [data-bs-target]{background-color:#fff;opacity:.8}
 #homeCarousel .carousel-indicators .active{opacity:1}
+/* ensure arrow buttons are clickable above overlays */
+#homeCarousel .carousel-control-prev,
+#homeCarousel .carousel-control-next { z-index: 11; }
 @media (max-width: 992px){
   #homeCarousel .carousel-item{min-height:55vh}
 }
@@ -84,3 +87,32 @@ design:
     </button>
   </div>
 </div>
+<script>
+(function(){
+  var el = document.getElementById('homeCarousel');
+  if(!el) return;
+  try {
+    // If Bootstrap JS is available, use the official API
+    if (window.bootstrap && bootstrap.Carousel) {
+      new bootstrap.Carousel(el, { interval: 5000, ride: true, touch: true, pause: false, wrap: true });
+    } else {
+      // Fallback: minimal JS to switch slides when arrows/indicators are clicked
+      var items = el.querySelectorAll('.carousel-item');
+      var indicators = el.querySelectorAll('.carousel-indicators [data-bs-slide-to]');
+      var idx = 0;
+      function show(i){
+        items[idx].classList.remove('active');
+        indicators[idx] && indicators[idx].classList.remove('active');
+        idx = (i + items.length) % items.length;
+        items[idx].classList.add('active');
+        indicators[idx] && indicators[idx].classList.add('active');
+      }
+      el.querySelector('.carousel-control-prev')?.addEventListener('click', function(e){ e.preventDefault(); show(idx-1); });
+      el.querySelector('.carousel-control-next')?.addEventListener('click', function(e){ e.preventDefault(); show(idx+1); });
+      indicators.forEach(function(btn){ btn.addEventListener('click', function(){ show(parseInt(btn.getAttribute('data-bs-slide-to'), 10)); }); });
+      // Auto-play
+      setInterval(function(){ show(idx+1); }, 5000);
+    }
+  } catch (e) { console && console.warn && console.warn('Carousel init fallback:', e); }
+})();
+</script>
