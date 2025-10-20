@@ -41,7 +41,7 @@ design:
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
-    <div class="carousel-inner">
+ <div class="carousel-inner">
       <div class="carousel-item active" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/media/desk.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">KJH 포트폴리오</h1>
@@ -50,7 +50,7 @@ design:
         </div>
       </div>
 
-      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/media/field.jpg');">
+<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/media/field.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">취미</h1>
           <p class="lead">여러가지 취미를 가지며 지치지 않는 일상을 유지합니다.</p>
@@ -58,7 +58,7 @@ design:
         </div>
       </div>
 
-      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/media/contact.jpg');">
+<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('/media/contact.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">연락하기</h1>
           <p class="lead">협업과 피드백은 언제나 환영합니다.</p>
@@ -67,7 +67,7 @@ design:
       </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+ <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">이전</span>
     </button>
