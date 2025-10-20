@@ -75,7 +75,7 @@ minify:
   _merge: deep
 # 이 코드로 기존의 markup 블록들을 교체하세요.
 markup:
-  _merge: deep
   goldmark:
     renderer:
       unsafe: true
+  _merge: deep

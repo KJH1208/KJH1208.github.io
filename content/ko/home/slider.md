@@ -130,19 +130,39 @@ design:
   z-index: 1;
 }
 
-/* 인디케이터 */
+/* 인디케이터 (세련된 중앙 점 스타일) */
 #homeCarousel .carousel-indicators {
-  bottom: 1.25rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   z-index: 10;
 }
 
 #homeCarousel .carousel-indicators [data-bs-target] {
-  background-color: #fff;
-  opacity: .8;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.35s ease;
+  opacity: 1;
+}
+
+#homeCarousel .carousel-indicators [data-bs-target]:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
 }
 
 #homeCarousel .carousel-indicators .active {
-  opacity: 1;
+  background-color: #a4e6b3;
+  border-color: #fff;
+  transform: scale(1.35);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* 화살표 클릭 가능 보장 */
