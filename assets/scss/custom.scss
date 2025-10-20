@@ -1,37 +1,37 @@
-/* 완전 풀폭 섹션 (슬라이더용) */
-.home-section.fullwidth,
-.section.fullwidth {
-  width: 100vw;                /* 뷰포트 전체 너비 */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;          /* container 중앙 정렬 제거 */
-  margin-right: -50vw;
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+// /* 완전 풀폭 섹션 (슬라이더용) */
+// .home-section.fullwidth,
+// .section.fullwidth {
+//   width: 100vw;                /* 뷰포트 전체 너비 */
+//   position: relative;
+//   left: 50%;
+//   right: 50%;
+//   margin-left: -50vw;          /* container 중앙 정렬 제거 */
+//   margin-right: -50vw;
+//   max-width: 100vw;
+//   overflow-x: hidden;
+// }
 
-/* container 제거 (HugoBlox가 자동 추가함) */
-.home-section.fullwidth > .container,
-.section.fullwidth > .container {
-  max-width: 100vw;
-  padding-left: 0;
-  padding-right: 0;
-}
+// /* container 제거 (HugoBlox가 자동 추가함) */
+// .home-section.fullwidth > .container,
+// .section.fullwidth > .container {
+//   max-width: 100vw;
+//   padding-left: 0;
+//   padding-right: 0;
+// }
 
-/* 캐러셀 높이 및 이미지 꽉 채움 */
-#homeCarousel .carousel-item img {
-  width: 100%;
-  height: 75vh;            /* 원하는 높이 */
-  object-fit: cover;
-}
+// /* 캐러셀 높이 및 이미지 꽉 채움 */
+// #homeCarousel .carousel-item img {
+//   width: 100%;
+//   height: 75vh;            /* 원하는 높이 */
+//   object-fit: cover;
+// }
 
-#homeCarousel .carousel-caption {
-  bottom: 12%;
-  text-shadow: 0 2px 12px rgba(0,0,0,.6);
-}
+// #homeCarousel .carousel-caption {
+//   bottom: 12%;
+//   text-shadow: 0 2px 12px rgba(0,0,0,.6);
+// }
 
-@media (max-width: 992px) {
-  #homeCarousel .carousel-item img { height: 55vh; }
-  #homeCarousel .carousel-caption { bottom: 8%; }
-}
+// @media (max-width: 992px) {
+//   #homeCarousel .carousel-item img { height: 55vh; }
+//   #homeCarousel .carousel-caption { bottom: 8%; }
+// }
