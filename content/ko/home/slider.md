@@ -1,55 +1,24 @@
 ---
-# 위젯 타입을 'hero'로 변경합니다.
+# 위젯 타입을 hero로 지정
 widget: hero
-# 위젯의 순서를 정합니다.
-weight: 10
-# 슬라이드 쇼 기능을 활성화합니다.
+# 활성화 상태
 active: true
+# 페이지 맨 위에 오도록 가중치를 10으로 설정
+weight: 10
 
-# 슬라이드에 들어갈 내용들을 'items' 아래에 하나씩 정의합니다.
+# 모든 복잡한 설정을 제거하고 슬라이드 딱 하나만 테스트합니다.
 items:
-  # --- 첫 번째 슬라이드 ---
-  - title: KJH 포트폴리오
-    content: 프로젝트와 도전을 통해 성장하는 과정을 기록합니다.
-    # 버튼 설정
-    buttons:
-      - label: '소개 보기'
-        url: '/about/'
-    # 이미지 설정
+  - title: 히어로 위젯 테스트
+    content: 이 글이 보인다면 hero 위젯은 작동하는 것입니다.
     image:
-      # 슬라이드 배경 이미지
-      filename: desk.jpg
-      # 이미지를 어둡게 만들어 글씨가 잘 보이게 합니다.
+      # 이 이미지가 assets/media/ 폴더에 있는지 확인해주세요.
+      filename: desk.jpg 
       filters:
         brightness: 0.6
 
-  # --- 두 번째 슬라이드 ---
-  - title: 취미
-    content: 여러가지 취미를 가지며 지치지 않는 일상을 유지합니다.
-    buttons:
-      - label: '여행 기록'
-        url: '/post/'
-    image:
-      filename: field.jpg
-      filters:
-        brightness: 0.6
-
-  # --- 세 번째 슬라이드 ---
-  - title: 연락하기
-    content: 협업과 피드백은 언제나 환영합니다.
-    buttons:
-      - label: 'Contact'
-        url: '/contact/'
-    image:
-      filename: contact.jpg
-      filters:
-        brightness: 0.6
-
-# 위젯 디자인 설정
+# 디자인 설정
 design:
-  # 위젯의 너비를 화면에 꽉 차게 설정
   spacing:
     padding: ['0', '0', '0', '0']
-  # 글씨 색상을 밝게 설정 (어두운 이미지 위에서 잘 보이도록)
   font_color: 'light'
 ---
