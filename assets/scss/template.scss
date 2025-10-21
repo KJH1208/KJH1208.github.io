@@ -140,11 +140,18 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
-.navbar:hover {
+body:not(.home) .navbar:hover {
   background-color: #ffffff !important; /* 비홈: 흰색 유지 */
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 body:not(.home) {
   padding-top: var(--kjh-nav-h, 64px);
+}
+
+/* --- FINAL: 홈에서만 완전 투명 고정 --- */
+body.home .navbar,
+body.home .navbar:hover {
+  background-color: rgba(255,255,255,0) !important;
+  box-shadow: none !important;
 }
