@@ -162,6 +162,10 @@ design:
     font-size: 2rem;
   }
 }
+/* Auto-hide navbar (local fallback to ensure specificity) */
+.navbar { position: fixed !important; top:0; left:0; right:0; z-index:10000; }
+.navbar.kjh-hide { transform: translateY(-110%) !important; }
+#kjh-nav-hover { position: fixed; top:0; left:0; right:0; height:14px; z-index:10001; }
 </style>
 
 <div class="fullbleed">
@@ -303,6 +307,7 @@ design:
     console && console.warn && console.warn('Carousel init fallback:', e);
     initFallback();
   }
+  
   // ---- Auto-hide navbar on scroll + reveal on hover ----
 (function navbarAutoHide(){
   var nav = document.querySelector('.navbar');
@@ -324,6 +329,7 @@ design:
   function show(){
     if(hidden){
       nav.classList.remove('kjh-hide');
+      nav.style.transform = '';
       hidden = false;
     }
   }
@@ -331,6 +337,7 @@ design:
   function hide(){
     if(!hidden){
       nav.classList.add('kjh-hide');
+      nav.style.transform = 'translateY(-110%)';
       hidden = true;
     }
   }
