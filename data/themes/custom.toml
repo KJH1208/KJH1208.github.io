@@ -7,8 +7,8 @@ name = "Starter Blog"
 
   # Menu
   menu_primary = "rgba(255,255,255,0)"
-  menu_text = "#000000ff"
-  menu_text_active = "#70A3C9"
+  menu_text = "#000000"
+  menu_text_active = "#6091b7ff"
   menu_title = "#7D777B"
 
   # Home sections
