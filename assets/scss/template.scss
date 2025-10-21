@@ -36,6 +36,11 @@ body {
 // no navbar shadow
 .navbar {
   box-shadow: none !important; // 'important' to override dark mode box-shadow too.
+  /* 메뉴 바 투명 처리 */
+  background-color: rgba(255, 255, 255, 0.15) !important; /* 투명도 0~1 조절 */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari 호환 */
+  transition: background-color 0.3s ease;
 }
 
 // custom section padding
