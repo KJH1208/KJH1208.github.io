@@ -349,4 +349,5 @@ design:
   // 마우스를 화면 맨 위로 올리면 다시 표시
   strip.addEventListener('mouseenter', show);
 })();
+})();
 </script>
