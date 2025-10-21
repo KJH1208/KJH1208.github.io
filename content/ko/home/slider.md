@@ -86,17 +86,62 @@ design:
 #homeCarousel .carousel-control-prev-icon,
 #homeCarousel .carousel-control-next-icon { filter: drop-shadow(0 2px 6px rgba(0,0,0,.6)); }
 
-/* 인디케이터 */
+/* 인디케이터 알약 스타일 */
 #homeCarousel .carousel-indicators {
-  bottom: 1.25rem;
-  z-index: 10;
+  bottom: 2rem;
+  gap: 10px;                 /* 버튼 간 간격 */
 }
-#homeCarousel .carousel-indicators [data-bs-target] {
-  background-color: #fff;
-  opacity: .8;
+
+#homeCarousel .carousel-indicators [data-bs-target]{
+  width: 36px;               /* 기본 너비 */
+  height: 6px;               /* 두께 */
+  border: 0;
+  border-radius: 999px;      /* 알약 모양 */
+  background: rgba(255,255,255,.45);
+  opacity: 1;                /* Bootstrap 기본 opacity 무효화 */
+  box-shadow: 0 2px 10px rgba(0,0,0,.25) inset, 0 1px 3px rgba(0,0,0,.2);
+  transition: width .28s ease, background .28s ease, transform .28s ease, box-shadow .28s ease;
+  position: relative;
+  overflow: hidden;          /* 내부 진행바 잘림 처리 */
 }
-#homeCarousel .carousel-indicators .active {
-  opacity: 1;
+
+/* 활성(slide 현재 위치) */
+#homeCarousel .carousel-indicators .active{
+  width: 56px;               /* 살짝 더 길게 */
+  background: rgba(255,255,255,.85);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0,0,0,.35) inset, 0 4px 14px rgba(0,0,0,.3);
+}
+
+/* 마우스 오버 시 살짝 강조 */
+#homeCarousel .carousel-indicators [data-bs-target]:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.7);
+}
+
+/* 유리(blur) 느낌 추가 - 지원 브라우저에서만 */
+#homeCarousel .carousel-indicators [data-bs-target]{
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+/* 진행 애니메이션 바(활성 버튼 내부에서 좌->우 채워짐) */
+#homeCarousel .carousel-indicators [data-bs-target]::after{
+  content:"";
+  position:absolute; left:0; top:0; bottom:0;
+  width:0%;
+  background: #70A3C9;            /* 테마 포인트 컬러 */
+  opacity:.9;
+  border-radius: inherit;
+}
+
+/* .is-animating 클래스가 붙은 활성 버튼에 진행 애니메이션 실행 */
+@keyframes kjh-fill {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+#homeCarousel .carousel-indicators .active.is-animating::after{
+  animation: kjh-fill 5s linear forwards; /* interval과 동일하게 */
 }
 
 /* 좌우 화살표 */
