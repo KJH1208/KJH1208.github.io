@@ -111,4 +111,3 @@ extensions:
     local_backend: false
   academicons:
     enable: false
-
