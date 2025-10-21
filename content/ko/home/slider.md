@@ -303,5 +303,50 @@ design:
     console && console.warn && console.warn('Carousel init fallback:', e);
     initFallback();
   }
+  // ---- Auto-hide navbar on scroll + reveal on hover ----
+(function navbarAutoHide(){
+  var nav = document.querySelector('.navbar');
+  if(!nav) return;
+
+  // 상단 hover 감지용 얇은 투명 영역 만들기
+  var strip = document.getElementById('kjh-nav-hover');
+  if(!strip){
+    strip = document.createElement('div');
+    strip.id = 'kjh-nav-hover';
+    document.body.appendChild(strip);
+  }
+
+  var lastY = window.pageYOffset || document.documentElement.scrollTop;
+  var hidden = false;
+  var threshold = 10; // 민감도
+  var topLimit = 50;  // 상단 50px 이내에서는 항상 메뉴 표시
+
+  function show(){
+    if(hidden){
+      nav.classList.remove('kjh-hide');
+      hidden = false;
+    }
+  }
+
+  function hide(){
+    if(!hidden){
+      nav.classList.add('kjh-hide');
+      hidden = true;
+    }
+  }
+
+  // 스크롤 방향에 따라 메뉴 숨기기/보이기
+  window.addEventListener('scroll', function(){
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    var dy = y - lastY;
+    lastY = y;
+    if (y < topLimit) { show(); return; }
+    if (Math.abs(dy) < threshold) return; // 미세한 움직임은 무시
+    if (dy > 0) hide();  // 아래로 스크롤 → 숨김
+    else show();         // 위로 스크롤 → 표시
+  }, { passive: true });
+
+  // 마우스를 화면 맨 위로 올리면 다시 표시
+  strip.addEventListener('mouseenter', show);
 })();
 </script>
