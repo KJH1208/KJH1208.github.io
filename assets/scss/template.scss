@@ -37,29 +37,27 @@ body {
 .navbar {
   box-shadow: none !important; /* 그림자 제거 (다크모드 포함) */
 
-  /* 기본: 투명 유리 느낌 */
-  background-color: rgba(255, 255, 255, 0.15) !important; /* 투명도 조절 */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* Safari 호환 */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+  /* 완전 투명한 메뉴 바 */
+  background-color: rgba(255, 255, 255, 0) !important; /* 완전 투명 */
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 마우스 오버 시: 흰색 창처럼 보이게 */
+/* 마우스 오버 시 살짝 흰빛 추가 (원하면 완전 투명 유지 가능) */
 .navbar:hover {
-  background-color: rgba(255, 255, 255, 0.96) !important; /* 거의 불투명한 흰색 */
-  backdrop-filter: blur(0);             /* 흐림 제거(패널 느낌) */
-  -webkit-backdrop-filter: blur(0);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* 살짝 그림자 추가 */
+  background-color: rgba(255, 255, 255, 0.25) !important; /* 약간 밝게 */
+  box-shadow: none;
 }
 
-/* 호버 시 글자색 대비 강화 */
-.navbar:hover .nav-link,
-.navbar:hover .navbar-brand {
-  color: #000 !important;               /* 글자 검정으로 변경 */
+/* 글자색은 항상 검정 */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #000 !important;
 }
 
 /* 활성 메뉴는 포인트 컬러 유지 */
-.navbar:hover .nav-link.active {
+.navbar .nav-link.active {
   color: #70A3C9 !important;
 }
 
