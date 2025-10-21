@@ -159,4 +159,7 @@ ul.network-icon .big-icon {
   top: 0; left: 0; right: 0;
   height: 14px;
   z-index: 10000;
+  body:not(.home) {
+  padding-top: var(--kjh-nav-h, 64px);
+}
 }
