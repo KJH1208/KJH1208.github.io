@@ -36,6 +36,7 @@ body {
 // no navbar shadow
 .navbar {
   box-shadow: none !important; /* 그림자 제거 (다크모드 포함) */
+  position: fixed; top:0; left:0; right:0;
 
   /* 완전 투명한 메뉴 바 */
   background-color: rgba(255, 255, 255, 0) !important; /* 완전 투명 */

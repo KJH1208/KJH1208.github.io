@@ -303,23 +303,5 @@ design:
     console && console.warn && console.warn('Carousel init fallback:', e);
     initFallback();
   }
-</script>
-  // --- Remove top white gap: pull slider under the navbar ---
-  (function fixTopGap(){
-    var wrap = document.querySelector('.fullbleed');
-    var nav  = document.querySelector('.navbar');
-    if(!wrap || !nav) return;
-    function apply(){
-      var h = nav.offsetHeight || 0;
-      // Pull the fullbleed container up by the navbar height
-      wrap.style.marginTop = (-h) + 'px';
-      // Optional: ensure next sections snap correctly when scrolling to anchors
-      document.documentElement.style.setProperty('--kjh-nav-h', h + 'px');
-    }
-    window.addEventListener('load', apply);
-    window.addEventListener('resize', apply);
-    // Try once immediately too (for SSR/instant paint)
-    apply();
-  })();
-</script>
+})();
 </script>
