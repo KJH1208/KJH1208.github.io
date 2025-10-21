@@ -102,9 +102,11 @@ design:
 /* 좌우 화살표 */
 #homeCarousel .carousel-control-prev,
 #homeCarousel .carousel-control-next {
-  z-index: 11;
-  width: 8%;
+  z-index: 9999;           /* 항상 최상단 */
+  width: 12%;              /* 클릭 영역 확대 */
+  pointer-events: auto;     /* 클릭 통과 방지 */
 }
+#homeCarousel .carousel-caption { z-index: 5; } /* 캡션은 화살표보다 아래 */
 
 /* 반응형 */
 @media (max-width: 992px) {
@@ -165,6 +167,7 @@ design:
 <script>
 (function(){
   var el = document.getElementById('homeCarousel');
+  var clickLock = false; // 연속 클릭 방지 락
   if(!el) return;
   function initFallback(){
     var items = Array.from(el.querySelectorAll('.carousel-item'));
@@ -189,6 +192,7 @@ design:
 
     function show(nextIndex, dir){
       if(nextIndex === idx) return;
+      if (clickLock) return; clickLock = true;
       nextIndex = (nextIndex + items.length) % items.length;
       var cur = items[idx];
       var nxt = items[nextIndex];
@@ -212,16 +216,18 @@ design:
         clearAnims(cur); clearAnims(nxt);
         deactivate(idx);
         idx = nextIndex;
+        clickLock = false;
       }
       cur.addEventListener('animationend', finish, { once: true });
       // Fallback safety in case animationend doesn't fire
       setTimeout(finish, 700);
     }
 
-    prevBtn && prevBtn.addEventListener('click', function(e){ e.preventDefault(); show(idx-1, 'prev'); });
-    nextBtn && nextBtn.addEventListener('click', function(e){ e.preventDefault(); show(idx+1, 'next'); });
+    prevBtn && prevBtn.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation && e.stopImmediatePropagation(); show(idx-1, 'prev'); });
+    nextBtn && nextBtn.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation && e.stopImmediatePropagation(); show(idx+1, 'next'); });
     indicators.forEach(function(btn){
-      btn.addEventListener('click', function(){
+      btn.addEventListener('click', function(event){
+        event && (event.preventDefault(), event.stopPropagation());
         var target = parseInt(btn.getAttribute('data-bs-slide-to'),10) || 0;
         var dir = (target < idx) ? 'prev' : 'next';
         show(target, dir);
@@ -232,6 +238,19 @@ design:
   try {
     if (window.bootstrap && bootstrap.Carousel) {
       new bootstrap.Carousel(el, { interval: 5000, ride: 'carousel', touch: true, pause: false, wrap: true });
+      // Bootstrap 사용 시에도 연타 방지 + 이벤트 차단
+      var prevBtnBS = el.querySelector('.carousel-control-prev');
+      var nextBtnBS = el.querySelector('.carousel-control-next');
+      function guardHandler(dir){
+        return function(e){
+          e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation && e.stopImmediatePropagation();
+          if (clickLock) return;
+          clickLock = true;
+          setTimeout(function(){ clickLock = false; }, 650);
+        };
+      }
+      prevBtnBS && prevBtnBS.addEventListener('click', guardHandler('prev'), true);
+      nextBtnBS && nextBtnBS.addEventListener('click', guardHandler('next'), true);
     } else {
       initFallback();
     }
