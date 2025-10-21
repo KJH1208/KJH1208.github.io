@@ -104,7 +104,6 @@ design:
     font-size: 2rem;
   }
 }
-
 </style>
 
 <div class="fullbleed">
