@@ -104,23 +104,7 @@ design:
     font-size: 2rem;
   }
 }
-/* === Fallback slide animation when Bootstrap JS is not present === */
-#homeCarousel.no-bs .carousel-inner{ position: relative; overflow: hidden; }
-#homeCarousel.no-bs .carousel-item{
-  position: absolute; top:0; left:0; width:100%;
-  opacity: 0; transform: translateX(100%);
-  transition: transform .6s ease, opacity .6s ease;
-}
-#homeCarousel.no-bs .carousel-item.active{
-  opacity: 1; transform: translateX(0);
-  z-index: 2;
-}
-#homeCarousel.no-bs .carousel-item.out-left{
-  transform: translateX(-100%); opacity: 0; z-index: 1;
-}
-#homeCarousel.no-bs .carousel-item.out-right{
-  transform: translateX(100%); opacity: 0; z-index: 1;
-}
+
 </style>
 
 <div class="fullbleed">
@@ -172,79 +156,27 @@ design:
 (function(){
   var el = document.getElementById('homeCarousel');
   if(!el) return;
-
-  // 방향에 따라 클래스를 부여해 슬라이드 애니메이션
   function initFallback(){
-    el.classList.add('no-bs');
-
     var items = Array.from(el.querySelectorAll('.carousel-item'));
     var indicators = Array.from(el.querySelectorAll('.carousel-indicators [data-bs-slide-to]'));
     var prevBtn = el.querySelector('.carousel-control-prev');
     var nextBtn = el.querySelector('.carousel-control-next');
-
-    // 최초 active 인덱스
     var idx = items.findIndex(function(i){return i.classList.contains('active');});
     if(idx < 0) idx = 0;
-
-    // 초기 위치 정리
-    items.forEach(function(it,i){
-      it.classList.remove('out-left','out-right');
-      if(i < idx){ it.style.transform = 'translateX(-100%)'; }
-      else if(i > idx){ it.style.transform = 'translateX(100%)'; }
-      else { it.classList.add('active'); it.style.transform = 'translateX(0)'; }
-    });
-
-    function show(next){
-      if(next === idx) return;
-      var dir = (next > idx || (idx === 0 && next === items.length-1) === false) ? 1 : -1; // 대략 방향
-      // 현재/다음
-      var cur = items[idx];
-      var nxt = items[next];
-
-      // out 방향 지정
-      cur.classList.remove('out-left','out-right','active');
-      nxt.classList.remove('out-left','out-right','active');
-
-      if(dir > 0){ // 오른쪽으로 이동: 현재는 왼쪽으로 나가고, 다음이 오른쪽에서 들어옴
-        cur.classList.add('out-left');
-        nxt.style.transform = 'translateX(100%)';
-      }else{
-        cur.classList.add('out-right');
-        nxt.style.transform = 'translateX(-100%)';
-      }
-
-      // 다음을 활성화
-      requestAnimationFrame(function(){
-        nxt.classList.add('active');
-        nxt.style.transform = 'translateX(0)';
-      });
-
-      // 인디케이터 동기화
+    function show(i){
+      items[idx].classList.remove('active');
       indicators[idx] && indicators[idx].classList.remove('active');
-      indicators[next] && indicators[next].classList.add('active');
-
-      idx = next;
+      idx = (i + items.length) % items.length;
+      items[idx].classList.add('active');
+      indicators[idx] && indicators[idx].classList.add('active');
     }
-
-    function nextIndex(){ return (idx + 1) % items.length; }
-    function prevIndex(){ return (idx - 1 + items.length) % items.length; }
-
-    prevBtn && prevBtn.addEventListener('click', function(e){ e.preventDefault(); show(prevIndex()); });
-    nextBtn && nextBtn.addEventListener('click', function(e){ e.preventDefault(); show(nextIndex()); });
-    indicators.forEach(function(btn){
-      btn.addEventListener('click', function(){
-        var i = parseInt(btn.getAttribute('data-bs-slide-to'), 10);
-        if(!isNaN(i)) show(i);
-      });
-    });
-
-    // 자동 전환
-    setInterval(function(){ show(nextIndex()); }, 5000);
+    prevBtn && prevBtn.addEventListener('click', function(e){e.preventDefault(); show(idx-1);});
+    nextBtn && nextBtn.addEventListener('click', function(e){e.preventDefault(); show(idx+1);});
+    indicators.forEach(function(btn){ btn.addEventListener('click', function(){ show(parseInt(btn.getAttribute('data-bs-slide-to'),10)); }); });
+    setInterval(function(){ show(idx+1); }, 5000);
   }
-
   try {
     if (window.bootstrap && bootstrap.Carousel) {
-      // 부트스트랩이 있으면 기본 전환 사용
       new bootstrap.Carousel(el, { interval: 5000, ride: 'carousel', touch: true, pause: false, wrap: true });
     } else {
       initFallback();
