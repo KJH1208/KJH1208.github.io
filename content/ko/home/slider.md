@@ -3,7 +3,7 @@ widget: markdown
 headless: true
 active: true
 weight: 1
-title: " "
+title: ""
 css_class: fullwidth
 design:
   spacing:
