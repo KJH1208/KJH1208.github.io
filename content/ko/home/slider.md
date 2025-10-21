@@ -69,6 +69,17 @@ design:
 #homeCarousel.carousel-fade .active.carousel-item-start,
 #homeCarousel.carousel-fade .active.carousel-item-end {opacity:0;}
 
+/* ---- Fallback slide+fade motion for arrow clicks ---- */
+#homeCarousel .carousel-item { transition: opacity .6s ease; }
+@keyframes kjh-slide-out-left { from { transform: translateX(0); opacity: 1;} to { transform: translateX(-12%); opacity: 0;} }
+@keyframes kjh-slide-out-right{ from { transform: translateX(0); opacity: 1;} to { transform: translateX(12%);  opacity: 0;} }
+@keyframes kjh-slide-in-left  { from { transform: translateX(-12%); opacity: 0;} to { transform: translateX(0);  opacity: 1;} }
+@keyframes kjh-slide-in-right { from { transform: translateX(12%);  opacity: 0;} to { transform: translateX(0);  opacity: 1;} }
+#homeCarousel .carousel-item.kjh-anim-out-left  { animation: kjh-slide-out-left  .6s ease both; }
+#homeCarousel .carousel-item.kjh-anim-out-right { animation: kjh-slide-out-right .6s ease both; }
+#homeCarousel .carousel-item.kjh-anim-in-left   { animation: kjh-slide-in-left   .6s ease both; }
+#homeCarousel .carousel-item.kjh-anim-in-right  { animation: kjh-slide-in-right  .6s ease both; }
+
 /* 화살표 클릭 가능 보장 */
 #homeCarousel .carousel-control-prev,
 #homeCarousel .carousel-control-next { z-index: 15; width:10%; pointer-events:auto; }
@@ -162,17 +173,61 @@ design:
     var nextBtn = el.querySelector('.carousel-control-next');
     var idx = items.findIndex(function(i){return i.classList.contains('active');});
     if(idx < 0) idx = 0;
-    function show(i){
-      items[idx].classList.remove('active');
-      indicators[idx] && indicators[idx].classList.remove('active');
-      idx = (i + items.length) % items.length;
-      items[idx].classList.add('active');
-      indicators[idx] && indicators[idx].classList.add('active');
+
+    function clearAnims(node){
+      node.classList.remove('kjh-anim-out-left','kjh-anim-out-right','kjh-anim-in-left','kjh-anim-in-right');
     }
-    prevBtn && prevBtn.addEventListener('click', function(e){e.preventDefault(); show(idx-1);});
-    nextBtn && nextBtn.addEventListener('click', function(e){e.preventDefault(); show(idx+1);});
-    indicators.forEach(function(btn){ btn.addEventListener('click', function(){ show(parseInt(btn.getAttribute('data-bs-slide-to'),10)); }); });
-    setInterval(function(){ show(idx+1); }, 5000);
+
+    function activate(i){
+      items[i].classList.add('active');
+      indicators[i] && indicators[i].classList.add('active');
+    }
+    function deactivate(i){
+      items[i].classList.remove('active');
+      indicators[i] && indicators[i].classList.remove('active');
+    }
+
+    function show(nextIndex, dir){
+      if(nextIndex === idx) return;
+      nextIndex = (nextIndex + items.length) % items.length;
+      var cur = items[idx];
+      var nxt = items[nextIndex];
+
+      // Prepare next slide for entry
+      activate(nextIndex);
+      clearAnims(cur); clearAnims(nxt);
+
+      // Choose directions
+      var outClass = dir === 'prev' ? 'kjh-anim-out-right' : 'kjh-anim-out-left';
+      var inClass  = dir === 'prev' ? 'kjh-anim-in-left'   : 'kjh-anim-in-right';
+
+      // Start animations
+      cur.classList.add(outClass);
+      nxt.classList.add(inClass);
+
+      // When the outgoing animation ends, finalize state
+      var done = false;
+      function finish(){
+        if(done) return; done = true;
+        clearAnims(cur); clearAnims(nxt);
+        deactivate(idx);
+        idx = nextIndex;
+      }
+      cur.addEventListener('animationend', finish, { once: true });
+      // Fallback safety in case animationend doesn't fire
+      setTimeout(finish, 700);
+    }
+
+    prevBtn && prevBtn.addEventListener('click', function(e){ e.preventDefault(); show(idx-1, 'prev'); });
+    nextBtn && nextBtn.addEventListener('click', function(e){ e.preventDefault(); show(idx+1, 'next'); });
+    indicators.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var target = parseInt(btn.getAttribute('data-bs-slide-to'),10) || 0;
+        var dir = (target < idx) ? 'prev' : 'next';
+        show(target, dir);
+      });
+    });
+    setInterval(function(){ show(idx+1, 'next'); }, 5000);
   }
   try {
     if (window.bootstrap && bootstrap.Carousel) {
