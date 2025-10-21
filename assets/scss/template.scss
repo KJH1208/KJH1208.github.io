@@ -35,12 +35,32 @@ body {
 
 // no navbar shadow
 .navbar {
-  box-shadow: none !important; // 'important' to override dark mode box-shadow too.
-  /* 메뉴 바 투명 처리 */
-  background-color: rgba(255, 255, 255, 0.15) !important; /* 투명도 0~1 조절 */
+  box-shadow: none !important; /* 그림자 제거 (다크모드 포함) */
+
+  /* 기본: 투명 유리 느낌 */
+  background-color: rgba(255, 255, 255, 0.15) !important; /* 투명도 조절 */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); /* Safari 호환 */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* 마우스 오버 시: 흰색 창처럼 보이게 */
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 0.96) !important; /* 거의 불투명한 흰색 */
+  backdrop-filter: blur(0);             /* 흐림 제거(패널 느낌) */
+  -webkit-backdrop-filter: blur(0);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* 살짝 그림자 추가 */
+}
+
+/* 호버 시 글자색 대비 강화 */
+.navbar:hover .nav-link,
+.navbar:hover .navbar-brand {
+  color: #000 !important;               /* 글자 검정으로 변경 */
+}
+
+/* 활성 메뉴는 포인트 컬러 유지 */
+.navbar:hover .nav-link.active {
+  color: #70A3C9 !important;
 }
 
 // custom section padding
