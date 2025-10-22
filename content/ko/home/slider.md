@@ -275,7 +275,7 @@ design:
   <a class="fab-mini" href="/about/" aria-label="자기소개"><i class="bi bi-person"></i></a>
   <a class="fab-mini" href="/project/" aria-label="프로젝트"><i class="bi bi-briefcase"></i></a>
   <a class="fab-mini" href="/contact/" aria-label="연락"><i class="bi bi-envelope"></i></a>
-  <a class="fab-mini" href="/post/" aria-label="블로그/글"><i class="bi bi-journal-text"></i></a>
+  <a class="fab-mini" href="/post/" aria-label="취미"><i class="bi bi-journal-text"></i></a>
   <a class="fab-mini" href="/home/portfolio/" aria-label="포트폴리오"><i class="bi bi-folder2-open"></i></a>
 </div>
 </div>
