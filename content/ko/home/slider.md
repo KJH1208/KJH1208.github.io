@@ -264,13 +264,15 @@ design:
 
 <!-- FAB speed dial (Home only) -->
 <div class="fab-dock" aria-label="Quick actions">
-  <button class="fab-main" aria-label="Toggle quick actions" type="button">＋</button>
-  <a class="fab-mini" href="#top"        aria-label="맨 위로">⬆️</a>
-  <a class="fab-mini" href="/about/"     aria-label="자기소개">👤</a>
-  <a class="fab-mini" href="/project/"   aria-label="프로젝트">💼</a>
-  <a class="fab-mini" href="/contact/"   aria-label="연락">✉️</a>
-  <a class="fab-mini" href="/post/"      aria-label="블로그/글">📝</a>
-  <a class="fab-mini" href="/home/portfolio/" aria-label="포트폴리오">🗂️</a>
+  <button class="fab-main" aria-label="Toggle quick actions" type="button">
+    <i class="bi bi-plus-lg"></i>
+  </button>
+  <a class="fab-mini" href="#top" aria-label="맨 위로"><i class="bi bi-arrow-up"></i></a>
+  <a class="fab-mini" href="/about/" aria-label="자기소개"><i class="bi bi-person"></i></a>
+  <a class="fab-mini" href="/project/" aria-label="프로젝트"><i class="bi bi-briefcase"></i></a>
+  <a class="fab-mini" href="/contact/" aria-label="연락"><i class="bi bi-envelope"></i></a>
+  <a class="fab-mini" href="/post/" aria-label="블로그/글"><i class="bi bi-journal-text"></i></a>
+  <a class="fab-mini" href="/home/portfolio/" aria-label="포트폴리오"><i class="bi bi-folder2-open"></i></a>
 </div>
 </div>
 
