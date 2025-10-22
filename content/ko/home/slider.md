@@ -331,13 +331,13 @@ design:
 
   var lastY = window.pageYOffset || document.documentElement.scrollTop;
   var hidden = false;
-  var threshold = 6; // 민감도
+  var threshold = 10; // 민감도
   var topLimit = 64;  // 상단 64px 이내에서는 항상 메뉴 표시
 
   // 마우스 hover 상태 추적
   var hoverOver = false;      // strip 또는 nav 위에 마우스가 있는지
   var hideTimer = null;       // 마우스가 떠났을 때 지연 숨김 타이머
-  var HIDE_DELAY = 260;       // ms
+  var HIDE_DELAY = 380;       // ms
 
   function clearHideTimer(){ if(hideTimer){ clearTimeout(hideTimer); hideTimer=null; } }
 
