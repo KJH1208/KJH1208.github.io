@@ -163,9 +163,17 @@ design:
   }
 }
 /* Auto-hide navbar (local fallback to ensure specificity) */
-.navbar { position: fixed !important; top:0; left:0; right:0; z-index:10000; }
-.navbar.kjh-hide { transform: translateY(-110%) !important; }
-#kjh-nav-hover { position: fixed; top:0; left:0; right:0; height:14px; z-index:10001; }
+.navbar { 
+  position: fixed !important; top:0; left:0; right:0; z-index:10000; 
+  will-change: transform, opacity; 
+  transition: transform .38s cubic-bezier(.22,.61,.36,1), opacity .24s ease-out; 
+}
+.navbar.kjh-hide { transform: translateY(-110%); opacity: 0; }
+#kjh-nav-hover { position: fixed; top:0; left:0; right:0; height:16px; z-index:10001; }
+
+@media (prefers-reduced-motion: reduce){
+  .navbar{ transition:none; }
+}
 </style>
 
 <div class="fullbleed">
@@ -323,13 +331,13 @@ design:
 
   var lastY = window.pageYOffset || document.documentElement.scrollTop;
   var hidden = false;
-  var threshold = 10; // 민감도
-  var topLimit = 50;  // 상단 50px 이내에서는 항상 메뉴 표시
+  var threshold = 6; // 민감도
+  var topLimit = 64;  // 상단 64px 이내에서는 항상 메뉴 표시
 
   // 마우스 hover 상태 추적
   var hoverOver = false;      // strip 또는 nav 위에 마우스가 있는지
   var hideTimer = null;       // 마우스가 떠났을 때 지연 숨김 타이머
-  var HIDE_DELAY = 180;       // ms
+  var HIDE_DELAY = 260;       // ms
 
   function clearHideTimer(){ if(hideTimer){ clearTimeout(hideTimer); hideTimer=null; } }
 
@@ -359,21 +367,19 @@ design:
     hideTimer = setTimeout(function(){ if(!hoverOver) hide(); }, HIDE_DELAY);
   }
 
-  // 스크롤 방향에 따라 메뉴 숨기기/보이기
+  // 스크롤 방향에 따라 메뉴 숨기기/보이기 (requestAnimationFrame으로 부드럽게)
+  var ticking = false;
   window.addEventListener('scroll', function(){
-    var y = window.pageYOffset || document.documentElement.scrollTop;
-    var dy = y - lastY;
-    lastY = y;
-    if (y < topLimit) { show(); return; }
-    if (Math.abs(dy) < threshold) return; // 미세한 움직임은 무시
-
-    if (dy > 0) {
-      // 아래로 스크롤: 즉시 숨김(hover가 아닌 경우)
-      if (!hoverOver) hide();
-    } else {
-      // 위로 스크롤: 표시
-      show();
-    }
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+      var dy = y - lastY; lastY = y;
+      if (y < topLimit) { show(); ticking=false; return; }
+      if (Math.abs(dy) < threshold) { ticking=false; return; }
+      if (dy > 0) { if (!hoverOver) hide(); } else { show(); }
+      ticking = false;
+    });
   }, { passive: true });
 
   // --- Hover 동작 ---
