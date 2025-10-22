@@ -177,7 +177,7 @@ design:
 /* ===== FAB Speed Dial (scoped by existence of .fab-dock in Home) ===== */
 .fab-dock{
   position: fixed; right: 20px; bottom: 24px;
-  width: 56px; height: 56px; z-index: 2147483000; /* very top layer */
+  width: 56px; height: 56px; z-index: 2147483647; /* MAX: stay above everything */
   display: grid; place-items: center;
   pointer-events: auto;
 }
@@ -454,6 +454,10 @@ design:
 <script>
 (function(){
   var dock = document.querySelector('.fab-dock');
+  // Ensure dock is attached directly to <body> to avoid clipping by ancestor overflow/transform
+  if (dock && dock.parentNode !== document.body) {
+    document.body.appendChild(dock);
+  }
   if(!dock) return;
   var main = dock.querySelector('.fab-main');
 
