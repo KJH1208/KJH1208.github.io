@@ -215,6 +215,8 @@ design:
   .fab-mini, .fab-main{ transition: none; }
 }
 .dark .fab-mini{ background:#2a2f3a; color:#fff; }
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </style>
 
 <div class="fullbleed">
