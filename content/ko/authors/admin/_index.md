@@ -18,7 +18,7 @@ role: '전북대학교 | 컴퓨터공학과'
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 분산시스템과 보안, 데이터 파이프라인에 관심이 있으며 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
+bio: 보안과 네트워크에 관심이 있으며, 최근에는 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
 
 
 #interests:
@@ -53,6 +53,11 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/KJH1208
+#discord
+  - icon: discord
+    icon_pack: fab
+    link: https://discord.com/users/kwkql
+
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -65,7 +70,7 @@ social:
 ---
 
 안녕하세요, 전북대학교 컴퓨터공학과에 재학중인 **강주현**입니다.<br>
-보안과 네트워크 관리 관심이 있으며, 꾸준함과 책임감을 바탕으로 신뢰받는 전산 전문가로 성장하고자 합니다.  
+보안과 네트워크 관리 관심이 있으며, 꾸준함과 책임감을 바탕으로 <br> 신뢰받는 전산 전문가로 성장하고자 합니다.  
 
 
 - 관심사 : 보안과 네트워크 분야에 관심이 많습니다. 이를 중심으로 공부하고 있으며, 관련 자격증 취득을 위해 준비 중입니다.
