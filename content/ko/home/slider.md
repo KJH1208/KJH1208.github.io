@@ -308,7 +308,7 @@ design:
     initFallback();
   }
   
-  // ---- Auto-hide navbar on scroll + reveal on hover ----
+// ---- Auto-hide navbar on scroll + reveal on hover ----
 (function navbarAutoHide(){
   var nav = document.querySelector('.navbar');
   if(!nav) return;
@@ -326,7 +326,15 @@ design:
   var threshold = 10; // 민감도
   var topLimit = 50;  // 상단 50px 이내에서는 항상 메뉴 표시
 
+  // 마우스 hover 상태 추적
+  var hoverOver = false;      // strip 또는 nav 위에 마우스가 있는지
+  var hideTimer = null;       // 마우스가 떠났을 때 지연 숨김 타이머
+  var HIDE_DELAY = 180;       // ms
+
+  function clearHideTimer(){ if(hideTimer){ clearTimeout(hideTimer); hideTimer=null; } }
+
   function show(){
+    clearHideTimer();
     if(hidden){
       nav.classList.remove('kjh-hide');
       nav.style.transform = '';
@@ -335,11 +343,20 @@ design:
   }
 
   function hide(){
+    clearHideTimer();
     if(!hidden){
       nav.classList.add('kjh-hide');
       nav.style.transform = 'translateY(-110%)';
       hidden = true;
     }
+  }
+
+  function scheduleHide(){
+    // 상단 영역에 있거나(고정 표시), 마우스가 올라와 있으면 숨김 예약하지 않음
+    if ((window.pageYOffset || document.documentElement.scrollTop) <= topLimit) return;
+    if (hoverOver) return;
+    clearHideTimer();
+    hideTimer = setTimeout(function(){ if(!hoverOver) hide(); }, HIDE_DELAY);
   }
 
   // 스크롤 방향에 따라 메뉴 숨기기/보이기
@@ -349,12 +366,28 @@ design:
     lastY = y;
     if (y < topLimit) { show(); return; }
     if (Math.abs(dy) < threshold) return; // 미세한 움직임은 무시
-    if (dy > 0) hide();  // 아래로 스크롤 → 숨김
-    else show();         // 위로 스크롤 → 표시
+
+    if (dy > 0) {
+      // 아래로 스크롤: 즉시 숨김(hover가 아닌 경우)
+      if (!hoverOver) hide();
+    } else {
+      // 위로 스크롤: 표시
+      show();
+    }
   }, { passive: true });
 
-  // 마우스를 화면 맨 위로 올리면 다시 표시
-  strip.addEventListener('mouseenter', show);
+  // --- Hover 동작 ---
+  function onEnter(){ hoverOver = true; show(); }
+  function onLeave(){ hoverOver = false; scheduleHide(); }
+
+  strip.addEventListener('mouseenter', onEnter);
+  strip.addEventListener('mouseleave', onLeave);
+  nav.addEventListener('mouseenter', onEnter);
+  nav.addEventListener('mouseleave', onLeave);
+
+  // 접근성: 키보드 포커스가 네비로 들어오면 표시, 포커스가 빠지면 숨김 예약
+  nav.addEventListener('focusin', function(){ hoverOver = true; show(); });
+  nav.addEventListener('focusout', function(){ hoverOver = false; scheduleHide(); });
 })();
 })();
 </script>
