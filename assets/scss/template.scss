@@ -140,3 +140,36 @@ ul.network-icon .big-icon {
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
 }
+
+.navbar .nav-link{
+  padding: .45rem .75rem;             /* 클릭 영역 확대 */
+  border-radius: 8px;                  /* pill 느낌 */
+  transition: background-color .18s ease, color .18s ease; 
+}
+
+/* 기본(비-홈): 흰 배경 위에서는 포인트 색으로 하이라이트 */
+body:not(.home) .navbar .nav-link:hover,
+body:not(.home) .navbar .nav-link:focus{
+  background-color: rgba(112,163,201,0.14); /* #70A3C9의 연한 틴트 */
+  color: #70A3C9 !important;
+}
+
+/* 홈(투명 배경): 이미지 위에서도 보이도록 살짝 더 진한 틴트 */
+body.home .navbar .nav-link:hover,
+body.home .navbar .nav-link:focus{
+  background-color: rgba(112,163,201,0.28);
+  color: #000 !important;              /* 가독성 유지 */
+}
+
+/* 다크 모드 대비 */
+.dark .navbar .nav-link:hover,
+.dark .navbar .nav-link:focus{
+  background-color: rgba(255,255,255,0.12);
+  color: #bbdefb !important;           /* 다크 모드 링크 색 */
+}
+
+/* 키보드 접근성: focus-visible 시에도 동일 처리 */
+.navbar .nav-link:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(112,163,201,0.35);
+}
