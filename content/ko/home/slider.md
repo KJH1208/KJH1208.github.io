@@ -219,6 +219,16 @@ design:
       <span class="visually-hidden"></span>
     </button>
   </div>
+  <!-- FAB speed dial (Home only) -->
+<div class="fab-dock" aria-label="Quick actions">
+  <button class="fab-main" aria-label="Toggle quick actions" type="button">＋</button>
+  <a class="fab-mini" href="#top"        aria-label="맨 위로">⬆️</a>
+  <a class="fab-mini" href="/about/"     aria-label="자기소개">👤</a>
+  <a class="fab-mini" href="/project/"   aria-label="프로젝트">💼</a>
+  <a class="fab-mini" href="/contact/"   aria-label="연락">✉️</a>
+  <a class="fab-mini" href="/post/"      aria-label="블로그/글">📝</a>
+  <a class="fab-mini" href="/home/portfolio/" aria-label="포트폴리오">🗂️</a>
+</div>
 </div>
 
 <script>
