@@ -6,7 +6,7 @@ title: 강주현
 superuser: true
 
 # Role/position
-role: '전북대학교 / 컴퓨터공학과'
+role: '전북대학교 | 컴퓨터공학과'
 
 # Status emoji
 #status:
@@ -18,7 +18,7 @@ role: '전북대학교 / 컴퓨터공학과'
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 분산시스템과 보안, 데이터 파이프라인에 관심이 있으며 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
+bio: 보안과 네트워크에 관심이 있으며, 최근에는 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
 
 
 #interests:
@@ -53,6 +53,11 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/KJH1208
+#discord
+  - icon: discord
+    icon_pack: fab
+    link: https://discord.com/users/kwkql
+
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -64,11 +69,13 @@ social:
 #email: ""
 ---
 
-Hello, I’m Juhyeon Kang. I’m studying Computer Engineering at Jeonbuk National University, and I’m particularly interested in backend development, system security, and DevOps automation.
-In this semester’s project, I built a personal portfolio website using the HugoBlox template and GitHub Actions, implementing multilingual support (Korean/English) and an automated deployment pipeline.
+안녕하세요, 전북대학교 컴퓨터공학과에 재학중인 **강주현**입니다.<br>
+보안과 네트워크 관리 관심이 있으며, 꾸준함과 책임감을 바탕으로 <br> 신뢰받는 전산 전문가로 성장하고자 합니다.  
 
-	•	Major / Interests: Networks & Systems, Security, Data Pipelines, Static Site Automation
-	•	Tools Used: Git, GitHub Actions, HugoBlox, Markdown
-	•	Goal: Establish a reusable portfolio and project presentation layout applicable to real-world development
+
+- 관심사 : 보안과 네트워크 분야에 관심이 많습니다. 이를 중심으로 공부하고 있으며, 관련 자격증 취득을 위해 준비 중입니다.
+- 희망 진로 : 공기업 전산직으로 진출하여, 공공기관의 정보시스템을 효율적이고 안전하게 운영하는 일을 하고 싶습니다.
+- 목표 : 기술적 전문성과 책임감을 바탕으로, 사회에 신뢰받는 전산 전문가로 성장하는 것을 목표로 하고 있습니다.
+
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
