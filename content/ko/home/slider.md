@@ -177,8 +177,9 @@ design:
 /* ===== FAB Speed Dial (scoped by existence of .fab-dock in Home) ===== */
 .fab-dock{
   position: fixed; right: 20px; bottom: 24px;
-  width: 56px; height: 56px; z-index: 10050;
+  width: 56px; height: 56px; z-index: 2147483000; /* very top layer */
   display: grid; place-items: center;
+  pointer-events: auto;
 }
 
 .fab-main{
@@ -259,7 +260,9 @@ design:
       <span class="visually-hidden"></span>
     </button>
   </div>
-  <!-- FAB speed dial (Home only) -->
+</div>
+
+<!-- FAB speed dial (Home only) -->
 <div class="fab-dock" aria-label="Quick actions">
   <button class="fab-main" aria-label="Toggle quick actions" type="button">＋</button>
   <a class="fab-mini" href="#top"        aria-label="맨 위로">⬆️</a>
