@@ -232,8 +232,8 @@ design:
 <div class="carousel-inner">
       <div class="carousel-item active" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/desk.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">KJH 포트폴리오</h1>
-          <p class="lead">프로젝트와 도전을 통해 성장하는 과정을 기록합니다.</p>
+          <h1 class="display-3 fw-semibold">강주현의 포트폴리오</h1>
+          <p class="lead">네트워크와 보안을 공부하며, 성장중인 전북대학교 컴퓨터공학부 학생입니다.</p>
           <a class="btn btn-primary btn-lg" href="/about/">소개 보기</a>
         </div>
       </div>
@@ -241,7 +241,7 @@ design:
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/field.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">취미</h1>
-          <p class="lead">여러 가지 취미를 가지며 지치지 않는 일상을 유지합니다.</p>
+          <p class="lead">여러 가지 문화를 즐기며, 이를 통해 일상의 활력을 얻습니다.</p>
           <a class="btn btn-outline-light btn-lg" href="/post/">여행 기록</a>
         </div>
       </div>
@@ -249,7 +249,7 @@ design:
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">연락하기</h1>
-          <p class="lead">협업과 피드백은 언제나 환영합니다.</p>
+          <p class="lead">함께 이야기하고 배우는 것을 좋아하며, 언제든 연락을 환영합니다.</p>
           <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
         </div>
       </div>

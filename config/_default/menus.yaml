@@ -16,3 +16,6 @@ main:
  - name: 연락
    url: /contact/
    weight: 40
+ - name: 취미
+   url: /post/
+   weight: 50
