@@ -174,24 +174,24 @@ design:
 @media (prefers-reduced-motion: reduce){
   .navbar{ transition:none; }
 }
-/* ===== FAB Speed Dial (Home only) ===== */
-body.home .fab-dock{
+/* ===== FAB Speed Dial (scoped by existence of .fab-dock in Home) ===== */
+.fab-dock{
   position: fixed; right: 20px; bottom: 24px;
   width: 56px; height: 56px; z-index: 10050;
   display: grid; place-items: center;
 }
 
-body.home .fab-main{
+.fab-main{
   width: 56px; height:56px; border-radius:50%;
   border: none; cursor:pointer;
   background: #70A3C9; color:#fff; font-size: 28px; line-height: 1;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
   transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
 }
-body.home .fab-main:hover{ box-shadow: 0 12px 28px rgba(0,0,0,.22); }
-body.home .fab-dock.open .fab-main{ transform: rotate(45deg); }
+.fab-main:hover{ box-shadow: 0 12px 28px rgba(0,0,0,.22); }
+.fab-dock.open .fab-main{ transform: rotate(45deg); }
 
-body.home .fab-mini{
+.fab-mini{
   position: absolute; right: 8px; bottom: 8px; /* 시작점 */
   width: 44px; height: 44px; border-radius: 50%;
   background: #fff; color:#222; display: grid; place-items:center;
@@ -202,18 +202,18 @@ body.home .fab-mini{
 }
 
 /* 펼쳐졌을 때 위로 차곡차곡 */
-body.home .fab-dock.open .fab-mini{ opacity: 1; pointer-events: auto; }
-body.home .fab-dock.open .fab-mini:nth-of-type(2){ transform: translateY(-60px)  scale(1); }
-body.home .fab-dock.open .fab-mini:nth-of-type(3){ transform: translateY(-115px) scale(1); }
-body.home .fab-dock.open .fab-mini:nth-of-type(4){ transform: translateY(-170px) scale(1); }
-body.home .fab-dock.open .fab-mini:nth-of-type(5){ transform: translateY(-225px) scale(1); }
-body.home .fab-dock.open .fab-mini:nth-of-type(6){ transform: translateY(-280px) scale(1); }
-body.home .fab-dock.open .fab-mini:nth-of-type(7){ transform: translateY(-335px) scale(1); }
+.fab-dock.open .fab-mini{ opacity: 1; pointer-events: auto; }
+.fab-dock.open .fab-mini:nth-of-type(2){ transform: translateY(-60px)  scale(1); }
+.fab-dock.open .fab-mini:nth-of-type(3){ transform: translateY(-115px) scale(1); }
+.fab-dock.open .fab-mini:nth-of-type(4){ transform: translateY(-170px) scale(1); }
+.fab-dock.open .fab-mini:nth-of-type(5){ transform: translateY(-225px) scale(1); }
+.fab-dock.open .fab-mini:nth-of-type(6){ transform: translateY(-280px) scale(1); }
+.fab-dock.open .fab-mini:nth-of-type(7){ transform: translateY(-335px) scale(1); }
 
 @media (prefers-reduced-motion: reduce){
-  body.home .fab-mini, body.home .fab-main{ transition: none; }
+  .fab-mini, .fab-main{ transition: none; }
 }
-.dark body.home .fab-mini{ background:#2a2f3a; color:#fff; }
+.dark .fab-mini{ background:#2a2f3a; color:#fff; }
 </style>
 
 <div class="fullbleed">
