@@ -111,3 +111,7 @@ extensions:
     local_backend: false
   academicons:
     enable: false
+
+# Custom elements to be injected into the <head> of every page
+custom_head: |
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">

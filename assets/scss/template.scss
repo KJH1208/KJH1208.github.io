@@ -173,3 +173,9 @@ body.home .navbar .nav-link:focus{
   outline: none;
   box-shadow: 0 0 0 2px rgba(112,163,201,0.35);
 }
+
+.fab-mini i, .fab-main i {
+  font-size: 22px;
+  color: inherit;      /* fab 색상 따라감 */
+  line-height: 1;
+}
