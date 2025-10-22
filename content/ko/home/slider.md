@@ -216,8 +216,10 @@ design:
 }
 .dark .fab-mini{ background:#2a2f3a; color:#fff; }
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </style>
+
+<!-- Bootstrap Icons 불러오기 (반드시 style 태그 바깥) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <div class="fullbleed">
   <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
