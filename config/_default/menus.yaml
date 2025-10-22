@@ -17,5 +17,5 @@ main:
    url: /contact/
    weight: 40
  - name: 취미
-   url: /post/hobby/
+   url: /post/
    weight: 50

@@ -24,6 +24,10 @@ ko:
      - name: "연락"
        url: "/contact/"
        weight: 40
+     - name: "취미"
+       url: "/post/"
+       weight: 50
+
 en:
   languageCode: en-us
   weight: 2
@@ -45,6 +49,9 @@ en:
       - name: "Contact"
         url: "/en/contact/"
         weight: 40
+      - name: "Hobby"
+        url: "/post/"
+        weight: 50
 
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
