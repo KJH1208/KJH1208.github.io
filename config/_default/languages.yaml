@@ -21,11 +21,11 @@ ko:
      - name: "프로젝트"
        url: "/project/"
        weight: 30
-     - name: "연락"
-       url: "/contact/"
+     - name: 미래 계획
+       url: /post/
        weight: 40
-     - name: "미래 계획"
-       url: "/post/"
+     - name: 연락
+       url: /contact/
        weight: 50
 
 en:
@@ -48,10 +48,10 @@ en:
         weight: 30
       - name: "Contact"
         url: "/en/contact/"
-        weight: 40
+        weight: 50
       - name: "Future Plans"
         url: "/post/"
-        weight: 50
+        weight: 40
 
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
