@@ -246,7 +246,7 @@ design:
         </div>
       </div>
 
-<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
+<div class="carousel-item" style="background-image:linear-gradient(rgba(255, 255, 255, 1), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">연락하기</h1>
           <p class="lead">함께 이야기하고 배우는 것을 좋아하며, 언제든 연락을 환영합니다.</p>
