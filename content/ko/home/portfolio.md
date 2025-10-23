@@ -39,7 +39,7 @@ content:
 
 design:
   columns: '1'
-  view: grid
+  view: compact
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
