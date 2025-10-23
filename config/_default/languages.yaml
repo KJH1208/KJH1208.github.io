@@ -22,7 +22,7 @@ ko:
        url: "/project/"
        weight: 30
      - name: 미래 계획
-       url: /post/
+       url: /goals/
        weight: 40
      - name: 연락
        url: /contact/
@@ -50,7 +50,7 @@ en:
         url: "/en/contact/"
         weight: 50
       - name: "Future Plans"
-        url: "/post/"
+        url: "/goals/"
         weight: 40
 
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
