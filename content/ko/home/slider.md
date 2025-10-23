@@ -242,7 +242,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">미래계획</h1>
           <p class="lead">미래 계획과 목표를 기록합니다.</p>
-          <a class="btn btn-outline-light btn-lg" href="/goals/"></a>
+          <a class="btn btn-outline-light btn-lg" href="/goals/">Goals</a>
         </div>
       </div>
 
