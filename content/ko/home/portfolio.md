@@ -34,34 +34,37 @@ content:
       tag: NET
     - name: 웹/앱
       tag: WEB
-    - name: 데이터 파이프라인
-      tag: DATA
+    - name: 인공지능 AI활용
+      tag: AI
 
 design:
   columns: '1'
-  view: compact
+  view: masonry
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
 ---
 
 <style>
-/* Portfolio filter buttons: hover/active in point color */
+/* Portfolio filter buttons: hover/active in bright gradient point color */
 .home-section .isotope-filters .btn:hover,
 .home-section .isotope-filters .btn:focus,
 .home-section .isotope-filters .btn.active {
   color: #fff !important;
-  background-color: #3A86FF !important; /* point color */
+  background: linear-gradient(90deg, #3A86FF 0%, #06D6A0 100%) !important;
   border-color: #3A86FF !important;
-  box-shadow: 0 6px 14px rgba(58,134,255,0.28);
+  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
+  transform: translateY(-2px);
+  transition: all 0.25s ease-in-out;
 }
 
 /* Dark mode contrast */
 .dark .home-section .isotope-filters .btn:hover,
 .dark .home-section .isotope-filters .btn:focus,
 .dark .home-section .isotope-filters .btn.active {
-  color: #0D1B2A !important;           /* navy text for contrast on bright chip */
-  background-color: #3A86FF !important;
+  color: #0D1B2A !important;
+  background: linear-gradient(90deg, #3A86FF 0%, #06D6A0 100%) !important;
   border-color: #3A86FF !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
 }
 </style>

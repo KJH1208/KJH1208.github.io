@@ -18,6 +18,9 @@ name = "Starter Blog"
 [dark]
   primary = "#3A86FF"
   link = "#06D6A0"
+  # Filter button hover/active colors
+  filter_button_hover = "#3A86FF"
+  filter_button_active = "#06D6A0"
   link_hover = "#3A86FF"
   background = "#0D1B2A"
   home_section_odd = "#0D1B2A"
