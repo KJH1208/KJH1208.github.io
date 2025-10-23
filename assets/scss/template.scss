@@ -181,3 +181,56 @@ body.home .navbar .nav-link:focus{
   color: inherit;      /* fab 색상 따라감 */
   line-height: 1;
 }
+
+/* ===== Portfolio filter tabs override (hover/active) ===== */
+:root{
+  --point1: #3A86FF; /* 하늘색 */
+  --point2: #06D6A0; /* 민트 */
+}
+
+/* 기본 탭(라이트/다크 공통) */
+.home-section.wg-portfolio .isotope-filters .nav-pills .nav-link{
+  border-radius: 12px;
+  transition: all .25s ease-in-out;
+}
+
+/* hover / focus */
+.home-section.wg-portfolio .isotope-filters .nav-pills .nav-link:hover,
+.home-section.wg-portfolio .isotope-filters .nav-pills .nav-link:focus{
+  color: #fff !important;
+  background: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
+  background-color: var(--point1) !important; /* fallback */
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
+  transform: translateY(-2px);
+}
+
+/* active(선택됨) */
+.home-section.wg-portfolio .isotope-filters .nav-pills .nav-link.active,
+.home-section.wg-portfolio .isotope-filters .nav-pills .show > .nav-link{
+  color: #fff !important;
+  background: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
+  background-color: var(--point1) !important; /* fallback */
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
+}
+
+/* 버튼으로 렌더될 수 있는 변형도 커버 */
+.home-section.wg-portfolio .isotope-filters .btn:hover,
+.home-section.wg-portfolio .isotope-filters .btn:focus,
+.home-section.wg-portfolio .isotope-filters .btn.active{
+  color: #fff !important;
+  background: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
+  background-color: var(--point1) !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
+  transform: translateY(-2px);
+}
+
+/* 다크 모드에서 텍스트 대비를 더 주고 싶다면(원하면 주석 해제)
+.dark .home-section.wg-portfolio .isotope-filters .nav-pills .nav-link:hover,
+.dark .home-section.wg-portfolio .isotope-filters .nav-pills .nav-link:focus,
+.dark .home-section.wg-portfolio .isotope-filters .nav-pills .nav-link.active{
+  color: #0D1B2A !important;
+}
+*/
