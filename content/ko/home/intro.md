@@ -22,3 +22,4 @@ author: admin
 {style="font-size: 1.2rem; background: #3A86FF; background: linear-gradient(to right, #3A86FF 0%, #06D6A0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
 Check out my [resumé](/about/) and portfolio below 😍
+
