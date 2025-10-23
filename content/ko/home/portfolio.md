@@ -46,7 +46,30 @@ design:
 ---
 
 <style>
-/* Portfolio filter buttons: hover/active in bright gradient point color */
+/* Portfolio filter chips use Bootstrap nav-pills (.nav-link). Force our point colors on hover/active. */
+.home-section .isotope-filters .nav-pills .nav-link {
+  border-radius: 12px;
+  transition: all .25s ease-in-out;
+}
+
+/* Hover state */
+.home-section .isotope-filters .nav-pills .nav-link:hover,
+.home-section .isotope-filters .nav-pills .nav-link:focus {
+  color: #fff !important;
+  background: linear-gradient(90deg, #3A86FF 0%, #06D6A0 100%) !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
+  transform: translateY(-2px);
+}
+
+/* Active (selected) state */
+.home-section .isotope-filters .nav-pills .nav-link.active,
+.home-section .isotope-filters .nav-pills .show > .nav-link {
+  color: #fff !important;
+  background: linear-gradient(90deg, #3A86FF 0%, #06D6A0 100%) !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
+}
+
+/* Keep supporting .btn markup just in case (some themes render buttons) */
 .home-section .isotope-filters .btn:hover,
 .home-section .isotope-filters .btn:focus,
 .home-section .isotope-filters .btn.active {
@@ -55,16 +78,15 @@ design:
   border-color: #3A86FF !important;
   box-shadow: 0 8px 20px rgba(58,134,255,0.35);
   transform: translateY(-2px);
-  transition: all 0.25s ease-in-out;
 }
 
 /* Dark mode contrast */
+.dark .home-section .isotope-filters .nav-pills .nav-link:hover,
+.dark .home-section .isotope-filters .nav-pills .nav-link:focus,
+.dark .home-section .isotope-filters .nav-pills .nav-link.active,
 .dark .home-section .isotope-filters .btn:hover,
 .dark .home-section .isotope-filters .btn:focus,
 .dark .home-section .isotope-filters .btn.active {
   color: #0D1B2A !important;
-  background: linear-gradient(90deg, #3A86FF 0%, #06D6A0 100%) !important;
-  border-color: #3A86FF !important;
-  box-shadow: 0 8px 20px rgba(58,134,255,0.35);
 }
 </style>
