@@ -232,7 +232,7 @@ design:
 <div class="carousel-inner">
       <div class="carousel-item active" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/desk.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">강주현의 포트폴리오</h1>
+          <h1 class="display-3 fw-semibold" style="color: #fff;">강주현의 포트폴리오</h1>
           <p class="lead">네트워크와 보안을 공부하며, 성장중인 전북대학교 컴퓨터공학부 학생입니다.</p>
           <a class="btn btn-primary btn-lg" href="/about/">소개 보기</a>
         </div>
@@ -246,7 +246,7 @@ design:
         </div>
       </div>
 
-<div class="carousel-item" style="background-image:linear-gradient(rgba(255, 255, 255, 1), rgba(0,0,0,.4)), url('/media/contact.jpg');">
+<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">연락하기</h1>
           <p class="lead">함께 이야기하고 배우는 것을 좋아하며, 언제든 연락을 환영합니다.</p>
