@@ -240,9 +240,9 @@ design:
 
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/field.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">취미</h1>
-          <p class="lead">여러 가지 문화를 즐기며, 이를 통해 일상의 활력을 얻습니다.</p>
-          <a class="btn btn-outline-light btn-lg" href="/post/">여행 기록</a>
+          <h1 class="display-3 fw-semibold">미래계획</h1>
+          <p class="lead">미래 계획과 목표를 기록합니다.</p>
+          <a class="btn btn-outline-light btn-lg" href="/goals/"></a>
         </div>
       </div>
 
@@ -275,7 +275,7 @@ design:
   <a class="fab-mini" href="/about/" aria-label="자기소개"><i class="bi bi-person"></i></a>
   <a class="fab-mini" href="/project/" aria-label="프로젝트"><i class="bi bi-briefcase"></i></a>
   <a class="fab-mini" href="/contact/" aria-label="연락"><i class="bi bi-envelope"></i></a>
-  <a class="fab-mini" href="/post/" aria-label="취미"><i class="bi bi-journal-text"></i></a>
+  <a class="fab-mini" href="/goals/" aria-label="미래계획"><i class="bi bi-journal-text"></i></a>
   <a class="fab-mini" href="/home/portfolio/" aria-label="포트폴리오"><i class="bi bi-folder2-open"></i></a>
 </div>
 </div>

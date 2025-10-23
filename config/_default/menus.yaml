@@ -16,6 +16,6 @@ main:
  - name: 연락
    url: /contact/
    weight: 40
- - name: 취미
+ - name: 미래 계획
    url: /post/
    weight: 50
