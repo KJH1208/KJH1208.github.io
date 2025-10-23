@@ -16,7 +16,7 @@ name = "Starter Blog"
   home_section_even = "#F5F6F7"
 
   # 추가: 링크 및 배경
-  link = "#3A86FF"          # 포인트 링크 색
+  link = "#2c65c0ff"          # 포인트 링크 색
   link_hover = "#06D6A0"    # hover 시 색
   background = "#FFFFFF"    # 기본 배경 (전체 페이지)
 
