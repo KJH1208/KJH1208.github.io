@@ -227,6 +227,7 @@ design:
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"></button>
     </div>
 
 <div class="carousel-inner">
