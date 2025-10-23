@@ -240,7 +240,16 @@ design:
 
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/field.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">미래계획</h1>
+          <h1 class="display-3 fw-semibold"  style="color: #fff;">프로젝트</h1>
+          <p class="lead">프로젝트</p>
+          <a class="btn btn-primary btn-lg" href="/project/">project</a>
+        </div>
+      </div>
+
+
+<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/field.jpg');">
+        <div class="carousel-caption">
+          <h1 class="display-3 fw-semibold"  style="color: #fff;">미래계획</h1>
           <p class="lead">미래 계획과 목표를 기록합니다.</p>
           <a class="btn btn-primary btn-lg" href="/goals/">Goals</a>
         </div>
@@ -248,7 +257,7 @@ design:
 
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">연락하기</h1>
+          <h1 class="display-3 fw-semibold" style="color: #fff;">연락하기</h1>
           <p class="lead">함께 이야기하고 배우는 것을 좋아하며, 언제든 연락을 환영합니다.</p>
           <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
         </div>
