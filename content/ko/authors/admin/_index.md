@@ -56,7 +56,7 @@ social:
 #discord
   - icon: discord
     icon_pack: fab
-    link: https://discord.com/users/kwkql
+    link: https://discord.com/users/845666931779960852
 
 
 # Link to a PDF of your resume/CV from the About widget.
