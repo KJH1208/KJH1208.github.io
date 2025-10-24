@@ -14,19 +14,13 @@
   --bs-nav-link-hover-color: inherit !important;
 }
 
-/* 1) 기본 버튼 (비활성 상태) */
-/*
-  [강화 포인트 ✨]
-  선택자를 더 구체적으로 명시 (div.isotope-filters .nav-link)
-  모든 상태를 초기화(revert)하여 충돌 방지
-*/
-.home-section.wg-portfolio div.isotope-filters .nav-link {
+/* 1) 기본 버튼 (비활성 상태) — nav-link & btn 모두 커버 */
+.home-section.wg-portfolio div.isotope-filters :is(.nav-link, .btn){
   border-radius: 12px !important;
   padding: .55rem 1rem !important;
   letter-spacing: .01em;
   font-weight: 500;
   transition: all .22s ease-in-out;
-  /* 모든 상속/기본값을 되돌려 충돌 방지 */
   background: revert !important;
   border: revert !important;
   color: revert !important;
@@ -35,31 +29,28 @@
 }
 
 /* 1-1) 라이트 모드 - 기본 버튼 */
-body:not(.dark) .home-section.wg-portfolio div.isotope-filters .nav-link {
-  background: #2c65c0 !important;
-  border: 1px solid rgba(13,27,42,.06) !important;
+body:not(.dark) .home-section.wg-portfolio div.isotope-filters :is(.nav-link, .btn){
+  background: rgba(13,27,42,.06) !important;
+  border: 1px solid rgba(13,27,42,.12) !important;
   color: var(--navy) !important;
 }
 
 /* 1-2) 다크 모드 - 기본 버튼 */
-.dark .home-section.wg-portfolio div.isotope-filters .nav-link {
+.dark .home-section.wg-portfolio div.isotope-filters :is(.nav-link, .btn){
   background: rgba(255,255,255,.08) !important;
-  border: 1px ssolid rgba(255,255,255,.15) !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
   color: #fff !important;
 }
 
-/* 2) 활성(Active) / 호버(Hover) / 포커스(Focus) 상태 */
-/*
-  [강화 포인트 ✨]
-  마찬가지로 선택자를 더 구체적으로 명시
-*/
-.home-section.wg-portfolio div.isotope-filters .nav-link:hover,
-.home-section.wg-portfolio div.isotope-filters .nav-link:focus,
+/* 2) 활성/호버/포커스 — nav-link & btn 공통 */
+.home-section.wg-portfolio div.isotope-filters :is(.nav-link, .btn):hover,
+.home-section.wg-portfolio div.isotope-filters :is(.nav-link, .btn):focus,
 .home-section.wg-portfolio div.isotope-filters .nav-link.active,
-.home-section.wg-portfolio div.isotope-filters .nav-item.show > .nav-link {
+.home-section.wg-portfolio div.isotope-filters .nav-item.show > .nav-link,
+.home-section.wg-portfolio div.isotope-filters .btn.active{
   color: #fff !important;
   background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
-  background-color: var(--point1) !important;
+  background-color: var(--point1) !important; /* fallback */
   border-color: transparent !important;
   box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
   transform: translateY(-2px) !important;
