@@ -11,7 +11,6 @@ design:
 ---
 
 <style>
-:root{ --toss-blue:#0064FF; --toss-blue-dark:#0046B5; }
 /* 전체 화면 가득 차도록 */
 .fullbleed {
   width: 100vw;
@@ -186,7 +185,7 @@ design:
 .fab-main{
   width: 56px; height:56px; border-radius:50%;
   border: none; cursor:pointer;
-  background: var(--toss-blue); color:#fff; font-size: 28px; line-height: 1;
+  background: #172a3eff; color:#fff; font-size: 28px; line-height: 1;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
   transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
 }
@@ -225,23 +224,27 @@ design:
   transition: all .22s ease-in-out;
 }
 
-/* Primary button — Toss CTA */
+/* Primary button — clean light gray */
 #homeCarousel .carousel-caption .btn.btn-primary {
-  color: #fff;
-  background-color: var(--toss-blue);
-  border: 1px solid var(--toss-blue);
+  color: #0D1B2A;
+  background-color: #F5F6F7;
+  border: 1px solid #E2E8F0;
   border-radius: 14px;
   padding: 0.85rem 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.01em;
   box-shadow: none;
-  transition: background-color .2s ease, border-color .2s ease, transform .15s ease;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease;
 }
+
 #homeCarousel .carousel-caption .btn.btn-primary:hover,
-#homeCarousel .carousel-caption .btn.btn-primary:focus{
-  background-color: var(--toss-blue-dark);
-  border-color: var(--toss-blue-dark);
-  transform: translateY(-2px);
+#homeCarousel .carousel-caption .btn.btn-primary:focus {
+  background-color: #E9ECEF; /* hover 시 약간 더 진한 회색 */
+  border-color: #DDE1E5;
+  color: #0D1B2A;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* 은은한 입체감 */
+  transition: all .2s ease-in-out;
 }
 
 /* Outline light button — unify with light gray style */
@@ -251,11 +254,13 @@ design:
   border: 1px solid #E2E8F0;
 }
 #homeCarousel .carousel-caption .btn.btn-outline-light:hover,
-#homeCarousel .carousel-caption .btn.btn-outline-light:focus{
+#homeCarousel .carousel-caption .btn.btn-outline-light:focus {
+  background-color: #E9ECEF;
+  border-color: #DDE1E5;
   color: #0D1B2A;
-  background-color: #EEF1F5;
-  border-color: #D5DEE7;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: all .2s ease-in-out;
 }
 </style>
 
