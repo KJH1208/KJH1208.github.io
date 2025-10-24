@@ -224,43 +224,51 @@ design:
   transition: all .22s ease-in-out;
 }
 
-/* Primary button — clean light gray */
+/* Primary button — transparent glass-like */
 #homeCarousel .carousel-caption .btn.btn-primary {
-  color: #0D1B2A;
-  background-color: #F5F6F7;
-  border: 1px solid #E2E8F0;
+  color: #ffffff;
+  background-color: transparent;      /* 투명 배경 */
+  border: 1.5px solid rgba(255,255,255,0.9);
   border-radius: 14px;
   padding: 0.85rem 1.6rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   box-shadow: none;
-  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease, box-shadow .15s ease;
 }
 
 #homeCarousel .carousel-caption .btn.btn-primary:hover,
 #homeCarousel .carousel-caption .btn.btn-primary:focus {
-  background-color: #E9ECEF; /* hover 시 약간 더 진한 회색 */
-  border-color: #DDE1E5;
-  color: #0D1B2A;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.16); /* hover 시 은은한 백색 틴트 */
+  border-color: rgba(255,255,255,1);
   transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* 은은한 입체감 */
-  transition: all .2s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
-/* Outline light button — unify with light gray style */
+/* 접근성: 키보드 포커스 링 */
+#homeCarousel .carousel-caption .btn.btn-primary:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.35);
+}
+
+/* Outline light button — transparent unify */
 #homeCarousel .carousel-caption .btn.btn-outline-light{
-  color: #0D1B2A;
-  background-color: #F5F6F7;
-  border: 1px solid #E2E8F0;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1.5px solid rgba(255,255,255,0.9);
 }
 #homeCarousel .carousel-caption .btn.btn-outline-light:hover,
-#homeCarousel .carousel-caption .btn.btn-outline-light:focus {
-  background-color: #E9ECEF;
-  border-color: #DDE1E5;
-  color: #0D1B2A;
+#homeCarousel .carousel-caption .btn.btn-outline-light:focus{
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,1);
   transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: all .2s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+#homeCarousel .carousel-caption .btn.btn-outline-light:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.35);
 }
 </style>
 
