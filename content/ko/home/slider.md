@@ -296,7 +296,7 @@ design:
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/labtab.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold"  style="color: #fff;">프로젝트</h1>
-          <p class="lead">프로젝트</p>
+          <p class="lead">진행했던 프로젝트를 기록합니다.</p>
           <a class="btn btn-primary btn-lg" href="/project/">project</a>
         </div>
       </div>
@@ -313,7 +313,7 @@ design:
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">연락하기</h1>
-          <p class="lead">함께 이야기하고 배우는 것을 좋아하며, 언제든 연락을 환영합니다.</p>
+          <p class="lead">함께 이야기하고 배우는 것을 좋아합니다.<br> 언제든 연락을 환영합니다.</p>
           <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
         </div>
       </div>
