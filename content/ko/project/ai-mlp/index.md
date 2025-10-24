@@ -6,7 +6,7 @@ tags:
   - AI
 date: 2025-10-24
 draft: false
-featured: true
+featured: false
 
 # 미리보기 이미지
 image:
@@ -26,8 +26,10 @@ links:
   - icon: file
     icon_pack: fas
     name: 프로젝트 보고서
-    url: /files/projects/202212080_강주현_AI_project2_.hwpx
+    url: /files/projects/202212080_강주현_AI_project2_.pdf
 ---
+
+
 ## 프로젝트 개요
 이 프로젝트는 **기초 머신러닝 알고리즘**을 Python으로 직접 구현하고,  
 데이터셋을 생성하여 회귀·분류·다층퍼셉트론(MLP) 모델을 실습한 내용입니다.
