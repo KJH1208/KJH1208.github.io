@@ -36,8 +36,8 @@
 
 /* 1-1) 라이트 모드 - 기본 버튼 */
 body:not(.dark) .home-section.wg-portfolio div.isotope-filters .nav-link {
-  background: rgba(13,27,42,.06) !important;
-  border: 1px solid rgba(13,27,42,.12) !important;
+  background: rgba(#2c65c0ff) !important;
+  border: 1px solid rgba(13,27,42,.06) !important;
   color: var(--navy) !important;
 }
 
