@@ -302,7 +302,7 @@ design:
       </div>
 
 
-<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/hello.jpg');">
+<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/path.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold"  style="color: #fff;">미래계획</h1>
           <p class="lead">미래 계획과 목표를 기록합니다.</p>
