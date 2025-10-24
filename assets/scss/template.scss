@@ -182,47 +182,66 @@ body.home .navbar .nav-link:focus{
   line-height: 1;
 }
 
-/* ========= KJH: Portfolio filter tabs — hard override ========= */
+/* ===== KJH — Portfolio filter: clear & strong override ===== */
 :root{
   --point1: #3A86FF; /* sky */
   --point2: #06D6A0; /* mint */
+  --navy:   #0D1B2A;
 }
 
-/* 필터 래퍼가 뭐로 렌더되든(테마별 차이), 가장 범용적으로 잡는다 */
-:is(.home-section, .section, body) .isotope-filters {
-  /* 혹시 Bootstrap 변수가 강제되는 테마를 위해 기본값도 무력화 */
+/* 0) 테마 기본값/변수 초기화(안 그러면 변수가 덮어씀) */
+.home-section.wg-portfolio .isotope-filters{
   --bs-nav-pills-link-active-bg: transparent !important;
-  --bs-nav-link-hover-color: #fff !important;
+  --bs-nav-link-hover-color: inherit !important;
 }
 
-/* 기본 탭(공통) */
-:is(.home-section, .section, body) .isotope-filters :is(.nav-pills .nav-link, .btn){
-  border-radius: 12px;
-  transition: all .25s ease-in-out;
+/* 1) 기본 칩(비활성) 상태: 라이트/다크 모두 대비 높이기 */
+.home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link{
+  border-radius: 12px !important;
+  padding: .55rem 1rem !important;
+  letter-spacing: .01em;
+  transition: all .22s ease-in-out;
+  background: rgba(255,255,255,.08) !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  color: #fff !important;
 }
 
-/* Hover / Focus */
-:is(.home-section, .section, body) .isotope-filters :is(.nav-pills .nav-link, .btn):hover,
-:is(.home-section, .section, body) .isotope-filters :is(.nav-pills .nav-link, .btn):focus{
+/* 라이트 모드 기본 칩은 밝은 배경에 맞게 */
+body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link{
+  background: rgba(13,27,42,.06) !important;
+  border-color: rgba(13,27,42,.12) !important;
+  color: var(--navy) !important;
+}
+
+/* 2) Hover/Focus: 포인트 그라데이션로 확실히 */
+.home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link:hover,
+.home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link:focus{
   color: #fff !important;
   background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
-  background-color: var(--point1) !important; /* fallback for older browsers */
+  background-color: var(--point1) !important; /* fallback */
   border-color: transparent !important;
-  box-shadow: 0 8px 20px rgba(58,134,255,0.35) !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
   transform: translateY(-2px);
 }
 
-/* Active(선택됨) */
-:is(.home-section, .section, body) .isotope-filters :is(.nav-pills .nav-link.active, .show > .nav-link, .btn.active){
+/* 3) Active(선택됨)도 동일하게 강조 */
+.home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link.active,
+.home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item.show > .nav-link{
   color: #fff !important;
   background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
   background-color: var(--point1) !important;
   border-color: transparent !important;
-  box-shadow: 0 8px 20px rgba(58,134,255,0.35) !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
 }
 
-/* 다크 모드에서 텍스트 대비 더 주고 싶다면(원하면 주석 해제)
-.dark :is(.home-section, .section, body) .isotope-filters :is(.nav-pills .nav-link:hover, .nav-pills .nav-link:focus, .nav-pills .nav-link.active, .btn:hover, .btn:focus, .btn.active){
-  color: #0D1B2A !important;
+/* 4) 혹시 버튼으로 렌더되는 테마 변형도 함께 커버 */
+.home-section.wg-portfolio .isotope-filters .btn:hover,
+.home-section.wg-portfolio .isotope-filters .btn:focus,
+.home-section.wg-portfolio .isotope-filters .btn.active{
+  color: #fff !important;
+  background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
+  background-color: var(--point1) !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
+  transform: translateY(-2px);
 }
-*/
