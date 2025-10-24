@@ -36,7 +36,7 @@
 
 /* 1-1) 라이트 모드 - 기본 버튼 */
 body:not(.dark) .home-section.wg-portfolio div.isotope-filters .nav-link {
-  background: rgba(#2c65c0ff) !important;
+  background: #2c65c0 !important;
   border: 1px solid rgba(13,27,42,.06) !important;
   color: var(--navy) !important;
 }
@@ -44,7 +44,7 @@ body:not(.dark) .home-section.wg-portfolio div.isotope-filters .nav-link {
 /* 1-2) 다크 모드 - 기본 버튼 */
 .dark .home-section.wg-portfolio div.isotope-filters .nav-link {
   background: rgba(255,255,255,.08) !important;
-  border: 1px solid rgba(255,255,255,.15) !important;
+  border: 1px ssolid rgba(255,255,255,.15) !important;
   color: #fff !important;
 }
 
