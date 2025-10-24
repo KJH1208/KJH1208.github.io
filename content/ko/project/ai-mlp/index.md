@@ -1,9 +1,11 @@
 ---
 title: 인공신경망 (MLP) 실습 프로젝트
 summary: Python을 활용한 선형회귀, 로지스틱회귀, 다층퍼셉트론 실습 프로젝트
-tags: 
-  -AI
-date: 2025-10-25
+type: project
+tags:
+  - AI
+date: 2025-10-24
+draft: false
 featured: true
 
 # 미리보기 이미지
