@@ -252,6 +252,7 @@ body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .na
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   margin-top: .75rem;
+  margin-bottom: 2rem; /* add space under custom cards */
 }
 
 .kjh-card{
@@ -274,3 +275,8 @@ body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .na
 .dark .kjh-card{ background:#1F2733; border-color:#2D3748; box-shadow: 0 2px 10px rgba(0,0,0,.3); }
 .dark .kjh-card__desc{ color:#A0AEC0; }
 .dark .kjh-card__badge{ background:#2A3342; color:#E2E8F0; }
+
+/* Extra spacing around portfolio filter chips */
+.home-section.wg-portfolio .isotope-filters{
+  margin: 1rem 0 1.25rem !important;
+}
