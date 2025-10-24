@@ -1,0 +1,57 @@
+/* =========================================
+   KJH — Portfolio Filter Override
+   ========================================= */
+   
+/* custom.scss 파일 맨 위에 추가 */
+body {
+  border: 10px solid red !important;
+}
+
+:root {
+  --point1: #3A86FF; /* 파란색 */
+  --point2: #06D6A0; /* 민트색 */
+  --navy:   #0D1B2A; /* 어두운 남색 */
+}
+
+/* 0) Bootstrap 기본값 무력화 */
+.home-section.wg-portfolio .isotope-filters {
+  --bs-nav-pills-link-active-bg: transparent !important;
+  --bs-nav-link-hover-color: inherit !important;
+}
+
+/* 1) 기본 버튼 (비활성 상태) */
+.home-section.wg-portfolio .isotope-filters .nav-link {
+  border-radius: 12px !important;
+  padding: .55rem 1rem !important;
+  letter-spacing: .01em;
+  font-weight: 500;
+  transition: all .22s ease-in-out;
+}
+
+/* 1-1) 라이트 모드 - 기본 버튼 */
+body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav-link {
+  background: rgba(13,27,42,.06) !important;
+  border: 1px solid rgba(13,27,42,.12) !important;
+  color: var(--navy) !important;
+}
+
+/* 1-2) 다크 모드 - 기본 버튼 */
+.dark .home-section.wg-portfolio .isotope-filters .nav-link {
+  background: rgba(255,255,255,.08) !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  color: #fff !important;
+}
+
+/* 2) 활성(Active) / 호버(Hover) / 포커스(Focus) 상태 */
+/* (모든 상태를 하나로 묶어 동일한 스타일 적용) */
+.home-section.wg-portfolio .isotope-filters .nav-link:hover,
+.home-section.wg-portfolio .isotope-filters .nav-link:focus,
+.home-section.wg-portfolio .isotope-filters .nav-link.active,
+.home-section.wg-portfolio .isotope-filters .nav-item.show > .nav-link {
+  color: #fff !important;
+  background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
+  background-color: var(--point1) !important; /* 그라데이션 미지원 시 파란색 */
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
+  transform: translateY(-2px);
+}
