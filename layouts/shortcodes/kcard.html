@@ -1,0 +1,12 @@
+<div class="kjh-card">
+  <a class="kjh-card__link" href='{{ .Get "href" }}'>
+    {{ with .Get "image" }}
+    <div class="kjh-card__thumb" style="background-image:url('{{ . }}');"></div>
+    {{ end }}
+    <div class="kjh-card__body">
+      <h3 class="kjh-card__title">{{ .Get "title" }}</h3>
+      {{ with .Get "desc" }}<p class="kjh-card__desc">{{ . }}</p>{{ end }}
+      {{ with .Get "badge" }}<span class="kjh-card__badge">{{ . }}</span>{{ end }}
+    </div>
+  </a>
+</div>

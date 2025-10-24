@@ -45,6 +45,14 @@ design:
   spacing: {padding: [0, 0, 0, 0]}
 ---
 
+{{< kcard 
+  href="/project/" 
+  title="프로젝트 모음" 
+  desc="네트워크·보안 관련 실습과 미니 앱"
+  image="/media/desk.jpg" 
+  badge="Project"
+>}}
+
 <style>
 /* Portfolio filter chips use Bootstrap nav-pills (.nav-link). Force our point colors on hover/active. */
 .home-section .isotope-filters .nav-pills .nav-link {
@@ -90,3 +98,4 @@ design:
   color: #0D1B2A !important;
 }
 </style>
+
