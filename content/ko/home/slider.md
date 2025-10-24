@@ -11,6 +11,7 @@ design:
 ---
 
 <style>
+:root{ --toss-blue:#0064FF; --toss-blue-dark:#0046B5; }
 /* 전체 화면 가득 차도록 */
 .fullbleed {
   width: 100vw;
@@ -185,7 +186,7 @@ design:
 .fab-main{
   width: 56px; height:56px; border-radius:50%;
   border: none; cursor:pointer;
-  background: #172a3eff; color:#fff; font-size: 28px; line-height: 1;
+  background: var(--toss-blue); color:#fff; font-size: 28px; line-height: 1;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
   transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
 }
@@ -224,24 +225,22 @@ design:
   transition: all .22s ease-in-out;
 }
 
-/* Primary button — clean light gray */
+/* Primary button — Toss CTA */
 #homeCarousel .carousel-caption .btn.btn-primary {
-  color: #0D1B2A;
-  background-color: #F5F6F7;
-  border: 1px solid #E2E8F0;
+  color: #fff;
+  background-color: var(--toss-blue);
+  border: 1px solid var(--toss-blue);
   border-radius: 14px;
   padding: 0.85rem 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.01em;
   box-shadow: none;
-  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease;
+  transition: background-color .2s ease, border-color .2s ease, transform .15s ease;
 }
-
 #homeCarousel .carousel-caption .btn.btn-primary:hover,
-#homeCarousel .carousel-caption .btn.btn-primary:focus {
-  background-color: #EEF1F5; /* 살짝 진한 회색 */
-  border-color: #D5DEE7;
-  color: #0D1B2A;
+#homeCarousel .carousel-caption .btn.btn-primary:focus{
+  background-color: var(--toss-blue-dark);
+  border-color: var(--toss-blue-dark);
   transform: translateY(-2px);
 }
 
