@@ -6,7 +6,8 @@ tags:
   - AI
 date: 2025-10-24
 draft: false
-featured: false
+featured: true
+share: false
 
 # 미리보기 이미지
 image:
@@ -26,7 +27,7 @@ links:
   - icon: file
     icon_pack: fas
     name: 프로젝트 보고서
-    url: /files/projects/202212080_강주현_AI_project2_.pdf
+    url: /files/projects/202212080_AI_project2.pdf
 ---
 
 
