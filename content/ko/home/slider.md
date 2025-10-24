@@ -185,7 +185,7 @@ design:
 .fab-main{
   width: 56px; height:56px; border-radius:50%;
   border: none; cursor:pointer;
-  background: #70A3C9; color:#fff; font-size: 28px; line-height: 1;
+  background: #172a3eff; color:#fff; font-size: 28px; line-height: 1;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
   transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
 }
@@ -216,6 +216,42 @@ design:
 }
 .dark .fab-mini{ background:#2a2f3a; color:#fff; }
 
+/* ===== Slider button theming (only affects buttons inside the carousel) ===== */
+#homeCarousel .carousel-caption .btn {
+  border-radius: 12px;
+  padding: .85rem 1.4rem;
+  font-weight: 600;
+  transition: all .22s ease-in-out;
+}
+
+/* Primary button (e.g., Goals) */
+#homeCarousel .carousel-caption .btn.btn-primary{
+  color: #fff;
+  background-color: #3A86FF;   /* base: sky */
+  border-color: #3A86FF;
+}
+#homeCarousel .carousel-caption .btn.btn-primary:hover,
+#homeCarousel .carousel-caption .btn.btn-primary:focus{
+  color: #fff;
+  background-image: linear-gradient(90deg, #3A86FF 0%, #06D6A0 100%);
+  background-color: #3A86FF; /* fallback */
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+/* Outline light button (second slide: "project" 등) */
+#homeCarousel .carousel-caption .btn.btn-outline-light{
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+}
+#homeCarousel .carousel-caption .btn.btn-outline-light:hover,
+#homeCarousel .carousel-caption .btn.btn-outline-light:focus{
+  color: #0D1B2A;               /* navy text on white */
+  background-color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
 </style>
 
 <!-- Bootstrap Icons 불러오기 (반드시 style 태그 바깥) -->
