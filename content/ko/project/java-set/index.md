@@ -19,26 +19,6 @@ links:
     name: 전체 소스 ZIP
     url: /files/projects/java-set/java-set-source.zip
 
-  - icon: java
-    icon_pack: fab
-    name: clientFrame.java
-    url: /files/projects/java-set/clientFrame.java
-
-  - icon: java
-    icon_pack: fab
-    name: Server.java
-    url: /files/projects/java-set/Server.java
-
-  - icon: java
-    icon_pack: fab
-    name: StartFrame.java
-    url: /files/projects/java-set/StartFrame.java
-
-  - icon: java
-    icon_pack: fab
-    name: Round2.java
-    url: /files/projects/java-set/Round2.java
-
   - icon: file-word
     icon_pack: fas
     name: 프로젝트 보고서(DOCX)
