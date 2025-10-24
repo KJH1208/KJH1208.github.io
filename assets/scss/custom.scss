@@ -21,25 +21,11 @@
   letter-spacing: .01em;
   font-weight: 500;
   transition: all .22s ease-in-out;
-  background: revert !important;
-  border: revert !important;
-  color: revert !important;
-  box-shadow: none !important;
-  transform: none !important;
-}
-
-/* 1-1) 라이트 모드 기본 */
-body:not(.dark) .home-section.wg-portfolio :is(.isotope-filters, .project-toolbar, .filters, .project-filters) :is(.nav-link, .btn, a, button, [data-filter]){
-  background: rgba(13,27,42,.06) !important;
-  border: 1px solid rgba(13,27,42,.12) !important;
+  background: transparent !important; /* 투명 배경 */
+  border: 1px solid rgba(13,27,42,.15) !important; /* 은은한 경계선 */
   color: var(--navy) !important;
-}
-
-/* 1-2) 다크 모드 기본 */
-.dark .home-section.wg-portfolio :is(.isotope-filters, .project-toolbar, .filters, .project-filters) :is(.nav-link, .btn, a, button, [data-filter]){
-  background: rgba(255,255,255,.08) !important;
-  border: 1px solid rgba(255,255,255,.15) !important;
-  color: #fff !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transform: none !important;
 }
 
 /* 2) Hover/Focus/Active — 전 변형 커버 */
