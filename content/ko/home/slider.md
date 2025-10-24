@@ -224,19 +224,24 @@ design:
   transition: all .22s ease-in-out;
 }
 
-/* Primary button (e.g., Goals) */
-#homeCarousel .carousel-caption .btn.btn-primary{
+/* Primary button (modern gradient style for carousel) */
+#homeCarousel .carousel-caption .btn.btn-primary {
   color: #fff;
-  background-color: #3A86FF;   /* base: sky */
-  border-color: #3A86FF;
+  background: linear-gradient(135deg, #3A86FF 0%, #06D6A0 100%);
+  border: none;
+  border-radius: 14px;
+  padding: 0.85rem 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 24px rgba(58, 134, 255, 0.35);
+  transition: all 0.25s ease-in-out;
 }
+
 #homeCarousel .carousel-caption .btn.btn-primary:hover,
-#homeCarousel .carousel-caption .btn.btn-primary:focus{
-  color: #fff;
-  background-image: linear-gradient(90deg, #3A86FF 0%, #06D6A0 100%);
-  background-color: #3A86FF; /* fallback */
-  border-color: transparent;
-  transform: translateY(-2px);
+#homeCarousel .carousel-caption .btn.btn-primary:focus {
+  background: linear-gradient(135deg, #06D6A0 0%, #3A86FF 100%);
+  box-shadow: 0 10px 28px rgba(6, 214, 160, 0.4);
+  transform: translateY(-3px) scale(1.03);
 }
 
 /* Outline light button (second slide: "project" 등) */
