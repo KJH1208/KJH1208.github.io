@@ -52,6 +52,18 @@ body:not(.dark) .home-section.wg-portfolio div.isotope-filters :is(.nav-link, .b
   background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
   background-color: var(--point1) !important; /* fallback */
   border-color: transparent !important;
-  box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
   transform: translateY(-2px) !important;
+}
+
+/* ===== Home link (site title) color customization ===== */
+.navbar-brand a,
+.navbar-brand,
+.navbar a[href="/#"] {
+  color: var(--point1) !important; /* 기본: 파란색 */
+  font-weight: 600;
+}
+
+.navbar-brand a:hover,
+.navbar a[href="/#"]:hover {
+  color: var(--point2) !important; /* hover 시 민트색 */
 }
