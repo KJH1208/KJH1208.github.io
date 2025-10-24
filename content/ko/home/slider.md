@@ -224,37 +224,38 @@ design:
   transition: all .22s ease-in-out;
 }
 
-/* Primary button (modern gradient style for carousel) */
+/* Primary button — clean light gray */
 #homeCarousel .carousel-caption .btn.btn-primary {
-  color: #fff;
-  background: linear-gradient(135deg, #3A86FF 0%, #06D6A0 100%);
-  border: none;
+  color: #0D1B2A;
+  background-color: #F5F6F7;
+  border: 1px solid #E2E8F0;
   border-radius: 14px;
   padding: 0.85rem 1.6rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  box-shadow: 0 8px 24px rgba(58, 134, 255, 0.35);
-  transition: all 0.25s ease-in-out;
+  letter-spacing: 0.01em;
+  box-shadow: none;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease;
 }
 
 #homeCarousel .carousel-caption .btn.btn-primary:hover,
 #homeCarousel .carousel-caption .btn.btn-primary:focus {
-  background: linear-gradient(135deg, #06D6A0 0%, #3A86FF 100%);
-  box-shadow: 0 10px 28px rgba(6, 214, 160, 0.4);
-  transform: translateY(-3px) scale(1.03);
+  background-color: #EEF1F5; /* 살짝 진한 회색 */
+  border-color: #D5DEE7;
+  color: #0D1B2A;
+  transform: translateY(-2px);
 }
 
-/* Outline light button (second slide: "project" 등) */
+/* Outline light button — unify with light gray style */
 #homeCarousel .carousel-caption .btn.btn-outline-light{
-  color: #ffffff;
-  border-color: #ffffff;
-  background-color: transparent;
+  color: #0D1B2A;
+  background-color: #F5F6F7;
+  border: 1px solid #E2E8F0;
 }
 #homeCarousel .carousel-caption .btn.btn-outline-light:hover,
 #homeCarousel .carousel-caption .btn.btn-outline-light:focus{
-  color: #0D1B2A;               /* navy text on white */
-  background-color: #ffffff;
-  border-color: #ffffff;
+  color: #0D1B2A;
+  background-color: #EEF1F5;
+  border-color: #D5DEE7;
   transform: translateY(-2px);
 }
 </style>
