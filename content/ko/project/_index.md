@@ -22,20 +22,39 @@ image:
 .kjh-hero__inner h1{ font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; margin: 0 0 .4rem; }
 .kjh-hero__inner p{ font-size: clamp(1rem, 1.6vw, 1.2rem); opacity:.95; margin:0; }
 
-/* ===== 아래 이미지와 리스트 사이 구분선 ===== */
-.kjh-sep{ position: relative; width: min(920px, 92%); margin: 3rem auto 2rem; text-align:center; }
-.kjh-sep::before{
-  content:""; display:block; height:1px; 
-  background: linear-gradient(90deg, transparent, rgba(13,27,42,.35), transparent);
+/* ===== Hero와 리스트 사이 구분선 ===== */
+.kjh-sep {
+  position: relative;
+  width: min(900px, 92%);
+  margin: 2.5rem auto 1.5rem;
+  text-align: center;
 }
-.kjh-sep span{
-  position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);
-  padding: 0 .75rem; font-weight:700; letter-spacing:.04em; font-size:.95rem;
-  background: #fff; color:#172a3e;
+.kjh-sep::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(23,42,62,0.45), transparent);
+}
+.kjh-sep span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color: #172a3e;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0 0.75rem;
+}
+.dark .kjh-sep::before {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+}
+.dark .kjh-sep span {
+  background: #0D1B2A;
+  color: #fff;
 }
 .dark .kjh-sep::before{ background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); }
 .dark .kjh-sep span{ background:#0D1B2A; color:#fff; }
-</style>
 </style>
 
 <section class="kjh-hero" style="--hero-img:url('/media/labtab.jpg')">
@@ -44,3 +63,4 @@ image:
     <p>개발 및 실습 프로젝트 모음</p>
   </div>
 </section>
+<div class="kjh-sep"><span>PROJECT LIST</span></div>
