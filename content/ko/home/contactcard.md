@@ -4,7 +4,6 @@ headless: true
 active: true
 weight: 60
 title: "Contact"
-subtitle: "함께 소통해요."
 design:
   columns: 1
 ---
@@ -27,3 +26,4 @@ design:
     <p>@wngus08</p>
   </div>
 </div>
+<p class="contact-note" style="text-align:center;margin-top:1rem;color:#51606f;">함께 소통해요.</p>
