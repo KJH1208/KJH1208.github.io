@@ -46,6 +46,9 @@ design:
 <div class="kjh-timeline">
   {{< kcard href="/goals/roadmap" title="활동 연혁" desc="2023~2025 주요 참여 기록" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
 </div>
+<div class="kjh-timeline">
+  {{< kcard href="/goals/certs" title="자격증 현황" desc="취득 및 예정 자격증 정리" image="/media/certificate.jpg" badge="Certifications" variant="horizontal">}}
+</div>
 
 <style>
 /* Portfolio filter chips use Bootstrap nav-pills (.nav-link). Force our point colors on hover/active. */
