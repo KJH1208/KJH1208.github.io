@@ -235,6 +235,7 @@ body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .na
 }
 
 /* 4) 혹시 버튼으로 렌더되는 테마 변형도 함께 커버 */
+
 .home-section.wg-portfolio .isotope-filters .btn:hover,
 .home-section.wg-portfolio .isotope-filters .btn:focus,
 .home-section.wg-portfolio .isotope-filters .btn.active{
@@ -244,6 +245,26 @@ body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .na
   border-color: transparent !important;
   box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
   transform: translateY(-2px);
+}
+
+/* 5) Dark mode explicit text/border colors for portfolio filter chips */
+.dark .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link{
+  color: #ffffff !important;                     /* 글자 흰색 고정 */
+  background: transparent !important;            /* 기본은 투명 */
+  border-color: rgba(255,255,255,0.35) !important; /* 은은한 흰색 테두리 */
+}
+.dark .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link:hover,
+.dark .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link:focus{
+  color: #06D6A0 !important;                     /* hover 포인트색 */
+  border-color: #06D6A0 !important;
+}
+.dark .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link.active,
+.dark .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item.show > .nav-link{
+  color: #0D1B2A !important;                     /* active는 진한 글자색 */
+  background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
+  background-color: var(--point1) !important;    /* fallback */
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(58,134,255,.35) !important;
 }
 
 /* ===== KJH custom shortcode styles: kcard + grid ===== */
