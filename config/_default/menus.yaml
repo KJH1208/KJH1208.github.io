@@ -27,11 +27,11 @@ main:
    parent: project
    weight: 33
  - name: 웹/앱
-   url: /project/#WEB
+   url: /project/java-set/
    parent: project
    weight: 34
  - name: 인공지능 AI활용
-   url: /project/#AI
+   url: /project/ai-mlp/
    parent: project
    weight: 35
  - name: 미래 계획

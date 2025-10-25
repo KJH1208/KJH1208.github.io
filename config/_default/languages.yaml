@@ -35,11 +35,11 @@ ko:
        parent: project
        weight: 33
      - name: "웹/앱"
-       url: "/project/#WEB"
+       url: "/project/java-set/"
        parent: project
        weight: 34
      - name: "인공지능 AI활용"
-       url: "/project/#AI"
+       url: "/project/ai-mlp/"
        parent: project
        weight: 35
      - name: "미래 계획"
@@ -90,11 +90,11 @@ en:
         parent: project
         weight: 33
       - name: "Web/App"
-        url: "/en/project/#WEB"
+        url: "/en/project/java-set/"
         parent: project
         weight: 34
       - name: "AI"
-        url: "/en/project/#AI"
+        url: "/en/project/ai-mlp/"
         parent: project
         weight: 35
       - name: "Future Plans"
