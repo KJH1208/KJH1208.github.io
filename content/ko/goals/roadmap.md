@@ -75,7 +75,7 @@ share: false
   .dark .kjh-roadmap h2{ background: linear-gradient(90deg, rgba(58,134,255,.12), transparent); }
   /* 추가: 다크모드 강조 스타일 */
   .dark .kjh-roadmap strong {
-    color: #3A86FF !important; /* 눈에 띄는 파란색 */
+    color: #06D6A0 !important; /* 눈에 띄는 파란색 */
     font-weight: 800;
   }
   .dark .kjh-roadmap em {
