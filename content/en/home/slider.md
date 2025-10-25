@@ -272,7 +272,7 @@ design:
 }
 </style>
 
-<!-- Bootstrap Icons 불러오기 (반드시 style 태그 바깥) -->
+<!-- Load Bootstrap Icons (must be outside style tag) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <div class="fullbleed">
@@ -284,42 +284,41 @@ design:
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"></button>
     </div>
 
-<div class="carousel-inner">
+    <div class="carousel-inner">
       <div class="carousel-item active" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/desk.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold" style="color: #fff;">강주현의 포트폴리오</h1>
-          <p class="lead">네트워크와 보안을 공부하며, 성장중인 전북대학교 컴퓨터공학부 학생입니다.</p>
-          <a class="btn btn-primary btn-lg" href="/about/">소개 보기</a>
+          <h1 class="display-3 fw-semibold" style="color: #fff;">Kang Juhyeon’s Portfolio</h1>
+          <p class="lead">A Computer Engineering student at Jeonbuk National University, studying networking and cybersecurity.</p>
+          <a class="btn btn-primary btn-lg" href="/about/">View Introduction</a>
         </div>
       </div>
 
-<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/labtab.jpg');">
+      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/labtab.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold"  style="color: #fff;">프로젝트</h1>
-          <p class="lead">진행했던 프로젝트를 기록합니다.</p>
-          <a class="btn btn-primary btn-lg" href="/project/">프로젝트</a>
+          <h1 class="display-3 fw-semibold" style="color: #fff;">Projects</h1>
+          <p class="lead">A record of completed and ongoing projects.</p>
+          <a class="btn btn-primary btn-lg" href="/project/">View Projects</a>
         </div>
       </div>
 
-
-<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/path.jpg');">
+      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/path.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold"  style="color: #fff;">활동</h1>
-          <p class="lead">활동 및 미래 계획과 목표를 기록합니다.</p>
-          <a class="btn btn-primary btn-lg" href="/goals/">활동 확인하기</a>
+          <h1 class="display-3 fw-semibold" style="color: #fff;">Activities</h1>
+          <p class="lead">Recording past activities, future plans, and goals.</p>
+          <a class="btn btn-primary btn-lg" href="/goals/">View Activities</a>
         </div>
       </div>
 
-<div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
+      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold" style="color: #fff;">연락</h1>
-          <p class="lead">언제든 연락을 환영합니다.</p>
+          <h1 class="display-3 fw-semibold" style="color: #fff;">Contact</h1>
+          <p class="lead">Feel free to reach out anytime.</p>
           <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
         </div>
       </div>
     </div>
 
- <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden"></span>
     </button>
@@ -335,12 +334,12 @@ design:
   <button class="fab-main" aria-label="Toggle quick actions" type="button">
     <i class="bi bi-plus-lg"></i>
   </button>
-  <a class="fab-mini" href="#top" aria-label="맨 위로"><i class="bi bi-arrow-up"></i></a>
-  <a class="fab-mini" href="/about/" aria-label="자기소개"><i class="bi bi-person"></i></a>
-  <a class="fab-mini" href="/project/" aria-label="프로젝트"><i class="bi bi-briefcase"></i></a>
-  <a class="fab-mini" href="/contact/" aria-label="연락"><i class="bi bi-envelope"></i></a>
-  <a class="fab-mini" href="/goals/roadmap/" aria-label="활동기록"><i class="bi bi-journal-text"></i></a>
-  <a class="fab-mini" href="/goals/certs/" aria-label="자격증"><i class="bi bi-folder2-open"></i></a>
+  <a class="fab-mini" href="#top" aria-label="Go to Top"><i class="bi bi-arrow-up"></i></a>
+  <a class="fab-mini" href="/about/" aria-label="About Me"><i class="bi bi-person"></i></a>
+  <a class="fab-mini" href="/project/" aria-label="Projects"><i class="bi bi-briefcase"></i></a>
+  <a class="fab-mini" href="/contact/" aria-label="Contact"><i class="bi bi-envelope"></i></a>
+  <a class="fab-mini" href="/goals/roadmap/" aria-label="Activity Log"><i class="bi bi-journal-text"></i></a>
+  <a class="fab-mini" href="/goals/certs/" aria-label="Certificates"><i class="bi bi-folder2-open"></i></a>
 </div>
 </div>
 

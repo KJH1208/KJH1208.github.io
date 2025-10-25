@@ -12,26 +12,26 @@ design:
 <div class="kjh-skill-grid">
   <div class="skill-card">
     <div class="skill-icon">📘</div>
-    <strong>학습 방향</strong><br>
-    보안과 네트워크 분야에 집중하며<br>
-    관련 기술 및 자격증 취득을 위해 공부 중입니다.<br>
-    <em>정보보안 · 네트워크 관리 · 시스템 운영</em>
+    <strong>Learning Focus</strong><br>
+    Focusing on security and networking fields,<br>
+    currently studying to acquire related skills and certifications.<br>
+    <em>Information Security · Network Management · System Administration</em>
   </div>
 
   <div class="skill-card">
     <div class="skill-icon">🎯</div>
-    <strong>진로 목표</strong><br>
-    공기업 전산직으로 진출하여 공공기관의 정보시스템을<br>
-    효율적이고 안전하게 운영하고자 합니다.<br>
-    <em>안정성 · 효율성 · 공공서비스</em>
+    <strong>Career Goal</strong><br>
+    Aiming to work as an IT officer in a public institution,<br>
+    efficiently and securely managing its information systems.<br>
+    <em>Stability · Efficiency · Public Service</em>
   </div>
 
   <div class="skill-card">
     <div class="skill-icon">🚀</div>
-    <strong>미래 계획</strong><br>
-    자격증 취득 및 인턴·서포터즈 경험을 통해<br>
-    실무 역량을 쌓고 포트폴리오를 고도화할 예정입니다.<br>
-    <em>TOPCIT · 정보처리기사 · NCS 역량 강화</em>
+    <strong>Future Plan</strong><br>
+    Planning to enhance practical skills through<br>
+    certifications, internships, and supporter activities while refining my portfolio.<br>
+    <em>TOPCIT · Engineer Information Processing · NCS Competency Development</em>
   </div>
 </div>
 
