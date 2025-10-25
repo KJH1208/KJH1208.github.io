@@ -8,9 +8,6 @@ image:
   preview_only: false
 cascade:
   show_breadcrumb: true
-type: page
-_build:
-  list: never
 ---
 
 <style>
@@ -67,67 +64,30 @@ _build:
 .dark .kjh-btn:hover{ background:#1b2b40; border-color:rgba(255,255,255,.28); }
 </style>
 
-<section class="kjh-hero" style="--hero-img:url('/media/goals-hero.jpg')">
-  <div class="kjh-hero__inner">
-    <h1>Goals</h1>
-    <p>미래의 계획과 목표, 달성을 기록합니다.</p>
-  </div>
-</section>
+<section class="goals-simple">
+  <h2 style="font-size:1.6rem; font-weight:800; color:#172a3e; margin-bottom:1rem;">자격증</h2>
+  <ul style="list-style:none; padding:0; margin:0 0 2rem 0;">
+    <li>✅ TOPCIT 수준 2 (2023.05.20 취득)</li>
+    <li>📘 한국사능력검정시험 (예정)</li>
+    <li>💻 컴퓨터활용능력 1급 (예정)</li>
+    <li>🗂️ SQLD (예정)</li>
+  </ul>
 
-<div class="kjh-sep"><span>OVERVIEW</span></div>
+  <h2 style="font-size:1.6rem; font-weight:800; color:#172a3e; margin-bottom:1rem;">활동 내역</h2>
+  <ul style="list-style:none; padding:0; margin:0 0 2rem 0;">
+    <li>• 2023-05-20 — TOPCIT 응시 (수준 2)</li>
+    <li>• 2023-06-24 — 전주 ICT · AI 코딩 대회</li>
+    <li>• 2023-2학기 — 진로캠프 참여</li>
+    <li>• 2024-1학기 — 취업 트렌드 특강 / 해외취업 특강</li>
+    <li>• 2025-09-27~28 — WHO 동아리·SW사업단 대회 운영</li>
+    <li>• 2025-2학기 — AI JOB@JBNU 시범운영단 활동</li>
+  </ul>
 
-<section class="goals-wrap">
-  <!-- 1행: 자격증 / 활동 리스트 -->
-  <div class="goals-col">
-    <h2>자격증</h2>
-    <ul class="checklist">
-      <li>TOPCIT <span style="opacity:.7">수준 2 취득</span></li>
-      <li><em style="opacity:.7">예정</em> · 한국사능력검정시험</li>
-      <li><em style="opacity:.7">예정</em> · 컴퓨터활용능력 1급</li>
-      <li><em style="opacity:.7">예정</em> · SQLD</li>
-    </ul>
-    <div class="kjh-cta">
-      <a class="kjh-btn" href="/goals/certs/">자격증 상세 보기</a>
-    </div>
-  </div>
-
-  <div class="goals-col">
-    <h2>활동 리스트</h2>
-    <ul class="timeline">
-      <li><time>2023-05-20</time> TOPCIT 응시 — 수준 2</li>
-      <li><time>2023-06-24</time> 전주 ICT · AI 코딩 대회</li>
-      <li><time>2024-1학기</time> 취업/해외취업 특강</li>
-    </ul>
-    <div class="kjh-cta">
-      <a class="kjh-btn" href="/goals/roadmap/">로드맵 보기</a>
-      <a class="kjh-btn" href="/project/">프로젝트로</a>
-    </div>
-  </div>
-
-  <!-- 2행: 활동 내역 / 미래 계획 -->
-  <div class="goals-col">
-    <h2>활동 내역</h2>
-    <ul class="timeline">
-      <li><time>2023-05-20</time> TOPCIT 응시 — 수준 2</li>
-      <li><time>2023-06-24</time> 전주 ICT · AI 코딩 대회</li>
-      <li><time>2023-2학기</time> 진로캠프</li>
-      <li><time>2024-1학기</time> 취업 트렌드 특강 · 해외취업 특강</li>
-      <li><time>2025-09-27~28</time> WHO 동아리 · SW사업단 대회 운영</li>
-      <li><time>2025-2학기</time> AI JOB@JBNU 시범운영단 활동</li>
-    </ul>
-  </div>
-
-  <div class="goals-col">
-    <h2>미래 계획</h2>
-    <ul class="checklist">
-      <li>프론트엔드 부트캠프 수료 (예정)</li>
-      <li>알고리즘·네트워크 스터디 정례화</li>
-      <li>보안 실습 프로젝트 고도화 및 정리</li>
-      <li>오픈소스 기여 2건 이상</li>
-    </ul>
-    <div class="kjh-cta">
-      <a class="kjh-btn" href="/project/">프로젝트 보기</a>
-      <a class="kjh-btn" href="/contact/">연락하기</a>
-    </div>
-  </div>
+  <h2 style="font-size:1.6rem; font-weight:800; color:#172a3e; margin-bottom:1rem;">미래 계획</h2>
+  <ul style="list-style:none; padding:0;">
+    <li>💡 프론트엔드 부트캠프 수료 (예정)</li>
+    <li>🧠 알고리즘·네트워크 스터디 정례화</li>
+    <li>🔐 보안 실습 프로젝트 고도화 및 정리</li>
+    <li>🌍 오픈소스 기여 2건 이상</li>
+  </ul>
 </section>
