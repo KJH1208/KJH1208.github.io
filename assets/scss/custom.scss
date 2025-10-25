@@ -38,3 +38,19 @@
   border-color: transparent !important;
   transform: translateY(-2px) !important;
 }
+
+.custom-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+.custom-card a {
+  color: #172a3e;
+  text-decoration: none;
+}
