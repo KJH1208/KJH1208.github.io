@@ -7,11 +7,11 @@ title: "Contact"
     text-align: justify;
   }
 </style>
-아래의 연락처로 연락가능합니다.
+You can reach me at the contact information below.
 
 - {{< icon name="envelope" pack="fas" >}} <a href="mailto:wkqdl08@jbnu.ac.kr">wkqdl08@jbnu.ac.kr</a>  
 - {{< icon name="phone" pack="fas" >}} <a href="tel:010-9779-5908">+82-10-9779-5908</a>  
-- {{< icon name="map-marker-alt" pack="fas" >}} 전북대학교 공과대학 7호관, 전주시
+- {{< icon name="map-marker-alt" pack="fas" >}} College of Engineering, Building 7, Jeonbuk National University, Jeonju, South Korea
 
 <div style="margin-top:16px;">
   <iframe
