@@ -297,23 +297,23 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold"  style="color: #fff;">프로젝트</h1>
           <p class="lead">진행했던 프로젝트를 기록합니다.</p>
-          <a class="btn btn-primary btn-lg" href="/project/">project</a>
+          <a class="btn btn-primary btn-lg" href="/project/">프로젝트</a>
         </div>
       </div>
 
 
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/path.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold"  style="color: #fff;">미래계획</h1>
-          <p class="lead">미래 계획과 목표를 기록합니다.</p>
-          <a class="btn btn-primary btn-lg" href="/goals/">Goals</a>
+          <h1 class="display-3 fw-semibold"  style="color: #fff;">활동</h1>
+          <p class="lead">활동 및 미래 계획과 목표를 기록합니다.</p>
+          <a class="btn btn-primary btn-lg" href="/goals/">활동 확인하기</a>
         </div>
       </div>
 
 <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold" style="color: #fff;">연락하기</h1>
-          <p class="lead">함께 이야기하고 배우는 것을 좋아합니다.<br> 언제든 연락을 환영합니다.</p>
+          <h1 class="display-3 fw-semibold" style="color: #fff;">연락</h1>
+          <p class="lead">언제든 연락을 환영합니다.</p>
           <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
         </div>
       </div>
@@ -339,8 +339,8 @@ design:
   <a class="fab-mini" href="/about/" aria-label="자기소개"><i class="bi bi-person"></i></a>
   <a class="fab-mini" href="/project/" aria-label="프로젝트"><i class="bi bi-briefcase"></i></a>
   <a class="fab-mini" href="/contact/" aria-label="연락"><i class="bi bi-envelope"></i></a>
-  <a class="fab-mini" href="/goals/" aria-label="미래계획"><i class="bi bi-journal-text"></i></a>
-  <a class="fab-mini" href="/home/portfolio/" aria-label="포트폴리오"><i class="bi bi-folder2-open"></i></a>
+  <a class="fab-mini" href="/goals/roadmap/" aria-label="활동기록"><i class="bi bi-journal-text"></i></a>
+  <a class="fab-mini" href="/goals/certs/" aria-label="자격증"><i class="bi bi-folder2-open"></i></a>
 </div>
 </div>
 
