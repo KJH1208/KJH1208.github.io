@@ -6,7 +6,10 @@ title: 강주현
 superuser: true
 
 # Role/position
+
 role: '전북대학교 | 컴퓨터공학과'
+summary: "전북대학교 컴퓨터공학부 | Kang Juhyeon"
+search_exclude: false
 
 # Status emoji
 #status:
@@ -21,7 +24,7 @@ superuser: true
 # Short bio (displayed in user profile at end of posts)
 bio: 전북대학교 컴퓨터공학과 재학 중이며, 보안과 네트워크에 관심이 있습니다. 최근에는 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
 
-keywords: ["전북대학교", "전북대", "Jeonbuk National University", "컴퓨터공학과", "강주현", "포트폴리오"]
+keywords: ["강주현","Kang Juhyeon","전북대학교","Jeonbuk National University","컴퓨터공학부","JBNU","포트폴리오"]
 
 #interests:
 #- Artificial Intelligence
