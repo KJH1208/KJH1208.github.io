@@ -19,6 +19,7 @@ marketing:
     local_business_type: ''
     org_name: 'Jeonbuk National University'
     description: '전북대학교 컴퓨터공학부 강주현의 포트폴리오 및 프로젝트 사이트입니다.'
+    keywords: ['강주현', 'Kang Juhyeon', '포트폴리오', '컴퓨터공학부', '전북대학교', '프로젝트', '자기소개', '연락']
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
