@@ -73,7 +73,7 @@ share: false
     <article class="cert-card">
       <div class="cert-icon">🧠</div>
       <div class="cert-body">
-        <h3>정보처리기사 <span class="chip pending">예정</span></h3>
+        <h3><a href="https://www.q-net.or.kr/" target="_blank">정보처리기사</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 한국산업인력공단</li>
           <li>취득 예정: 2025년 상반기</li>
@@ -85,7 +85,7 @@ share: false
 <article class="cert-card">
       <div class="cert-icon">💡</div>
       <div class="cert-body">
-        <h3>TOPCIT 수준 2 <span class="chip done">취득</span></h3>
+        <h3><a href="https://www.topcit.or.kr/" target="_blank">TOPCIT 수준 2</a> <span class="chip done">취득</span></h3>
         <ul class="cert-meta">
           <li>기관: 정보통신산업진흥원(NIPA)</li>
           <li>취득일: 2024년 하반기</li>
@@ -97,7 +97,7 @@ share: false
 <article class="cert-card">
       <div class="cert-icon">📜</div>
       <div class="cert-body">
-        <h3>한국사능력검정시험 <span class="chip pending">예정</span></h3>
+        <h3><a href="https://www.historyexam.go.kr/" target="_blank">한국사능력검정시험</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 국사편찬위원회</li>
           <li>응시 예정: 2025-03</li>
@@ -109,7 +109,7 @@ share: false
 <article class="cert-card">
       <div class="cert-icon">🧾</div>
       <div class="cert-body">
-        <h3>컴퓨터활용능력 1급 <span class="chip pending">예정</span></h3>
+        <h3><a href="https://license.korcham.net/" target="_blank">컴퓨터활용능력 1급</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 대한상공회의소</li>
           <li>응시 예정: 2025-05</li>
@@ -121,7 +121,7 @@ share: false
 <article class="cert-card">
       <div class="cert-icon">💾</div>
       <div class="cert-body">
-        <h3>SQLD (SQL 개발자) <span class="chip pending">예정</span></h3>
+        <h3><a href="https://www.dataq.or.kr/" target="_blank">SQLD (SQL 개발자)</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 한국데이터산업진흥원</li>
           <li>응시 예정: 2025-06</li>
