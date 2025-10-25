@@ -71,4 +71,4 @@ cascade:
   </div>
 </section>
 
-<div class="kjh-sep"><span>자세히 보기</span></div>
+<div class="kjh-sep"><span>개요</span></div>

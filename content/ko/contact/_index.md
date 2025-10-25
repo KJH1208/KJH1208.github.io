@@ -1,5 +1,5 @@
 ---
-title: "Contact"
+title: "연락"
 ---
 <style>
   .article-style p,
