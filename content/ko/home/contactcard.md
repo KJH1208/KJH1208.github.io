@@ -1,5 +1,5 @@
 ---
-widget: feature
+widget: markdown
 headless: true
 active: true
 weight: 60
@@ -7,7 +7,7 @@ title: "Contact"
 design:
   columns: 1
 ---
-<div style="display:flex; justify-content:flex-start; margin-left:-5%; gap:2rem;" class="contact-cards">
+<div class="contact-cards">
   <div class="custom-card">
     <i class="bi bi-envelope" style="font-size:2rem;color:#3A86FF;"></i>
     <h3>이메일</h3>
