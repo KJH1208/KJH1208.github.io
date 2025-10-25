@@ -29,7 +29,6 @@ share: false
   font-size: 1.6rem; font-weight: 700; color: var(--navy); 
   margin: 1.2rem 0 1rem; letter-spacing: .2px;
 }
-
 /* Card list */
 .kjh-certs .cert-list{ display: grid; gap: 14px; }
 .kjh-certs .cert-card{
@@ -43,7 +42,6 @@ share: false
   box-shadow: 0 10px 24px rgba(13,27,42,.08);
   border-color: rgba(58,134,255,.35);
 }
-
 /* Icon */
 .kjh-certs .cert-icon{ 
   width: 56px; height: 56px; border-radius: 12px; 
@@ -52,7 +50,6 @@ share: false
   color: var(--navy);
   align-self: center;
 }
-
 /* Body */
 .kjh-certs .cert-body h3{
   margin: 2px 0 6px;
@@ -74,7 +71,6 @@ share: false
   margin: 2px 0 0;
   text-align: justify; /* ← 양쪽 정렬 추가 */
 }
-
 /* Chips */
 .kjh-certs .chip{
   display: inline-flex;
@@ -100,10 +96,54 @@ share: false
   color: #06D6A0;
   background: rgba(6,214,160,.08);
 }
-
 @media (max-width: 640px){
   .kjh-certs .cert-card{ grid-template-columns: 48px 1fr; padding: 12px 12px; }
   .kjh-certs .cert-icon{ width: 48px; height: 48px; font-size: 24px; }
+}
+/* ===== Dark Mode Styling (enhanced for visibility) ===== */
+.dark .kjh-certs {
+  background-color: #0d1117; /* 어두운 배경 */
+  color: #e6edf3; /* 기본 텍스트 밝게 */
+}
+.dark .kjh-certs .page-subtitle {
+  color: #ffffff !important;
+}
+.dark .kjh-certs .cert-card {
+  background: #161b22; /* 카드 배경 */
+  border-color: #30363d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.dark .kjh-certs .cert-card:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 8px 20px rgba(56, 139, 253, 0.25);
+}
+.dark .kjh-certs .cert-body h3,
+.dark .kjh-certs .cert-body h3 a {
+  color: #ffffff !important;
+}
+.dark .kjh-certs .cert-desc,
+.dark .kjh-certs .cert-meta li {
+  color: #c9d1d9 !important;
+}
+.dark .kjh-certs .cert-icon {
+  background: linear-gradient(135deg, rgba(56, 139, 253, 0.25), rgba(6, 214, 160, 0.25));
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark .kjh-certs .chip {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.dark .kjh-certs .chip.pending {
+  background: rgba(56, 139, 253, 0.18);
+  border-color: rgba(56, 139, 253, 0.4);
+  color: #58a6ff;
+}
+.dark .kjh-certs .chip.done {
+  background: rgba(6, 214, 160, 0.2);
+  border-color: rgba(6, 214, 160, 0.45);
+  color: #39d353;
 }
 </style>
 

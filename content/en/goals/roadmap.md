@@ -66,13 +66,29 @@ share: false
 .kjh-roadmap em{ color: var(--mint); }
 
 /* Dark mode */
-.dark .kjh-roadmap{
-  --bg:#121823;
-  --line:#263042;
-  --chip:#1E293B;
-}
-.dark .kjh-roadmap li{ background: var(--bg); border-color: var(--line); }
-.dark .kjh-roadmap h2{ background: linear-gradient(90deg, rgba(58,134,255,.12), transparent); }
+  .dark .kjh-roadmap{
+    --bg:#121823;
+    --line:#263042;
+    --chip:#1E293B;
+  }
+  .dark .kjh-roadmap li{ background: var(--bg); border-color: var(--line); }
+  .dark .kjh-roadmap h2{ background: linear-gradient(90deg, rgba(58,134,255,.12), transparent); }
+  /* 추가: 다크모드 강조 스타일 */
+  .dark .kjh-roadmap strong {
+    color: #06D6A0 !important; /* 눈에 띄는 파란색 */
+    font-weight: 800;
+  }
+  .dark .kjh-roadmap em {
+    color: #06D6A0 !important; /* 밝은 민트색 */
+    font-style: italic;
+  }
+  .dark .kjh-roadmap h2 {
+    color: #FFFFFF !important; /* 섹션 제목을 흰색으로 */
+  }
+  .dark .kjh-roadmap li:hover {
+    background: rgba(58,134,255,0.15) !important; /* hover시 은은한 파랑 하이라이트 */
+    transform: translateY(-1px);
+  }
 </style>
 
 <div class="kjh-roadmap">

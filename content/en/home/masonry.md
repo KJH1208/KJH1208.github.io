@@ -43,4 +43,8 @@ design:
 .kjh-hobby-card h3 { font-size:1.1rem; margin:0 0 .5rem; color:#172a3e; }
 .kjh-hobby-card p { margin:0; color:#374151; text-align:justify; line-height:1.55; }
 .dark .kjh-hobby-card { background:#0D1B2A; color:#fff; box-shadow:0 4px 12px rgba(255,255,255,.08); }
+.dark .kjh-hobby-card h3,
+.dark .kjh-hobby-card p {
+  color: #ffffff !important;
+}
 </style>
