@@ -96,3 +96,56 @@ design:
 }
 </style>
 
+<script>
+/**
+ * Hash-based portfolio filter
+ * /project/#AI 처럼 들어오면 해당 필터 버튼을 자동 클릭
+ */
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    // 현재 페이지가 포트폴리오 섹션을 포함할 때만 동작
+    var sec = document.querySelector('.home-section.wg-portfolio');
+    if (!sec) return;
+
+    // URL hash -> 'AI', 'NET' 등으로 정규화
+    var raw = (location.hash || '').replace('#', '').trim();
+    if (!raw) return;
+    var hash = decodeURIComponent(raw).toUpperCase();
+
+    // 1) data-filter 속성으로 먼저 찾기 (테마에 따라 ".AI" 또는 "AI")
+    var btn =
+      sec.querySelector('[data-filter="' + hash + '"]') ||
+      sec.querySelector('[data-filter=".' + hash + '"]');
+
+    // 2) 못 찾으면 라벨 텍스트로 탐색 (보안/네트워크/웹/앱/AI 등)
+    if (!btn) {
+      var candidates = sec.querySelectorAll(
+        '.isotope-filters .nav-link, .isotope-filters .btn'
+      );
+      btn = Array.from(candidates).find(function (el) {
+        return el.textContent.replace(/\s+/g, '').toUpperCase().includes(hash);
+      });
+    }
+
+    // 3) 마지막으로 '전체'('*') 지원
+    if (!btn && hash === '*' || hash === 'ALL') {
+      btn =
+        sec.querySelector('[data-filter="*"]') ||
+        Array.from(
+          sec.querySelectorAll('.isotope-filters .nav-link, .isotope-filters .btn')
+        ).find(function (el) {
+          return /전체|ALL/i.test(el.textContent);
+        });
+    }
+
+    if (btn) {
+      // 스크롤해서 섹션으로 가져오고 클릭
+      sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // 버튼이 Isotope 필터인 경우 click이 가장 호환성이 좋음
+      setTimeout(function () {
+        btn.click();
+      }, 50);
+    }
+  });
+})();
+</script>
