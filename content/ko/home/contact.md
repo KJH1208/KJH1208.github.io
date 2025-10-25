@@ -1,32 +1,18 @@
 ---
-# An instance of the Contact widget.
-# Documentation: https://docs.hugoblox.com/getting-started/page-builder/
-widget: contact
-
-# This file represents a page section.
+# Simple CTA section that links to the dedicated Contact page
+widget: blank
 headless: true
-
-# Order that this section appears on the page.
 weight: 50
 
-title: Get in touch
-subtitle:
+# Hide section title on the homepage (we only want a button)
+title: ''
+subtitle: ''
 
-content:
-  # Automatically link email and phone or display as text?
-  autolink: true
-
-  # Email form provider
-  form:
-    provider: netlify
-    formspree:
-      id:
-    netlify:
-      # Enable CAPTCHA challenge to reduce spam?
-      captcha: false
-
+# Layout
 design:
   columns: '1'
+  spacing:
+    padding: [0, 0, 0, 0]
 ---
 
 <div style="text-align:center; margin: 1.5rem 0 0;">
@@ -55,3 +41,4 @@ design:
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 </style>
+
