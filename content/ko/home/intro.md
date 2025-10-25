@@ -22,27 +22,27 @@ author: admin
 전북대학교 컴퓨터공학부 재학중이며,
 시스템 보안과 네트워크 관리에 관심을 가지고 관련지식과 실무 능력을 꾸준히 쌓고 있습니다.
 현재 공공기관 전산직 진출을 목표로 공부하고 있습니다.
-{style="font-size: 1.2rem; color: #172a3e;"}
+{class="intro-text"}
 
 Check out my [resumé](/about/) and portfolio below 
 
 <style>
-/* 🌙 다크모드 전용 — 글씨 흰색으로 변경 */
-.dark .wg-about,
-[data-theme="dark"] .wg-about {
+/* 라이트 모드 */
+.wg-about .intro-text{
+  font-size: 1.2rem;
+  color: #172a3e;
+}
+
+/* 다크 모드 — 흰색으로 고정 */
+.dark .wg-about .intro-text,
+[data-theme="dark"] .wg-about .intro-text{
   color: #ffffff !important;
+  opacity: 1 !important;
 }
 
+/* (선택) 다크 모드에서 이 섹션 전체 글자/링크 색 */
+.dark .wg-about,
+[data-theme="dark"] .wg-about { color:#fff !important; }
 .dark .wg-about a,
-[data-theme="dark"] .wg-about a {
-  color: #9BE8FF !important; /* 링크는 은은한 하늘색 */
-}
-
-.dark .wg-about strong {
-  color: #fff !important;
-}
-
-.dark .wg-about em {
-  color: #f0f0f0 !important;
-}
+[data-theme="dark"] .wg-about a { color:#9BE8FF !important; }
 </style>
