@@ -33,7 +33,7 @@ share: false
 /* Card list */
 .kjh-certs .cert-list{ display: grid; gap: 14px; }
 .kjh-certs .cert-card{
-  display: grid; grid-template-columns: 64px 1fr; align-items: start;
+  display: grid; grid-template-columns: 64px 1fr; align-items: center;
   background: var(--bg); border: 1px solid var(--line); border-radius: 14px;
   padding: 14px 16px; box-shadow: 0 2px 10px rgba(13,27,42,.04);
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
@@ -50,27 +50,51 @@ share: false
   display: grid; place-items: center; font-size: 28px; 
   background: linear-gradient(135deg, rgba(58,134,255,.18), rgba(6,214,160,.18));
   color: var(--navy);
+  align-self: center;
 }
 
 /* Body */
-.kjh-certs .cert-body h3{ 
-  margin: 2px 0 6px; font-size: 1.1rem; font-weight: 700; color: var(--ink);
+.kjh-certs .cert-body h3{
+  margin: 2px 0 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 .kjh-certs .cert-meta{ 
   display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 0 0 8px; padding: 0; list-style: none;
 }
-.kjh-certs .cert-meta li{ color: var(--muted); font-size: .95rem; }
+.kjh-certs .cert-meta li{ color: var(--muted); font-size: .95rem; line-height: 1.4; }
 .kjh-certs .cert-desc{ color: #374151; line-height: 1.6; margin: 2px 0 0; }
 
 /* Chips */
-.kjh-certs .chip{ 
-  display: inline-flex; align-items: center; gap: 6px; 
-  font-size: .78rem; font-weight: 600; letter-spacing: .2px; 
-  padding: 4px 8px; border-radius: 999px; border: 1px solid var(--line);
-  background: var(--bg-alt); color: var(--navy);
+.kjh-certs .chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .76rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .2px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--navy);
 }
-.kjh-certs .chip.pending{ border-color: rgba(58,134,255,.35); color: var(--brand); background: rgba(58,134,255,.08); }
-.kjh-certs .chip.done{ border-color: rgba(6,214,160,.45); color: var(--mint); background: rgba(6,214,160,.08); }
+.kjh-certs .chip.pending{
+  border-color: rgba(58,134,255,.35);
+  color: #3A86FF;
+  background: rgba(58,134,255,.08);
+}
+.kjh-certs .chip.done{
+  border-color: rgba(6,214,160,.35);
+  color: #06D6A0;
+  background: rgba(6,214,160,.08);
+}
 
 @media (max-width: 640px){
   .kjh-certs .cert-card{ grid-template-columns: 48px 1fr; padding: 12px 12px; }
