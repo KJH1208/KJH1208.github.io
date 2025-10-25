@@ -46,8 +46,8 @@ design:
 ---
 
 <div class="kjh-grid">
-  {{< kcard href="/project/" title="프로젝트 모음" desc="네트워크·보안 관련 실습과 미니 앱" image="/media/desk.jpg" badge="Project" >}}
-  {{< kcard href="/goals/"   title="미래 계획"     desc="로드맵/자격증"       image="/media/field.jpg" badge="Goals" >}}
+  {{< kcard href="/project/" title="프로젝트 모음" desc="네트워크·보안 관련 실습과 미니 앱" image="/media/desk.jpg" badge="Project" variant="list">}}
+  {{< kcard href="/goals/"   title="미래 계획"     desc="로드맵/자격증"       image="/media/field.jpg" badge="Goals" variant="list">}}
 </div>
 
 <style>

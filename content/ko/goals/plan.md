@@ -1,5 +1,5 @@
 ---
-title: "첫 글"
+title: ""
 date: 2025-01-01
 summary: "포스트 예시입니다."
 featured: false
