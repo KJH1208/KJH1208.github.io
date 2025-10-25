@@ -76,7 +76,7 @@ share: false
         <h3><a href="https://www.q-net.or.kr/" target="_blank">정보처리기사</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 한국산업인력공단</li>
-          <li>취득 예정: 2025년 상반기</li>
+          <li>취득 예정: 2026년 상반기</li>
         </ul>
         <p class="cert-desc">필기 및 실기 준비 과정을 진행 중이며, 데이터베이스·운영체제·네트워크 중심으로 학습 중입니다.</p>
       </div>
@@ -88,7 +88,7 @@ share: false
         <h3><a href="https://www.topcit.or.kr/" target="_blank">TOPCIT 수준 2</a> <span class="chip done">취득</span></h3>
         <ul class="cert-meta">
           <li>기관: 정보통신산업진흥원(NIPA)</li>
-          <li>취득일: 2024년 하반기</li>
+          <li>취득일: 2023년 상반기</li>
         </ul>
         <p class="cert-desc">소프트웨어 개발, 데이터 관리, ICT 문제해결 역량 평가에서 수준 2를 달성했습니다.</p>
       </div>
@@ -100,7 +100,7 @@ share: false
         <h3><a href="https://www.historyexam.go.kr/" target="_blank">한국사능력검정시험</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 국사편찬위원회</li>
-          <li>응시 예정: 2025-03</li>
+          <li>응시 예정: 2026-02</li>
         </ul>
         <p class="cert-desc">한국사의 주요 시대 구분, 정치·문화사 및 근현대사 중심으로 학습 중입니다.</p>
       </div>
@@ -112,7 +112,7 @@ share: false
         <h3><a href="https://license.korcham.net/" target="_blank">컴퓨터활용능력 1급</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 대한상공회의소</li>
-          <li>응시 예정: 2025-05</li>
+          <li>응시 예정: 2025-12</li>
         </ul>
         <p class="cert-desc">엑셀과 액세스를 활용한 데이터 분석, 업무자동화 및 함수 활용 중심 학습 진행 중.</p>
       </div>
@@ -124,7 +124,7 @@ share: false
         <h3><a href="https://www.dataq.or.kr/" target="_blank">SQLD (SQL 개발자)</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
           <li>기관: 한국데이터산업진흥원</li>
-          <li>응시 예정: 2025-06</li>
+          <li>응시 예정: 2026-06</li>
         </ul>
         <p class="cert-desc">데이터 모델링, SQL 최적화, 인덱스 관리 및 성능 개선에 대한 실무 학습을 진행 중입니다.</p>
       </div>
