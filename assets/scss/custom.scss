@@ -55,15 +55,19 @@
   text-decoration: none;
 }
 
-/* ===== Contact Card Layout ===== */
+/* ===== Contact Card Layout (Horizontal Alignment) ===== */
 .contact-cards {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 3em; /* 카드 간 간격 */
-  flex-wrap: wrap; /* 화면 작을 때 줄바꿈 */
+  flex-direction: row;     /* 가로 정렬 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: flex-start; /* 위쪽 정렬 */
+  gap: 2rem;               /* 카드 간 간격 */
+  flex-wrap: nowrap;       /* 줄바꿈 방지 */
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-cards .custom-card {
