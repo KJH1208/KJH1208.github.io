@@ -30,6 +30,12 @@ links:
     url: /files/projects/202212080_AI_project2.pdf
 ---
 
+<style>
+  .article-style p, 
+  .article-style li {
+    text-align: justify;
+  }
+</style>
 
 ## 프로젝트 개요
 이 프로젝트는 **기초 머신러닝 알고리즘**을 Python으로 직접 구현하고,  

@@ -25,6 +25,13 @@ links:
     url: /files/projects/java-set/project-report.pdf
 ---
 
+<style>
+  .article-style p,
+  .article-style li {
+    text-align: justify;
+  }
+</style>
+
 ## 프로젝트 개요
 **Java Swing UI**와 **TCP 소켓 통신**으로 멀티플레이 카드게임 *‘결!합!’*을 구현했습니다.  
 실시간 채팅, 서버의 정답 판정, 클라이언트 UI/이벤트 처리, 라운드 관리 등을 포함합니다.

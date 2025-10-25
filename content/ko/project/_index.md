@@ -55,6 +55,11 @@ image:
 }
 .dark .kjh-sep::before{ background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); }
 .dark .kjh-sep span{ background:#0D1B2A; color:#fff; }
+  /* 텍스트 양쪽 정렬 */
+  .article-style p,
+  .article-style li {
+    text-align: justify;
+  }
 </style>
 
 
