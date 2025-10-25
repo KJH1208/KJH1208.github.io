@@ -34,6 +34,10 @@ main:
    url: /goals/
    identifier: goals
    weight: 40
+ - name: 전체
+   url: /goals/
+   identifier: goals
+   weight: 41  
  - name: 로드맵
    url: /goals/roadmap/
    parent: goals
