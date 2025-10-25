@@ -64,7 +64,7 @@ cascade:
 .dark .kjh-btn:hover{ background:#1b2b40; border-color:rgba(255,255,255,.28); }
 </style>
 
-<section class="kjh-hero" style="--hero-img:url('/media/path.jpg')">
+<section class="kjh-hero" style="--hero-img:url('/media/achieve.jpg')">
   <div class="kjh-hero__inner">
     <h1>Goals</h1>
     <p>미래의 계획과 목표, 달성을 기록합니다.</p>
