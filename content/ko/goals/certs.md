@@ -82,7 +82,7 @@ share: false
       </div>
     </article>
 
-    <article class="cert-card">
+<article class="cert-card">
       <div class="cert-icon">💡</div>
       <div class="cert-body">
         <h3>TOPCIT 수준 2 <span class="chip done">취득</span></h3>
@@ -94,7 +94,7 @@ share: false
       </div>
     </article>
 
-    <article class="cert-card">
+<article class="cert-card">
       <div class="cert-icon">📜</div>
       <div class="cert-body">
         <h3>한국사능력검정시험 <span class="chip pending">예정</span></h3>
@@ -106,7 +106,7 @@ share: false
       </div>
     </article>
 
-    <article class="cert-card">
+<article class="cert-card">
       <div class="cert-icon">🧾</div>
       <div class="cert-body">
         <h3>컴퓨터활용능력 1급 <span class="chip pending">예정</span></h3>
@@ -118,7 +118,7 @@ share: false
       </div>
     </article>
 
-    <article class="cert-card">
+<article class="cert-card">
       <div class="cert-icon">💾</div>
       <div class="cert-body">
         <h3>SQLD (SQL 개발자) <span class="chip pending">예정</span></h3>
