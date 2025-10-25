@@ -38,7 +38,7 @@ design:
 <style>
 .kjh-skill-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
   gap: 2rem;
   grid-auto-rows: 1fr;
   margin-top: 1rem;
