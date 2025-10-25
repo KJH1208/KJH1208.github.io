@@ -100,19 +100,50 @@ share: false
   .kjh-certs .cert-card{ grid-template-columns: 48px 1fr; padding: 12px 12px; }
   .kjh-certs .cert-icon{ width: 48px; height: 48px; font-size: 24px; }
 }
-/* ===== Dark Mode Styling (moved inside <style>) ===== */
-.dark .kjh-certs .page-subtitle { color: #ffffff !important; }
-.dark .kjh-certs .cert-body h3 a { color: #ffffff !important; }
+/* ===== Dark Mode Styling (enhanced for visibility) ===== */
+.dark .kjh-certs {
+  background-color: #0d1117; /* 어두운 배경 */
+  color: #e6edf3; /* 기본 텍스트 밝게 */
+}
+.dark .kjh-certs .page-subtitle {
+  color: #ffffff !important;
+}
+.dark .kjh-certs .cert-card {
+  background: #161b22; /* 카드 배경 */
+  border-color: #30363d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.dark .kjh-certs .cert-card:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 8px 20px rgba(56, 139, 253, 0.25);
+}
+.dark .kjh-certs .cert-body h3,
+.dark .kjh-certs .cert-body h3 a {
+  color: #ffffff !important;
+}
 .dark .kjh-certs .cert-desc,
-.dark .kjh-certs .cert-meta li { color: #d1d5db !important; }
+.dark .kjh-certs .cert-meta li {
+  color: #c9d1d9 !important;
+}
 .dark .kjh-certs .cert-icon {
-  background: linear-gradient(135deg, rgba(58,134,255,.25), rgba(6,214,160,.25));
+  background: linear-gradient(135deg, rgba(56, 139, 253, 0.25), rgba(6, 214, 160, 0.25));
   color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .dark .kjh-certs .chip {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.12);
   color: #ffffff;
-  border-color: rgba(255,255,255,0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.dark .kjh-certs .chip.pending {
+  background: rgba(56, 139, 253, 0.18);
+  border-color: rgba(56, 139, 253, 0.4);
+  color: #58a6ff;
+}
+.dark .kjh-certs .chip.done {
+  background: rgba(6, 214, 160, 0.2);
+  border-color: rgba(6, 214, 160, 0.45);
+  color: #39d353;
 }
 </style>
 
