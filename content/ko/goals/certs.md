@@ -3,7 +3,7 @@ title: "자격증"
 type: page
 summary: "최근 취득 및 준비 중인 자격증"
 image:
-  filename: /media/activelist.jpg
+  filename: /media/certs.jpg
   preview_only: false
 show_breadcrumb: true
 share: false
@@ -136,7 +136,7 @@ share: false
 </div>
 
 <section class="kjh-hero" style="position:relative; overflow:hidden; border-radius:16px; margin-bottom:2rem;">
-  <img src="/media/activelist.jpg" 
+  <img src="/media/certs.jpg" 
        alt="자격증 대표 이미지" 
        style="width:100%; height:280px; object-fit:cover; filter:brightness(0.75); border-radius:16px;">
   <div style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff;">
