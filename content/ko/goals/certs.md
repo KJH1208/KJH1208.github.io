@@ -81,7 +81,7 @@ show_breadcrumb: true
       </div>
     </article>
 
-    <article class="cert-card">
+<article class="cert-card">
       <div class="cert-icon">💻</div>
       <div class="cert-body">
         <h3>리눅스마스터 2급 <span class="chip pending">예정</span></h3>
@@ -93,7 +93,7 @@ show_breadcrumb: true
       </div>
     </article>
 
-    <article class="cert-card">
+<article class="cert-card">
       <div class="cert-icon">🌐</div>
       <div class="cert-body">
         <h3>네트워크관리사 2급</h3>
