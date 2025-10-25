@@ -13,20 +13,20 @@ design:
 <div class="kjh-hobby-grid">
   <div class="kjh-hobby-card">
     <div class="kjh-hobby-card__inner">
-      <h3>🎬 영화/공연 감상</h3>
-      <p>주로 영화관이나 콘서트 현장에서 활력을 얻습니다.</p>
+      <h3>🎬 Watching Movies & Performances</h3>
+      <p>I often gain energy and inspiration from visiting cinemas or live concerts.</p>
     </div>
   </div>
   <div class="kjh-hobby-card">
     <div class="kjh-hobby-card__inner">
-      <h3>☕ 카페 탐방</h3>
-      <p>새로운 카페를 방문해 공간과 향을 감상하는 걸 좋아합니다.</p>
+      <h3>☕ Café Hopping</h3>
+      <p>I enjoy visiting new cafés to appreciate the atmosphere, design, and aroma of each space.</p>
     </div>
   </div>
   <div class="kjh-hobby-card">
     <div class="kjh-hobby-card__inner">
-      <h3>📖 독서</h3>
-      <p>기술 서적과 생각과 인간관계에 관한 책를 읽으며 사고를 넓히고 있습니다.</p>
+      <h3>📖 Reading</h3>
+      <p>I broaden my perspective by reading books on technology, self-reflection, and human relationships.</p>
     </div>
   </div>
 </div>
