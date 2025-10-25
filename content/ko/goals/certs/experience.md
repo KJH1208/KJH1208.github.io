@@ -1,49 +1,32 @@
 ---
-# An instance of the Experience widget.
-# Documentation: https://docs.hugoblox.com/page-builder/
 widget: experience
-
-# This file represents a page section.
 headless: true
+weight: 10
 
-# Order that this section appears on the page.
-weight: 20
-
-title: Experience
+title: 취득/준비 중인 자격증
 subtitle:
-
-# Date format for experience
-#   Refer to https://docs.hugoblox.com/customization/#date-format
 date_format: Jan 2006
 
-# Experiences.
-#   Add/remove as many `experience` items below as you like.
-#   Required fields are `title`, `company`, and `date_start`.
-#   Leave `date_end` empty if it's your current employer.
-#   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
+  - title: 정보처리기사 (필기)
+    company: 한국산업인력공단
     company_url: ''
-    company_logo: org-gc
-    location: California
-    date_start: '2021-01-01'
+    company_logo: ai
+    location: 대한민국
+    date_start: '2025-03-01'
     date_end: ''
     description: |2-
-        Responsibilities include:
-        
-        * Analysing
-        * Modelling
-        * Deploying
+      * 전공 지식을 바탕으로 실무 역량 강화
+      * 실기 대비 자료 정리 중
 
-  - title: Professor of Semiconductor Physics
-    company: University X
+  - title: 네트워크관리사 2급
+    company: 한국정보통신자격협회
     company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    company_logo: network
+    location: 대한민국
+    date_start: '2024-09-01'
+    date_end: '2024-12-01'
+    description: TCP/IP, 라우팅, 보안 기초 복습
 
 design:
   columns: '1'

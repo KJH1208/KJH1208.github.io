@@ -35,7 +35,7 @@ main:
    identifier: goals
    weight: 40
  - name: 로드맵
-   url: /goals/#roadmap
+   url: /goals/roadmap/
    parent: goals
    weight: 41
  - name: 자격증

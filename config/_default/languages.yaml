@@ -44,7 +44,7 @@ ko:
        identifier: goals
        weight: 40
      - name: "로드맵"
-       url: "/goals/#roadmap"
+       url: "/goals/roadmap"
        parent: goals
        weight: 41
      - name: "자격증"
@@ -95,7 +95,7 @@ en:
         identifier: goals
         weight: 40
       - name: "Roadmap"
-        url: "/en/goals/#roadmap"
+        url: "/en/goals/roadmap"
         parent: goals
         weight: 41
       - name: "Certificates"
