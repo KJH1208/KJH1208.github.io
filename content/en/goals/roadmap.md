@@ -1,18 +1,18 @@
 ---
-title: "📃 활동 리스트"
+title: "📃 Activity List"
 type: page
-summary: "활동 내역 및 미래 활동 계획"
+summary: "Record of activities and future plans"
 show_breadcrumb: true
 share: false
 ---
 
 <section class="kjh-hero" style="position:relative; overflow:hidden; border-radius:16px; margin-bottom:2rem;">
   <img src="/media/glass.jpg" 
-       alt="활동 및 로드맵 대표 이미지" 
+       alt="Activity and Roadmap Main Image" 
        style="width:100%; height:280px; object-fit:cover; filter:brightness(0.75); border-radius:16px;">
   <div style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff;">
-    <h1 style="font-size:2.2rem; font-weight:800; margin:0;">활동 리스트</h1>
-    <p style="font-size:1.1rem; opacity:0.9;">활동 내역 및 미래 계획</p>
+    <h1 style="font-size:2.2rem; font-weight:800; margin:0;">Activity List</h1>
+    <p style="font-size:1.1rem; opacity:0.9;">Activity Record and Future Plans</p>
   </div>
 </section>
 
@@ -40,7 +40,7 @@ share: false
 }
 
 .kjh-roadmap h2 + h2 {
-  margin-top: 4rem; /* 활동 내역과 미래 계획 사이 간격 확대 */
+  margin-top: 4rem; /* Increase spacing between Activity History and Future Plans */
 }
 
 .kjh-roadmap ul{ 
@@ -73,43 +73,43 @@ share: false
   }
   .dark .kjh-roadmap li{ background: var(--bg); border-color: var(--line); }
   .dark .kjh-roadmap h2{ background: linear-gradient(90deg, rgba(58,134,255,.12), transparent); }
-  /* 추가: 다크모드 강조 스타일 */
+  /* Additional: Highlight styles for dark mode */
   .dark .kjh-roadmap strong {
-    color: #06D6A0 !important; /* 눈에 띄는 파란색 */
+    color: #06D6A0 !important;
     font-weight: 800;
   }
   .dark .kjh-roadmap em {
-    color: #06D6A0 !important; /* 밝은 민트색 */
+    color: #06D6A0 !important;
     font-style: italic;
   }
   .dark .kjh-roadmap h2 {
-    color: #FFFFFF !important; /* 섹션 제목을 흰색으로 */
+    color: #FFFFFF !important;
   }
   .dark .kjh-roadmap li:hover {
-    background: rgba(58,134,255,0.15) !important; /* hover시 은은한 파랑 하이라이트 */
+    background: rgba(58,134,255,0.15) !important;
     transform: translateY(-1px);
   }
 </style>
 
 <div class="kjh-roadmap">
 
-## 🧭 활동 내역
-- 2023.05.20 **TOPCIT 응시** – 수준 2 달성
-- 2023.06.24 **전주 ICT AI 코딩 대회** 참가
-- 2023년 2학기 **진로캠프** 참여
-- 2024년 1학기 **취업트렌드 특강**, **해외취업특강** 수강
-- 2025.09.27~28 **WHO 동아리 – SW사업단 대회 진행**
-- 2025년 2학기~ **AI JOB@JBNU 시범운영단** 활동
-- 2025년 11월~ **프론트엔드 부트캠프**활동
+## 🧭 Activity History
+- 2023.05.20 **TOPCIT Test** – Achieved Level 2
+- 2023.06.24 **Jeonju ICT AI Coding Competition** Participant
+- 2023, 2nd Semester **Career Camp** Participant
+- 2024, 1st Semester **Employment Trend Seminar** and **Overseas Employment Lecture** Attended
+- 2025.09.27–28 **WHO Club – SW Business Group Competition**
+- 2025, 2nd Semester– **AI JOB@JBNU Pilot Program Member**
+- From November 2025 – **Frontend Bootcamp** Participant
 
-## 🚀 미래 계획
-### 2025 상반기
-- NCS 국가직무능력표준 자격시험 준비
-- 취업에 필요한 자격증 취득(한국사, 컴활)
-- 정보처리기사 실기 준비
-- 인턴 및 서포터즈 활동
+## 🚀 Future Plans
+### First Half of 2025
+- Prepare for NCS (National Competency Standards) Certification Exams
+- Obtain necessary employment-related certificates (Korean History, Computer Specialist)
+- Prepare for the Engineer Information Processing practical exam
+- Participate in internship and supporter programs
 
-### 2025 하반기
-- 포트폴리오 리팩터링
-- 인턴 및 서포터즈 활동
+### Second Half of 2025
+- Refactor personal portfolio
+- Continue internships and supporter activities
 </div>
