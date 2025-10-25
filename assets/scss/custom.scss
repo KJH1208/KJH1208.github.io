@@ -158,3 +158,80 @@
     font-size: 0.9rem;
   }
 }
+
+/* ===== Horizontal timeline card container ===== */
+.kjh-timeline {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 1.5rem;
+  max-width: 980px;
+}
+
+/* kcard가 렌더링하는 바깥 카드 요소(클래스는 테마/쇼트코드 구현에 따라 다름) */
+.kjh-timeline .kcard,
+.kjh-timeline .wb-card,
+.kjh-timeline .card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 980px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+}
+
+/* 이미지(썸네일)와 텍스트 영역을 좌/우로 배치 */
+.kjh-timeline .kcard__image,
+.kjh-timeline .card-img,
+.kjh-timeline img {
+  flex: 0 0 240px;        /* 왼쪽 이미지 고정폭 */
+  width: 240px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.kjh-timeline .kcard__body,
+.kjh-timeline .card-body {
+  flex: 1 1 auto;         /* 오른쪽 텍스트 영역 */
+}
+
+.kjh-timeline .kcard__title,
+.kjh-timeline .card-title {
+  margin: 0 0 .35rem 0;
+  font-weight: 700;
+}
+
+.kjh-timeline .kcard__desc,
+.kjh-timeline .card-text {
+  margin: 0;
+  color: #51606f;
+}
+
+/* 배지(있다면) 살짝 강조 */
+.kjh-timeline .kcard__badge { 
+  display: inline-block;
+  margin-bottom: .35rem; 
+  font-size: .8rem; 
+  background: #eef4ff; 
+  padding: .25rem .5rem; 
+  border-radius: 6px; 
+}
+
+/* 모바일에서는 세로로 쌓기 */
+@media (max-width: 768px) {
+  .kjh-timeline .kcard,
+  .kjh-timeline .wb-card,
+  .kjh-timeline .card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .kjh-timeline .kcard__image,
+  .kjh-timeline .card-img,
+  .kjh-timeline img {
+    width: 100%;
+    height: 180px;
+  }
+}

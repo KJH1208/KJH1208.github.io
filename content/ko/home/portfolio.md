@@ -44,7 +44,7 @@ design:
 ---
 
 <div class="kjh-timeline">
-  {{< kcard href="/milestone/" title="활동 연혁" desc="2023~2025 주요 참여 기록" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
+  {{< kcard href="/goals/roadmap" title="활동 연혁" desc="2023~2025 주요 참여 기록" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
 </div>
 
 <style>
