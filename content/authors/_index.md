@@ -8,4 +8,7 @@ cascade:
   build:
     render: never
     list: always
+image:
+  filename: /media/og/cover.jpg
+  preview_only: false
 ---
