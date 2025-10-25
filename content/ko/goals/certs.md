@@ -82,27 +82,51 @@ share: false
       </div>
     </article>
 
-<article class="cert-card">
-      <div class="cert-icon">💻</div>
+    <article class="cert-card">
+      <div class="cert-icon">💡</div>
       <div class="cert-body">
-        <h3>리눅스마스터 2급 <span class="chip pending">예정</span></h3>
+        <h3>TOPCIT 수준 2 <span class="chip done">취득</span></h3>
         <ul class="cert-meta">
-          <li>기관: 한국정보통신진흥협회</li>
-          <li>취득(예정): 2025-02</li>
+          <li>기관: 정보통신산업진흥원(NIPA)</li>
+          <li>취득일: 2024년 하반기</li>
         </ul>
-        <p class="cert-desc">사용자 관리, 파일 권한, 네트워크 기초 등 실무 중심의 리눅스 명령어 학습 포함.</p>
+        <p class="cert-desc">소프트웨어 개발, 데이터 관리, ICT 문제해결 역량 평가에서 수준 2를 달성했습니다.</p>
       </div>
     </article>
 
-<article class="cert-card">
-      <div class="cert-icon">🌐</div>
+    <article class="cert-card">
+      <div class="cert-icon">📜</div>
       <div class="cert-body">
-        <h3>네트워크관리사 2급</h3>
+        <h3>한국사능력검정시험 <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
-          <li>기관: 한국정보통신자격협회</li>
-          <li>취득(예정): 2024-12</li>
+          <li>기관: 국사편찬위원회</li>
+          <li>응시 예정: 2025-03</li>
         </ul>
-        <p class="cert-desc">TCP/IP, 라우팅, 스위칭 기초와 실제 네트워크 구성 실습 진행 중.</p>
+        <p class="cert-desc">한국사의 주요 시대 구분, 정치·문화사 및 근현대사 중심으로 학습 중입니다.</p>
+      </div>
+    </article>
+
+    <article class="cert-card">
+      <div class="cert-icon">🧾</div>
+      <div class="cert-body">
+        <h3>컴퓨터활용능력 1급 <span class="chip pending">예정</span></h3>
+        <ul class="cert-meta">
+          <li>기관: 대한상공회의소</li>
+          <li>응시 예정: 2025-05</li>
+        </ul>
+        <p class="cert-desc">엑셀과 액세스를 활용한 데이터 분석, 업무자동화 및 함수 활용 중심 학습 진행 중.</p>
+      </div>
+    </article>
+
+    <article class="cert-card">
+      <div class="cert-icon">💾</div>
+      <div class="cert-body">
+        <h3>SQLD (SQL 개발자) <span class="chip pending">예정</span></h3>
+        <ul class="cert-meta">
+          <li>기관: 한국데이터산업진흥원</li>
+          <li>응시 예정: 2025-06</li>
+        </ul>
+        <p class="cert-desc">데이터 모델링, SQL 최적화, 인덱스 관리 및 성능 개선에 대한 실무 학습을 진행 중입니다.</p>
       </div>
     </article>
   </div>
