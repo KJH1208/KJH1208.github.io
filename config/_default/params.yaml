@@ -115,10 +115,14 @@ extensions:
 # Custom elements to be injected into the <head> of every page
 custom_head: |
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Favicon / App Icons -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Favicon (현대 브라우저) -->
+  <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+  <!-- 레거시 브라우저 대비 -->
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <!-- iOS 홈화면 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <!-- Safari pinned tab -->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#172a3e">  
   
   <!-- Open Graph / Kakao & Twitter Preview -->
   <meta property="og:image" content="https://kjh1208.github.io/media/og-default.jpg?v=1">
