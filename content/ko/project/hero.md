@@ -1,18 +1,30 @@
 ---
-widget: hero
+widget: markdown
 headless: true
 weight: 1
-
-title: "프로젝트"
-# 배경 전체에 이미지를 까는 방식
-design:
-  background:
-    image:
-      filename: "labtab.jpg"     # static/media/labtab.jpg 파일을 가리킵니다.
-      filters:
-        brightness: 0.55         # 이미지 어둡게(텍스트 가독성 ↑)
-      size: cover
-      position: center
-      parallax: false
-subtitle: "개발 및 실습 프로젝트 모음"
 ---
+
+<style>
+/* ===== KJH — Project page custom hero (works in any theme) ===== */
+.kjh-hero{ position: relative; min-height: 42vh; display: grid; place-items: center; overflow: hidden; }
+.kjh-hero::before{
+  content: ""; position:absolute; inset:0;
+  background-image: var(--hero-img, url('/media/labtab.jpg'));
+  background-size: cover; background-position: center; filter: brightness(.55);
+}
+.kjh-hero::after{ /* subtle gradient top->bottom for readability */
+  content:""; position:absolute; inset:0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.15) 40%, rgba(0,0,0,.45));
+}
+.kjh-hero__inner{ position: relative; z-index: 1; text-align: center; padding: 3rem 1rem; color:#fff; }
+.kjh-hero__inner h1{ font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; margin: 0 0 .4rem; }
+.kjh-hero__inner p{ font-size: clamp(1rem, 1.6vw, 1.2rem); opacity:.95; margin:0; }
+.dark .kjh-hero::before{ filter: brightness(.6); }
+</style>
+
+<section class="kjh-hero" style="--hero-img:url('/media/labtab.jpg')">
+  <div class="kjh-hero__inner">
+    <h1>프로젝트</h1>
+    <p>개발 및 실습 프로젝트 모음</p>
+  </div>
+</section>
