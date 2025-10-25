@@ -17,11 +17,6 @@ author: admin
 #  css_class: fullscreen
 ---
 
-<style>
-  .article-style p {
-    text-align: justify;
-  }
-</style>
 
 ✨안녕하세요! **강주현**입니다. <br>
 전북대학교 컴퓨터공학부 재학중이며,
