@@ -100,16 +100,61 @@
   padding: 0;
 }
 
-/* Optional: constrain the overall width of the contact cards row */
+/* ===== Contact Card Layout (fixed-size, one-row) ===== */
 .contact-cards {
-  max-width: 980px;   /* center + limit line length */
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;          /* 줄바꿈 금지 */
+  max-width: 1080px;
+  margin: 1.5rem auto;
 }
 
-@media (min-width: 992px){
-  .home-section.wg-blank .container { max-width: 1080px; }
+/* 세 카드 모두 동일 크기 (글자 수와 무관) */
+.contact-cards .custom-card {
+  box-sizing: border-box;
+  flex: 0 0 220px !important;   /* 고정 폭 */
+  width: 220px !important;
+  max-width: 220px !important;
+  height: 200px !important;     /* 고정 높이 */
+  padding: 0.8rem;
+  font-size: 0.95rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* 세로 가운데 */
+  align-items: center;          /* 가로 가운데 */
+  text-align: center;
 }
-@media (min-width: 1200px){
-  .home-section.wg-blank .container { max-width: 1080px; }
+
+/* 길어도 고정 높이를 넘지 않도록 줄수 제한(잘림/말줄임) */
+.contact-cards .custom-card h3,
+.contact-cards .custom-card p {
+  margin: 0.25rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.contact-cards .custom-card h3 { -webkit-line-clamp: 1; }
+.contact-cards .custom-card p  { -webkit-line-clamp: 2; }
+.contact-cards .custom-card i  { font-size: 2rem; margin-bottom: 0.25rem; }
+
+/* 모바일에서는 줄바꿈 허용하되 크기는 동일 유지 */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .contact-cards .custom-card {
+    flex: 0 0 200px !important;
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 180px !important;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
 }
