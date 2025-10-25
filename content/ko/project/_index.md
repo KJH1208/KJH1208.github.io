@@ -2,7 +2,9 @@
 title: "프로젝트"
 type: widget_page
 summary: "개발 및 실습 프로젝트 모음"
-featured_image: "/media/labtab.jpg"  # 대표 이미지 경로
+image:
+  filename: /media/labtab.jpg
+  preview_only: false
 ---
 <style>
 /* ===== KJH — Project page custom hero (list page용) ===== */
@@ -27,4 +29,7 @@ featured_image: "/media/labtab.jpg"  # 대표 이미지 경로
     <h1>프로젝트</h1>
     <p>개발 및 실습 프로젝트 모음</p>
   </div>
+</section>
+<section class="kjh-bottom-image">
+  <img src="/media/labtab2.jpg" alt="프로젝트 관련 이미지" style="width:90%; max-width:900px; display:block; margin:3rem auto; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.15);">
 </section>
