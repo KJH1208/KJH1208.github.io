@@ -67,7 +67,20 @@
 }
 
 .contact-cards .custom-card {
-  flex: 1 1 220px;   /* 최소 너비 줄이기 */
-  max-width: 260px;  /* 카드 최대 폭 줄이기 */
-  padding: 0.8rem;   /* 안쪽 여백 살짝 줄이기 */
+  flex: 1 1 180px;
+  max-width: 200px;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.contact-cards .custom-card i {
+  font-size: 1.6rem;  /* 아이콘만 살짝 줄이기 */
+}
+
+@media (max-width: 768px) {
+  .contact-cards .custom-card {
+    flex: 1 1 150px;
+    max-width: 180px;
+    padding: 0.6rem;
+  }
 }
