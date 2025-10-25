@@ -83,4 +83,4 @@ social:
 - 목표 : 기술적 전문성과 책임감을 바탕으로, 사회에 신뢰받는 전산 전문가로 성장하는 것을 목표로 하고 있습니다.
 
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}이력서 다운로드{{< /staticref >}}
