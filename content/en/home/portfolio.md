@@ -45,10 +45,10 @@ design:
 <br>
 <div class="kjh-timeline-wrap">
   <div class="kjh-timeline">
-    {{< kcard href="/goals/roadmap" title="Activity Timeline" desc="Major participation records from 2023 to 2025" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
+    {{< kcard href='{{< relref "/goals/roadmap/" >}}' title="Activity Timeline" desc="Major participation records from 2023 to 2025" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
   </div>
   <div class="kjh-timeline">
-    {{< kcard href="/goals/certs" title="Certification Status" desc="Summary of acquired and planned certifications" image="/media/certificate.jpg" badge="Certifications" variant="horizontal">}}
+    {{< kcard href='{{< relref "/goals/certs/" >}}' title="Certification Status" desc="Summary of acquired and planned certifications" image="/media/certificate.jpg" badge="Certifications" variant="horizontal">}}
   </div>
 </div>
 
