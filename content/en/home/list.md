@@ -10,7 +10,7 @@ design:
 ---
 
 <ul style="list-style:none; padding:0; margin:0;">
-  <li style="margin-bottom:1rem; text-align:justify;">
+  <li style="margin-bottom:1rem; text-align:justify; text-justify: inter-word;">
     <strong style="background:linear-gradient(90deg,#3A86FF,#06D6A0); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:800;">▪️ Major:</strong><br>
     Currently studying in the Department of Computer Engineering at Jeonbuk National University.
   </li>
