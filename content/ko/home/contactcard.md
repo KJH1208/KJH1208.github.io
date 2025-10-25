@@ -1,4 +1,4 @@
----
+<!-- ---
 widget: markdown
 headless: true
 active: true
@@ -27,4 +27,4 @@ design:
   </div>
 </div>
 
-<p class="contact-note" style="text-align:center;margin-top:1rem;color:#51606f;">함께 소통해요.</p>
+<p class="contact-note" style="text-align:center;margin-top:1rem;color:#51606f;">함께 소통해요.</p> -->
