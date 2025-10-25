@@ -235,3 +235,17 @@
     height: 180px;
   }
 }
+
+/* ===== Dark Mode Portfolio Filter Fix ===== */
+.dark .home-section.wg-portfolio :is(.isotope-filters, .project-toolbar, .filters, .project-filters)
+:is(.nav-link, .btn, a, button, [data-filter]) {
+  color: #ffffff !important;                    /* 기본 글씨 흰색 */
+  border-color: rgba(255,255,255,0.3) !important;
+  background: transparent !important;
+}
+
+.dark .home-section.wg-portfolio :is(.nav-link:hover, .btn:hover, a:hover, button:hover, [data-filter]:hover),
+.dark .home-section.wg-portfolio :is(.nav-link.active, .btn.active, [aria-selected="true"]) {
+  color: #0D1B2A !important;
+  background-image: linear-gradient(90deg, var(--point1), var(--point2)) !important;
+}
