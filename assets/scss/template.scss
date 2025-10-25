@@ -260,7 +260,7 @@ body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .na
 }
 .dark .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item > .nav-link.active,
 .dark .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .nav-item.show > .nav-link{
-  color: #0D1B2A !important;                     /* active는 진한 글자색 */
+  color: #ffffff !important;                     /* active는 진한 글자색 */
   background-image: linear-gradient(90deg, var(--point1) 0%, var(--point2) 100%) !important;
   background-color: var(--point1) !important;    /* fallback */
   border-color: transparent !important;
