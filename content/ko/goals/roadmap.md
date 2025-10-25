@@ -9,9 +9,9 @@ share: false
 <style>
 /* ===== KJH — Roadmap (type: page) scoped styles ===== */
 .kjh-roadmap{
-  --navy:#0D1B2A;
-  --sky:#3A86FF;
-  --mint:#06D6A0;
+  --navy:#172a3eff;
+  --sky:#172a3eff;
+  --mint:#172a3eff;
   --chip:#EEF5FF;
   --line:#E8EEF7;
   --bg:#FAFBFE;
