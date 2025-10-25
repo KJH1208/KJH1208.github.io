@@ -13,8 +13,8 @@ share: false
        alt="자격증 대표 이미지" 
        style="width:100%; height:280px; object-fit:cover; filter:brightness(0.75); border-radius:16px;">
   <div style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff;">
-    <h1 style="font-size:2.2rem; font-weight:800; margin:0;">자격증</h1>
-    <p style="font-size:1.1rem; opacity:0.9;">최근 취득 및 준비 중인 자격증</p>
+    <h1 style="font-size:2.2rem; font-weight:800; margin:0;">Certificates</h1>
+    <p style="font-size:1.1rem; opacity:0.9;">Recently acquired and currently preparing certificates</p>
   </div>
 </section>
 <style>
@@ -174,7 +174,7 @@ share: false
       <p class="cert-desc">Achieved Level 2 in software development, data management, and ICT problem-solving competency assessment.</p>
     </div>
   </article>
-  
+
 <article class="cert-card">
     <div class="cert-icon">💡</div>
     <div class="cert-body">
