@@ -43,6 +43,37 @@ design:
   spacing: {padding: [0, 0, 0, 0]}
 ---
 
+<style>
+.kjh-timeline-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kjh-timeline {
+  flex: 1 1 400px;
+  max-width: 400px;
+  min-height: 420px; /* consistent card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kjh-timeline .kcard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.kjh-timeline img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px; /* fixed uniform image height */
+  border-radius: 12px 12px 0 0;
+}
+
 /* Portfolio filter chips use Bootstrap nav-pills (.nav-link). Force our point colors on hover/active. */
 .home-section .isotope-filters .nav-pills .nav-link {
   border-radius: 12px;
@@ -150,34 +181,3 @@ design:
     {{< kcard href="/goals/certs" title="자격증 현황" desc="취득 및 예정 자격증 정리" image="/media/certificate.jpg" badge="Certifications" variant="horizontal">}}
   </div>
 </div>
-
-<style>
-.kjh-timeline-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.kjh-timeline {
-  flex: 1 1 400px;
-  max-width: 400px;
-  min-height: 420px; /* consistent card height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.kjh-timeline .kcard {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.kjh-timeline img {
-  object-fit: cover;
-  width: 100%;
-  height: 200px; /* fixed uniform image height */
-  border-radius: 12px 12px 0 0;
-}
