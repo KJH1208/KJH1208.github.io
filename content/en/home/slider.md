@@ -289,7 +289,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Kang Juhyeon’s Portfolio</h1>
           <p class="lead">A Computer Engineering student at Jeonbuk National University, studying networking and cybersecurity.</p>
-          <a class="btn btn-primary btn-lg" href="{{< relLangURL "/about/" >}}">View Introduction</a>
+          <a class="btn btn-primary btn-lg" href="{{< relref "/about/" >}}">View Introduction</a>
         </div>
       </div>
 
@@ -297,7 +297,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Projects</h1>
           <p class="lead">A record of completed and ongoing projects.</p>
-          <a class="btn btn-primary btn-lg" href="{{< relLangURL "/project/" >}}">View Projects</a>
+          <a class="btn btn-primary btn-lg" href="{{< relref "/project/" >}}">View Projects</a>
         </div>
       </div>
 
@@ -305,7 +305,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Activities</h1>
           <p class="lead">Recording past activities, future plans, and goals.</p>
-          <a class="btn btn-primary btn-lg" href="{{< relLangURL "/goals/" >}}">View Activities</a>
+          <a class="btn btn-primary btn-lg" href="{{< relref "/goals/" >}}">View Activities</a>
         </div>
       </div>
 
@@ -313,7 +313,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Contact</h1>
           <p class="lead">Feel free to reach out anytime.</p>
-          <a class="btn btn-primary btn-lg" href="{{< relLangURL "/contact/" >}}">Contact</a>
+          <a class="btn btn-primary btn-lg" href="{{< relref "/contact/" >}}">Contact</a>
         </div>
       </div>
     </div>
@@ -335,11 +335,11 @@ design:
     <i class="bi bi-plus-lg"></i>
   </button>
   <a class="fab-mini" href="#top" aria-label="Go to Top"><i class="bi bi-arrow-up"></i></a>
-  <a class="fab-mini" href="{{< relLangURL "/about/" >}}" aria-label="About Me"><i class="bi bi-person"></i></a>
-  <a class="fab-mini" href="{{< relLangURL "/project/" >}}" aria-label="Projects"><i class="bi bi-briefcase"></i></a>
-  <a class="fab-mini" href="{{< relLangURL "/contact/" >}}" aria-label="Contact"><i class="bi bi-envelope"></i></a>
-  <a class="fab-mini" href="{{< relLangURL "/goals/roadmap/" >}}" aria-label="Activity Log"><i class="bi bi-journal-text"></i></a>
-  <a class="fab-mini" href="{{< relLangURL "/goals/certs/" >}}" aria-label="Certificates"><i class="bi bi-folder2-open"></i></a>
+  <a class="fab-mini" href="{{< relref "/about/" >}}" aria-label="About Me"><i class="bi bi-person"></i></a>
+  <a class="fab-mini" href="{{< relref "/project/" >}}" aria-label="Projects"><i class="bi bi-briefcase"></i></a>
+  <a class="fab-mini" href="{{< relref "/contact/" >}}" aria-label="Contact"><i class="bi bi-envelope"></i></a>
+  <a class="fab-mini" href="{{< relref "/goals/roadmap/" >}}" aria-label="Activity Log"><i class="bi bi-journal-text"></i></a>
+  <a class="fab-mini" href="{{< relref "/goals/certs/" >}}" aria-label="Certificates"><i class="bi bi-folder2-open"></i></a>
 </div>
 </div>
 
