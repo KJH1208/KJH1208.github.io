@@ -18,14 +18,10 @@ links:
     icon_pack: fas
     name: 전체 ZIP 다운로드
     url: /files/security/security_reports.zip
-  - icon: file-pdf
-    icon_pack: fas
-    name: 패킷 분석 (PDF)
-    url: /files/security/패킷분석.pdf
 ---
 
 ## 프로젝트 개요
-보안 관련 수업/개인실습에서 수행한 보고서를 모은 페이지입니다.  
+네트워크 보안 관련 수업/개인실습에서 수행한 보고서를 모은 페이지입니다.  
 Wireshark 기반 패킷 분석, Nmap 스캐닝, 배너 그래빙, SNMP 시도, 방화벽/DoS 등 주제를 다룹니다.
 
 ---
