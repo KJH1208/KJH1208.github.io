@@ -31,7 +31,7 @@ cascade:
 .kjh-sep { position: relative; width: min(900px, 92%); margin: 2.5rem auto 1.75rem; text-align: center; }
 .kjh-sep::before { content: ""; display: block; height: 1px; background: linear-gradient(90deg, transparent, rgba(23,42,62,0.45), transparent); }
 .kjh-sep span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; color: #172a3e; font-weight: 600; font-size: .95rem; padding: 0 .75rem; }
-.dark .kjh-sep::before { background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); }
+.dark .kjh-sep::before { background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 1), transparent); }
 .dark .kjh-sep span { background: #0D1B2A; color: #fff; }
 
 /* 본문 2열 레이아웃 */
