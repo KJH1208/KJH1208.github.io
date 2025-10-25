@@ -3,7 +3,7 @@ widget: blank
 headless: true
 active: true
 weight: 56
-title: "Learning & Skills"
+title: "Learning Roadmap"
 design:
   view: showcase
   columns: 3
@@ -11,24 +11,27 @@ design:
 
 <div class="kjh-skill-grid">
   <div class="skill-card">
-    <div class="skill-icon">💻</div>
-    <strong>네트워크 보안</strong><br>
-    TCP/IP, 방화벽, 패킷 분석 등 네트워크 보안 기본기 학습<br>
-    <em>Kali Linux · Wireshark · tcpdump</em>
+    <div class="skill-icon">📘</div>
+    <strong>학습 방향</strong><br>
+    보안과 네트워크 분야에 집중하며<br>
+    관련 기술 및 자격증 취득을 위해 공부 중입니다.<br>
+    <em>정보보안 · 네트워크 관리 · 시스템 운영</em>
   </div>
 
   <div class="skill-card">
-    <div class="skill-icon">🧠</div>
-    <strong>웹/앱 개발</strong><br>
-    JAVA로 게임 제작<br>
-    <em>interactive</em>
+    <div class="skill-icon">🎯</div>
+    <strong>진로 목표</strong><br>
+    공기업 전산직으로 진출하여 공공기관의 정보시스템을<br>
+    효율적이고 안전하게 운영하고자 합니다.<br>
+    <em>안정성 · 효율성 · 공공서비스</em>
   </div>
 
   <div class="skill-card">
-    <div class="skill-icon">⚙️</div>
-    <strong>AI 활용</strong><br>
-    python을 이용한 MLP 실습<br>
-    <em>선형회귀, 로지스틱회귀, 다층퍼셉트론</em>
+    <div class="skill-icon">🚀</div>
+    <strong>미래 계획</strong><br>
+    자격증 취득 및 인턴·서포터즈 경험을 통해<br>
+    실무 역량을 쌓고 포트폴리오를 고도화할 예정입니다.<br>
+    <em>TOPCIT · 정보처리기사 · NCS 역량 강화</em>
   </div>
 </div>
 
