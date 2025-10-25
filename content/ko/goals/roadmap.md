@@ -58,6 +58,7 @@ share: false
   margin: .55rem 0;
   border-radius: 10px;
   transition: background .25s ease, transform .12s ease;
+  text-align: justify;
 }
 .kjh-roadmap li:hover{ background:#F2F7FF; transform: translateY(-1px); }
 
