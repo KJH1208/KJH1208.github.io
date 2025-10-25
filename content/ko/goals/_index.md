@@ -75,6 +75,29 @@ cascade:
 
 <section class="goals-wrap">
   <div class="goals-col">
+    <h2>자격증</h2>
+    <ul class="checklist">
+      <li>TOPCIT 수준 2 (2023.05.20 취득)</li>
+      <li>리눅스마스터 2급 (예정)</li>
+      <li>SQLD (예정)</li>
+      <li>컴퓨터활용능력 1급 (예정)</li>
+      <li>한국사능력검정시험 (예정)</li>
+    </ul>
+  </div>
+
+  <div class="goals-col">
+    <h2>활동 리스트</h2>
+    <ul class="timeline">
+      <li><time>2023-05-20</time> TOPCIT 응시 — 수준 2</li>
+      <li><time>2023-06-24</time> 전주 ICT · AI 코딩 대회</li>
+      <li><time>2023-2학기</time> 진로캠프</li>
+      <li><time>2024-1학기</time> 취업 트렌드 특강 · 해외취업 특강</li>
+      <li><time>2025-09-27~28</time> WHO 동아리 · SW사업단 대회 운영</li>
+      <li><time>2025-2학기</time> AI JOB@JBNU 시범운영단 활동</li>
+    </ul>
+  </div>
+
+  <div class="goals-col">
     <h2>활동 내역</h2>
     <ul class="timeline">
       <li><time>2023-05-20</time> TOPCIT 응시 — 수준 2</li>
