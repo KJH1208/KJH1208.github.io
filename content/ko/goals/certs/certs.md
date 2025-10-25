@@ -34,10 +34,3 @@ items:
     date_end: 2024-12-01
     description: TCP/IP, 스위칭/라우팅 기초 및 문제 풀이
 ---
-
----
-title: 자격증
-type: widget_page
-summary: 최근 취득 · 준비 중인 자격
-show_breadcrumb: true
----
