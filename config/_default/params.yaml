@@ -125,3 +125,5 @@ custom_head: |
   <meta property="og:image:alt" content="Kang Juhyeon portfolio preview">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://kjh1208.github.io/media/og-default.jpg?v=1">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#172a3e">
+  <meta name="theme-color" content="#ffffff">
