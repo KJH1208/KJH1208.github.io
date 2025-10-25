@@ -43,7 +43,7 @@ ko:
        url: "/goals/"
        identifier: goals
        weight: 40
-     - name: 전체
+     - name: 모아보기
        url: /goals/
        parent: goals
        weight: 41    
@@ -98,7 +98,7 @@ en:
         url: "/en/goals/"
         identifier: goals
         weight: 40
-      - name: All
+      - name: "Overview"
         url: /en/goals/
         parent: goals
         weight: 41
