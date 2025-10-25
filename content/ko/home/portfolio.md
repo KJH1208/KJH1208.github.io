@@ -127,6 +127,29 @@ design:
 }
 </style>
 
+/* === Portfolio 필터 버튼 다크모드 보정 === */
+.dark .isotope-filters button,
+[data-theme="dark"] .isotope-filters button {
+  color: #ffffff !important;                 /* 텍스트 흰색 */
+  border-color: rgba(255,255,255,0.3) !important;  /* 외곽선 은은한 흰색 */
+  background: transparent !important;        /* 배경 투명하게 */
+}
+
+/* hover 시 */
+.dark .isotope-filters button:hover,
+[data-theme="dark"] .isotope-filters button:hover {
+  color: #06D6A0 !important;                 /* 호버 시 포인트색 */
+  border-color: #06D6A0 !important;
+}
+
+/* 선택된(active) 버튼 */
+.dark .isotope-filters button.active,
+[data-theme="dark"] .isotope-filters button.active {
+  color: #0D1B2A !important;                 /* 선택된 버튼 글자색 */
+  background: linear-gradient(90deg, #06D6A0, #3A86FF) !important; /* 예쁜 그라데이션 */
+  border: none !important;
+}
+
 <script>
 /**
  * Hash-based portfolio filter
