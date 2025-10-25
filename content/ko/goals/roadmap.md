@@ -29,6 +29,10 @@ share: false
   border-radius: 4px;
 }
 
+.kjh-roadmap h2 + h2 {
+  margin-top: 2.5rem; /* 활동 내역과 미래 계획 사이 간격 확대 */
+}
+
 .kjh-roadmap ul{ 
   list-style:none; 
   padding-left:0; 
