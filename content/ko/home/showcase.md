@@ -42,7 +42,7 @@ design:
 .skill-card {
   background: #fff;
   border-radius: 14px;
-  padding: 2rem 1.5rem 1.5rem;
+  padding: 1.2rem 1.2rem 1rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
   line-height: 1.6;
   color: #222;
@@ -52,16 +52,17 @@ design:
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 180px;
 }
 .skill-icon {
-  font-size: 2.5rem;
-  width: 64px;
-  height: 64px;
-  line-height: 64px;
+  font-size: 2rem;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
   border-radius: 50%;
   background: #e0e7ff;
   color: #3A86FF;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   box-shadow: 0 4px 10px rgba(58, 134, 255, 0.3);
   user-select: none;
   display: flex;
