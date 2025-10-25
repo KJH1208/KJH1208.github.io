@@ -7,7 +7,7 @@ title: "Contact"
 design:
   columns: 1
 ---
-<br>
+<br><br><br>
 <div class="contact-cards">
   <div class="custom-card">
     <i class="bi bi-envelope" style="font-size:2rem;color:#3A86FF;"></i>
