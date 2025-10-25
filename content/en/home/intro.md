@@ -17,8 +17,12 @@ author: admin
 #  css_class: fullscreen
 ---
 
-👋 안녕하세요! 저는 **강주현**입니다. 전북대학교 컴퓨터공학부 학생이며  
-백엔드 개발과 시스템 보안, DevOps 자동화에 관심이 많습니다.  
-{style="font-size: 1.2rem; background: #7DD3FC; background: linear-gradient(to right, #7DD3FC 0%, #60A5FA 50%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
-Check out my [resumé](/about/) and portfolio below 😍
+✨안녕하세요! **강주현**입니다. <br>
+전북대학교 컴퓨터공학부 재학중이며,
+시스템 보안과 네트워크 관리에 관심을 가지고 관련지식과 실무 능력을 꾸준히 쌓고 있습니다.
+현재 공공기관 전산직 진출을 목표로 공부하고 있습니다.
+{style="font-size: 1.2rem; color: #172a3e;"}
+
+Check out my [resumé](/about/) and portfolio below 
+

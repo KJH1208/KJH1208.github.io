@@ -1,7 +1,13 @@
 ---
 title: "Contact"
 ---
-
+<style>
+  .article-style p,
+  .article-style li {
+    text-align: justify;
+  }
+</style>
+아래의 연락처로 연락가능합니다.
 
 - {{< icon name="envelope" pack="fas" >}} <a href="mailto:wkqdl08@jbnu.ac.kr">wkqdl08@jbnu.ac.kr</a>  
 - {{< icon name="phone" pack="fas" >}} <a href="tel:010-9779-5908">+82-10-9779-5908</a>  
