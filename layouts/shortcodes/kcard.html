@@ -1,12 +1,60 @@
-<div class="kjh-card">
-  <a class="kjh-card__link" href='{{ .Get "href" }}'>
-    {{ with .Get "image" }}
-    <div class="kjh-card__thumb" style="background-image:url('{{ . }}');"></div>
-    {{ end }}
-    <div class="kjh-card__body">
-      <h3 class="kjh-card__title">{{ .Get "title" }}</h3>
-      {{ with .Get "desc" }}<p class="kjh-card__desc">{{ . }}</p>{{ end }}
-      {{ with .Get "badge" }}<span class="kjh-card__badge">{{ . }}</span>{{ end }}
+{{/*
+  kcard shortcode with variants
+  Usage examples:
+  {{< kcard href="/project/" title="프로젝트" desc="설명" image="/media/desk.jpg" badge="Project" >}}
+  {{< kcard href="/goals/"   title="미래 계획" variant="list" image="/media/field.jpg" desc="로드맵/자격증" badge="Goals" >}}
+  {{< kcard href="/contact/" title="연락하기" variant="compact" desc="문의 환영" >}}
+*/}}
+{{ $href := .Get "href" }}
+{{ $image := .Get "image" }}
+{{ $title := .Get "title" }}
+{{ $desc := .Get "desc" }}
+{{ $badge := .Get "badge" }}
+{{ $variant := .Get "variant" | default "card" }}
+
+<div class="kjh-card kjh-card--{{ $variant }}">
+  <a class="kjh-card__link" href='{{ $href }}'>
+    <div class="kjh-card__inner">
+      {{ with $image }}
+        <div class="kjh-card__thumb" style="background-image:url('{{ . }}');"></div>
+      {{ end }}
+      <div class="kjh-card__body">
+        <h3 class="kjh-card__title">{{ $title }}</h3>
+        {{ with $desc }}<p class="kjh-card__desc">{{ . }}</p>{{ end }}
+        {{ with $badge }}<span class="kjh-card__badge">{{ . }}</span>{{ end }}
+      </div>
     </div>
   </a>
 </div>
+
+<style>
+/* Base card */
+.kjh-card{border-radius:12px;box-shadow:0 4px 8px rgba(0,0,0,.1);overflow:hidden;background:#fff;transition:transform .3s ease,box-shadow .3s ease}
+.kjh-card__link{color:inherit;text-decoration:none;display:block}
+.kjh-card__body{padding:16px}
+.kjh-card__title{margin:0 0 8px;transition:color .3s ease}
+.kjh-card__desc{margin:0 0 12px;color:#555}
+.kjh-card__badge{display:inline-block;background:#3A86FF;color:#fff;padding:4px 8px;border-radius:8px;font-size:.75rem}
+.kjh-card__thumb{height:180px;background-size:cover;background-position:center}
+.kjh-card:hover{transform:translateY(-6px);box-shadow:0 12px 20px rgba(58,134,255,.3)}
+.kjh-card:hover .kjh-card__title{color:#3A86FF}
+
+/* ===== Variant: LIST (horizontal media card) ===== */
+.kjh-card--list{border-radius:12px}
+.kjh-card--list .kjh-card__inner{display:flex;align-items:center;gap:16px;padding:12px 16px}
+.kjh-card--list .kjh-card__thumb{width:160px;height:110px;border-radius:10px;flex:0 0 auto}
+.kjh-card--list .kjh-card__body{padding:0}
+
+/* ===== Variant: COMPACT (no image, small row) ===== */
+.kjh-card--compact{border:1px solid rgba(13,27,42,.1)}
+.kjh-card--compact .kjh-card__inner{display:flex;align-items:center;gap:12px;padding:12px 14px}
+.kjh-card--compact .kjh-card__thumb{display:none}
+.kjh-card--compact .kjh-card__body{padding:0}
+.kjh-card--compact .kjh-card__title{margin:0;font-size:1rem}
+.kjh-card--compact .kjh-card__desc{margin:4px 0 0;font-size:.9rem;color:#666}
+
+/* Dark mode tweaks */
+.dark .kjh-card{background:#1f2733}
+.dark .kjh-card__desc{color:#cbd5e1}
+.dark .kjh-card--compact{border-color:rgba(255,255,255,.12)}
+</style>
