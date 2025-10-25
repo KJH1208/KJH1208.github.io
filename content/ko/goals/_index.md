@@ -77,7 +77,7 @@ cascade:
   <div class="goals-col">
     <h2>활동 내역</h2>
     <ul class="timeline">
-      <li><time>2023-05-20</time> TOPCIT 응시 — 수준 2 (획득)</li>
+      <li><time>2023-05-20</time> TOPCIT 응시 — 수준 2</li>
       <li><time>2023-06-24</time> 전주 ICT · AI 코딩 대회</li>
       <li><time>2023-2학기</time> 진로캠프</li>
       <li><time>2024-1학기</time> 취업 트렌드 특강 · 해외취업 특강</li>
@@ -93,12 +93,9 @@ cascade:
   <div class="goals-col">
     <h2>미래 계획</h2>
     <ul class="checklist">
-      <li>2025-11 프론트엔드 부트캠프 수료 <em>(예정)</em></li>
-      <li>TOPCIT 재응시 — 수준 3 목표 <em>(예정)</em></li>
-      <li>한국사능력검정 시험 응시 <em>(예정)</em></li>
-      <li>컴퓨터활용능력 1급 취득 <em>(예정)</em></li>
-      <li>SQLD 취득 <em>(예정)</em></li>
-      <li>네트워크·보안 실습 프로젝트 고도화 및 문서화</li>
+      <li>프론트엔드 부트캠프 수료 (예정)</li>
+      <li>알고리즘·네트워크 스터디 정례화</li>
+      <li>보안 실습 프로젝트 고도화 및 정리</li>
       <li>오픈소스 기여 2건 이상</li>
     </ul>
     </div>
