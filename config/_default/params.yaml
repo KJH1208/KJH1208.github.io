@@ -26,6 +26,7 @@ marketing:
       '데이터베이스', '프로그래밍', '웹개발', '자기소개', '연락'
     ]
     twitter: ''
+    image: /media/og-default.jpg
   analytics:
     google_analytics: ''
     baidu_tongji: ''

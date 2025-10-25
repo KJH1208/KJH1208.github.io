@@ -134,7 +134,7 @@ design:
   background: transparent !important;        /* 배경 투명하게 */
 }
 
-/* hover 시 */
+/* hover*/
 .dark .isotope-filters button:hover,
 [data-theme="dark"] .isotope-filters button:hover {
   color: #06D6A0 !important;                 /* 호버 시 포인트색 */
