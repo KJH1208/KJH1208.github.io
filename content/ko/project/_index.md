@@ -21,7 +21,7 @@ image:
 .kjh-hero__inner{ position: relative; z-index: 1; text-align: center; padding: 3rem 1rem; color:#fff; }
 .kjh-hero__inner h1{ font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; margin: 0 0 .4rem; }
 .kjh-hero__inner p{ font-size: clamp(1rem, 1.6vw, 1.2rem); opacity:.95; margin:0; }
-</style>
+
 /* ===== 아래 이미지와 리스트 사이 구분선 ===== */
 .kjh-sep{ position: relative; width: min(920px, 92%); margin: 3rem auto 2rem; text-align:center; }
 .kjh-sep::before{
