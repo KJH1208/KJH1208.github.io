@@ -11,11 +11,41 @@ main:
    url: /about/
    weight: 20
  - name: 프로젝트
-   url: /project/ 
+   url: /project/
+   identifier: project
    weight: 30
+ - name: 전체
+   url: /project/
+   parent: project
+   weight: 31
+ - name: 보안
+   url: /project/#SEC
+   parent: project
+   weight: 32
+ - name: 네트워크
+   url: /project/#NET
+   parent: project
+   weight: 33
+ - name: 웹/앱
+   url: /project/#WEB
+   parent: project
+   weight: 34
+ - name: 인공지능 AI활용
+   url: /project/#AI
+   parent: project
+   weight: 35
  - name: 미래 계획
    url: /goals/
+   identifier: goals
    weight: 40
+ - name: 로드맵
+   url: /goals/#roadmap
+   parent: goals
+   weight: 41
+ - name: 자격증
+   url: /goals/#certs
+   parent: goals
+   weight: 42
  - name: 연락
    url: /contact/
    weight: 50
