@@ -84,3 +84,28 @@
     padding: 0.6rem;
   }
 }
+
+/* ===== Fix: Blank widget default card wrapper makes blocks full-width ===== */
+.home-section.wg-blank .card {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+}
+.home-section.wg-blank .card > .card-body {
+  padding: 0;
+}
+
+/* Optional: constrain the overall width of the contact cards row */
+.contact-cards {
+  max-width: 980px;   /* center + limit line length */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px){
+  .home-section.wg-blank .container { max-width: 1080px; }
+}
+@media (min-width: 1200px){
+  .home-section.wg-blank .container { max-width: 1080px; }
+}
