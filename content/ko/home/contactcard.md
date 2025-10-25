@@ -6,13 +6,12 @@ weight: 60
 title: "Contact"
 subtitle: "함께 소통해요."
 design:
-  columns: 3
-  gap: 16
+  columns: 1
 ---
 <div class="custom-card">
   <i class="bi bi-envelope" style="font-size:2rem;color:#3A86FF;"></i>
   <h3>이메일</h3>
-  <p><a href="mailto:wkqdl08@jbnu.ac.kr">kjh1208@jbnu.ac.kr</a></p>
+  <p><a href="mailto:wkqdl08@jbnu.ac.kr">wkqdl08@jbnu.ac.kr</a></p>
 </div>
 
 <div class="custom-card">
@@ -24,5 +23,5 @@ design:
 <div class="custom-card">
   <i class="bi bi-chat-dots" style="font-size:2rem;color:#3A86FF;"></i>
   <h3>카카오톡</h3>
-  <p>@wngus08/p>
+  <p>@wngus08</p>
 </div>
