@@ -62,9 +62,12 @@ design:
 }
 
 .kjh-timeline {
-  flex: 1 1 380px;
-  max-width: 420px;
-  min-height: 360px; /* forces uniform card height */
+  flex: 1 1 400px;
+  max-width: 400px;
+  min-height: 420px; /* consistent card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .kjh-timeline .kcard {
@@ -76,7 +79,7 @@ design:
 .kjh-timeline img {
   object-fit: cover;
   width: 100%;
-  height: 180px; /* ensures consistent image height */
+  height: 200px; /* fixed uniform image height */
   border-radius: 12px 12px 0 0;
 }
 
@@ -85,7 +88,6 @@ design:
   border-radius: 12px;
   transition: all .25s ease-in-out;
 }
-
 /* Hover state */
 .home-section .isotope-filters .nav-pills .nav-link:hover,
 .home-section .isotope-filters .nav-pills .nav-link:focus {
