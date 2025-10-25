@@ -7,6 +7,7 @@ title: "Contact"
 design:
   columns: 1
 ---
+<br>
 <div class="contact-cards">
   <div class="custom-card">
     <i class="bi bi-envelope" style="font-size:2rem;color:#3A86FF;"></i>
@@ -26,4 +27,5 @@ design:
     <p>@wngus08</p>
   </div>
 </div>
+
 <p class="contact-note" style="text-align:center;margin-top:1rem;color:#51606f;">함께 소통해요.</p>
