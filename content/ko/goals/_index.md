@@ -98,6 +98,9 @@ cascade:
       <li>보안 실습 프로젝트 고도화 및 정리</li>
       <li>오픈소스 기여 2건 이상</li>
     </ul>
+    <div class="kjh-cta">
+      <a class="kjh-btn" href="/project/">프로젝트 보기</a>
+      <a class="kjh-btn" href="/contact/">연락하기</a>
     </div>
   </div>
 </section>
