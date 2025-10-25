@@ -57,6 +57,13 @@ image:
 .dark .kjh-sep span{ background:#0D1B2A; color:#fff; }
 </style>
 
+/* ===== 양쪽 정렬 적용 ===== */
+.home-section.wg-portfolio p,
+.home-section.wg-portfolio li,
+.home-section.wg-portfolio .article-style {
+  text-align: justify;
+}
+
 <section class="kjh-hero" style="--hero-img:url('/media/labtab.jpg')">
   <div class="kjh-hero__inner">
     <h1>프로젝트</h1>
