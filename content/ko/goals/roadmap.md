@@ -1,10 +1,20 @@
 ---
-title: "활동 리스트"
+title: "📃 활동 리스트"
 type: page
 summary: "활동 내역 및 미래 활동 계획"
 show_breadcrumb: true
 share: false
 ---
+
+<section class="kjh-hero" style="position:relative; overflow:hidden; border-radius:16px; margin-bottom:2rem;">
+  <img src="/media/glass.jpg" 
+       alt="활동 및 로드맵 대표 이미지" 
+       style="width:100%; height:280px; object-fit:cover; filter:brightness(0.75); border-radius:16px;">
+  <div style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff;">
+    <h1 style="font-size:2.2rem; font-weight:800; margin:0;">활동 리스트</h1>
+    <p style="font-size:1.1rem; opacity:0.9;">활동 내역 및 미래 계획</p>
+  </div>
+</section>
 
 <style>
 /* ===== KJH — Roadmap (type: page) scoped styles ===== */
