@@ -18,10 +18,11 @@ author: admin
 ---
 
 
-✨안녕하세요! **강주현**입니다. <br>
-전북대학교 컴퓨터공학부 재학중이며,
-시스템 보안과 네트워크 관리에 관심을 가지고 관련지식과 실무 능력을 꾸준히 쌓고 있습니다.
-현재 공공기관 전산직 진출을 목표로 공부하고 있습니다.
+✨Hello! I’m Kang Juhyeon. <br>
+I’m currently studying Computer Engineering at Jeonbuk National University,
+with a strong interest in system security and network management.
+I’m continuously building both theoretical knowledge and practical skills,
+and my current goal is to work as an IT officer in a public institution.
 {class="intro-text"}
 
 Check out my [resumé](/about/) and portfolio below 
