@@ -2,6 +2,9 @@
 title: "자격증"
 type: page
 summary: "최근 취득 및 준비 중인 자격증"
+image:
+  filename: /media/activelist.jpg
+  preview_only: false
 show_breadcrumb: true
 share: false
 ---
