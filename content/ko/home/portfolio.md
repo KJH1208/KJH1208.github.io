@@ -42,7 +42,7 @@ design:
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
 ---
-
+<br>
 <div class="kjh-timeline-wrap">
   <div class="kjh-timeline">
     {{< kcard href="/goals/roadmap" title="활동 연혁" desc="2023~2025 주요 참여 기록" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
