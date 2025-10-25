@@ -1,7 +1,7 @@
 ---
-title: "프로젝트"
+title: "Project"
 type: widget_page
-summary: "개발 및 실습 프로젝트 모음"
+summary: "Collection of Development and Practice Projects"
 image:
   filename: /media/labtab.jpg
   preview_only: false
@@ -65,8 +65,8 @@ image:
 
 <section class="kjh-hero" style="--hero-img:url('/media/labtab.jpg')">
   <div class="kjh-hero__inner">
-    <h1>프로젝트</h1>
-    <p>개발 및 실습 프로젝트 모음</p>
+    <h1>project</h1>
+    <p>Collection of Development and Practice Projects</p>
   </div>
 </section>
 <div class="kjh-sep"><span>PROJECT LIST</span></div>
