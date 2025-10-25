@@ -5,6 +5,10 @@ summary: "개발 및 실습 프로젝트 모음"
 image:
   filename: /media/labtab.jpg
   preview_only: false
+design:
+  columns: '1'          # 1 → 한 줄 하나씩 / 2~3 → 여러개 한줄에
+  view: showcase            # list, masonry, showcase, card 등 변경 가능
+  flip_alt_rows: true
 ---
 <style>
 /* ===== KJH — Project page custom hero (list page용) ===== */
