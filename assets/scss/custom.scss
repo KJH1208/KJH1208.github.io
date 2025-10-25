@@ -60,13 +60,14 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 2rem; /* 카드 간 간격 */
+  gap: 3em; /* 카드 간 간격 */
   flex-wrap: wrap; /* 화면 작을 때 줄바꿈 */
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .contact-cards .custom-card {
-  flex: 1 1 280px; /* 최소 너비, 유연한 크기 */
-  max-width: 320px;
+  flex: 1 1 220px;   /* 최소 너비 줄이기 */
+  max-width: 260px;  /* 카드 최대 폭 줄이기 */
+  padding: 0.8rem;   /* 안쪽 여백 살짝 줄이기 */
 }
