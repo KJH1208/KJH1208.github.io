@@ -40,7 +40,9 @@ design:
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  grid-auto-rows: 1fr;
   margin-top: 1rem;
+  align-items: stretch;
 }
 @media (max-width: 900px) {
   .kjh-skill-grid {
@@ -65,9 +67,11 @@ design:
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 180px;
-  height: 200px;
+  justify-content: flex-start;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
 }
 .skill-icon {
   font-size: 2rem;
