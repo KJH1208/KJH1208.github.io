@@ -1,32 +1,55 @@
-# [Hugo Portfolio Theme](https://github.com/wowchemy/starter-hugo-portfolio-theme)
+# 🌐 강주현 | Juhyeon Kang
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+[![Website](https://img.shields.io/badge/-Visit%20Portfolio-70A3C9?style=for-the-badge)](https://kjh1208.github.io)
+[![GitHub](https://img.shields.io/badge/-GitHub-black?style=for-the-badge&logo=github)](https://github.com/KJH1208)
+[![Email](https://img.shields.io/badge/-Email-blue?style=for-the-badge&logo=gmail)](mailto:wkqdl08@jbnu.ac.kr)
 
-The **Hugo Portfolio Template** empowers you to easily create a portfolio website. Make it your own by choosing a color theme and grid layout!
+---
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## 🧑‍💻 About Me
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+안녕하세요! 저는 **전북대학교 컴퓨터공학부**에 재학 중인 **강주현**입니다.  
+시스템 보안, 네트워크 관리, 그리고 DevOps 자동화에 관심이 많습니다.  
+현재는 **Hugo + GitHub Pages**를 이용해 정적 포트폴리오 사이트를 제작하고 있으며,  
+AI, 데이터베이스, 서버 자동화 분야의 프로젝트를 진행 중입니다.
 
-[Check out the latest demo](https://hugo-portfolio-theme.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://hugoblox.com/creators/).
+---
 
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+## 🚀 Portfolio Overview
 
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+🔗 **[나의 포트폴리오 바로가기](https://kjh1208.github.io)**  
 
-## We ask you, humbly, to support this open source movement
+포트폴리오에는 다음과 같은 콘텐츠가 포함되어 있습니다.
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
+- 📁 **Projects** — 실습 및 개발 프로젝트 정리  
+- 🧠 **Goals & Roadmap** — 학습 로드맵 및 미래 계획  
+- 🏆 **Certifications** — 취득 및 준비 중인 자격증  
+- ☕ **Hobby & Daily** — 일상과 취미로부터 얻은 영감  
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+---
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+## 🧩 Tech Stack
+
+| 분야 | 사용 기술 |
+|------|------------|
+| Web & DevOps | Hugo, GitHub Pages, Docker, CI/CD |
+| Security | Wireshark, tcpdump, Kali Linux |
+| Backend | Java, Spring, Python |
+| Database | MariaDB, Oracle, SQL |
+| ML/AI | Numpy, Pandas, TensorFlow (기초 실습 중) |
+
+---
+
+## 📫 Contact
+
+- 📧 Email: [wkqdl08@jbnu.ac.kr](mailto:wkqdl08@jbnu.ac.kr)
+- 💬 Instagram: [@kxngwn04](https://www.instagram.com/kxngwn04/)
+- 💻 GitHub: [github.com/KJH1208](https://github.com/KJH1208)
+
+---
+
+> ⚙️ Built with **HugoBlox (Wowchemy)**  
+> Hosted on **GitHub Pages**  
+> © 2025 Juhyeon Kang — All Rights Reserved.
+
+_Last updated: October 2025_
