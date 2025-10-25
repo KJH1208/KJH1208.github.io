@@ -27,12 +27,9 @@ ko:
        parent: project
        weight: 31
      - name: "보안"
-       url: "/project/#SEC"
+       url: "/project/security/"
        parent: project
        weight: 32
-     - name: "네트워크"
-       url: "/project/#NET"
-       parent: project
        weight: 33
      - name: "웹/앱"
        url: "/project/java-set/"
@@ -82,13 +79,9 @@ en:
         parent: project
         weight: 31
       - name: "Security"
-        url: "/en/project/#SEC"
+        url: "/en/project/security/"
         parent: project
         weight: 32
-      - name: "Network"
-        url: "/en/project/#NET"
-        parent: project
-        weight: 33
       - name: "Web/App"
         url: "/en/project/java-set/"
         parent: project
