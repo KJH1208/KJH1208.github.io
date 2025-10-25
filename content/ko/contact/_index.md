@@ -1,6 +1,12 @@
 ---
 title: "Contact"
 ---
+<style>
+  .article-style p,
+  .article-style li {
+    text-align: justify;
+  }
+</style>
 아래의 연락처로 연락가능합니다.
 
 - {{< icon name="envelope" pack="fas" >}} <a href="mailto:wkqdl08@jbnu.ac.kr">wkqdl08@jbnu.ac.kr</a>  
