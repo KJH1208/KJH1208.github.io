@@ -19,16 +19,16 @@ design:
 
   <div class="skill-card">
     <div class="skill-icon">🧠</div>
-    <strong>데이터베이스</strong><br>
-    SQL 최적화와 트랜잭션 처리 중심으로 학습 중<br>
-    <em>MariaDB · Oracle · ERD 설계</em>
+    <strong>웹/앱 개발</strong><br>
+    JAVA로 게임 제작<br>
+    <em>interactive</em>
   </div>
 
   <div class="skill-card">
     <div class="skill-icon">⚙️</div>
-    <strong>DevOps 자동화</strong><br>
-    CI/CD 파이프라인 구축 및 서버 관리 자동화<br>
-    <em>GitHub Actions · Docker · Bash 스크립트</em>
+    <strong>AI 활용</strong><br>
+    python을 이용한 MLP 실습<br>
+    <em>선형회귀, 로지스틱회귀, 다층퍼셉트론</em>
   </div>
 </div>
 
