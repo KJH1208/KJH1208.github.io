@@ -17,6 +17,12 @@ author: admin
 #  css_class: fullscreen
 ---
 
+<style>
+  .article-style p {
+    text-align: justify;
+  }
+</style>
+
 ✨안녕하세요! **강주현**입니다. <br>
 전북대학교 컴퓨터공학부 재학중이며,
 시스템 보안과 네트워크 관리에 관심을 가지고 관련지식과 실무 능력을 꾸준히 쌓고 있습니다.
