@@ -15,7 +15,7 @@ image:
 보안 관련 수업/개인실습에서 수행한 보고서를 모은 페이지입니다.  
 Wireshark 기반 패킷 분석, Nmap 스캐닝, 배너 그래빙, SNMP 시도, 방화벽/DoS 등 주제를 다룹니다.
 
-{{< button href="/files/security/security_reports.zip" >}}전체 ZIP 다운로드{{< /button >}}
+<p><a class="btn btn-primary" href="/files/security/security_reports.zip" download>전체 ZIP 다운로드</a></p>
 
 ### 실습 목차
 - 패킷 스니핑/분석 (Wireshark)
