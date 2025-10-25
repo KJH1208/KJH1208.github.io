@@ -1,6 +1,6 @@
 ---
 # Display name
-title: kwngus의 포트폴리오
+title: 강주현의 포트폴리오
 
 # Is this the primary user of the site?
 superuser: true

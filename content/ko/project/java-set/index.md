@@ -21,7 +21,7 @@ links:
 
   - icon: file-word
     icon_pack: fas
-    name: 프로젝트 보고서(DOCX)
+    name: 프로젝트 보고서
     url: /files/projects/java-set/project-report.pdf
 ---
 
@@ -36,5 +36,5 @@ links:
 - 서버 측 정답 판정 로직 및 라운드 관리
 
 ### 역할 분담(요약)
-- 강주현: 전체 프레임/클라이언트(UI) 설계, 이미지 리소스 제작
+- 강주현(본인): 전체 프레임/클라이언트(UI) 설계, 이미지 리소스 제작
 - 팀원: StartFrame, 멀티플레이/서버 구현, 피드백 및 안정화
