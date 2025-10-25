@@ -123,7 +123,7 @@ design:
 .dark .home-section .isotope-filters .btn:hover,
 .dark .home-section .isotope-filters .btn:focus,
 .dark .home-section .isotope-filters .btn.active {
-  color: #0D1B2A !important;
+  color: #ffffffff !important;
 }
 
 /* === Portfolio 필터 버튼 다크모드 보정 === */
