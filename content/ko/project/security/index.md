@@ -17,7 +17,7 @@ links:
   - icon: file-archive
     icon_pack: fas
     name: 전체 ZIP 다운로드
-    url: /files/security_reports.zip
+    url: /files/projects/security_reports.zip
 ---
 
 ## 프로젝트 개요
