@@ -48,7 +48,7 @@ ko:
        parent: goals
        weight: 41
      - name: "자격증"
-       url: "/goals/#certs"
+       url: "/goals/certs/"
        parent: goals
        weight: 42
      - name: "연락"
@@ -99,7 +99,7 @@ en:
         parent: goals
         weight: 41
       - name: "Certificates"
-        url: "/en/goals/#certs"
+        url: "/en/goals/certs/"
         parent: goals
         weight: 42
       - name: "Contact"

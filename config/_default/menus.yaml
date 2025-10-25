@@ -39,7 +39,7 @@ main:
    parent: goals
    weight: 41
  - name: 자격증
-   url: /goals/#certs
+   url: /goals/certs/
    parent: goals
    weight: 42
  - name: 연락
