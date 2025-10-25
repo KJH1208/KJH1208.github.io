@@ -1,5 +1,5 @@
 ---
-title: "Goals"
+title: "활동 및 목표"
 summary: "미래의 계획과 목표, 달성을 기록합니다."
 sort_by: date
 sort_ascending: false
@@ -66,9 +66,9 @@ cascade:
 
 <section class="kjh-hero" style="--hero-img:url('/media/achieve.jpg')">
   <div class="kjh-hero__inner">
-    <h1>Goals</h1>
+    <h1>활동 및 목표</h1>
     <p>미래의 계획과 목표, 달성을 기록합니다.</p>
   </div>
 </section>
 
-<div class="kjh-sep"><span>OVERVIEW</span></div>
+<div class="kjh-sep"><span>자세히 보기</span></div>

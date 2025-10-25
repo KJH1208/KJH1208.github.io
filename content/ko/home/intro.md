@@ -24,8 +24,7 @@ author: admin
 현재 공공기관 전산직 진출을 목표로 공부하고 있습니다.
 {class="intro-text"}
 
-이곳에서 [이력서](/about/)와 포트폴리오를 확인해보세요
-
+[이력서](/about/)와 포트폴리오를 확인해보세요.
 <style>
 /* 라이트 모드 */
 .wg-about .intro-text{
