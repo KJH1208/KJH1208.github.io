@@ -43,13 +43,13 @@ header:
     highlight_active_link: false
     
   logo:
-    image: ""
+    image: "/media/icon.png"
     text: true
 
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Kang Juhyeon. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -110,8 +110,18 @@ extensions:
     branch: main
     local_backend: false
   academicons:
-    enable: false
+    enable: true
 
 # Custom elements to be injected into the <head> of every page
 custom_head: |
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Favicon / App Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- Open Graph / Kakao & Twitter Preview -->
+  <meta property="og:image" content="https://kjh1208.github.io/media/og-default.jpg?v=1">
+  <meta property="og:image:alt" content="Kang Juhyeon portfolio preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://kjh1208.github.io/media/og-default.jpg?v=1">
