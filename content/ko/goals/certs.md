@@ -68,7 +68,12 @@ share: false
   display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 0 0 8px; padding: 0; list-style: none;
 }
 .kjh-certs .cert-meta li{ color: var(--muted); font-size: .95rem; line-height: 1.4; }
-.kjh-certs .cert-desc{ color: #374151; line-height: 1.6; margin: 2px 0 0; }
+.kjh-certs .cert-desc {
+  color: #374151;
+  line-height: 1.6;
+  margin: 2px 0 0;
+  text-align: justify; /* ← 양쪽 정렬 추가 */
+}
 
 /* Chips */
 .kjh-certs .chip{
@@ -85,17 +90,17 @@ share: false
   background: #fff;
   color: var(--navy);
 }
-/* 예정 */
 .kjh-certs .chip.pending{
-  background: rgba(58,134,255,.08); /* ← 투명도 조절(0.05~0.15 추천) */
   border-color: rgba(58,134,255,.35);
+  color: #3A86FF;
+  background: rgba(58,134,255,.08);
+}
+.kjh-certs .chip.done{
+  border-color: rgba(6,214,160,.35);
+  color: #06D6A0;
+  background: rgba(6,214,160,.08);
 }
 
-/* 취득 */
-.kjh-certs .chip.done{
-  background: rgba(6,214,160,.08);  /* ← 투명도 조절 */
-  border-color: rgba(6,214,160,.35);
-}
 @media (max-width: 640px){
   .kjh-certs .cert-card{ grid-template-columns: 48px 1fr; padding: 12px 12px; }
   .kjh-certs .cert-icon{ width: 48px; height: 48px; font-size: 24px; }
