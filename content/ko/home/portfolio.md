@@ -125,7 +125,6 @@ design:
 .dark .home-section .isotope-filters .btn.active {
   color: #0D1B2A !important;
 }
-</style>
 
 /* === Portfolio 필터 버튼 다크모드 보정 === */
 .dark .isotope-filters button,
@@ -149,6 +148,9 @@ design:
   background: linear-gradient(90deg, #06D6A0, #3A86FF) !important; /* 예쁜 그라데이션 */
   border: none !important;
 }
+</style>
+
+
 
 <script>
 /**
