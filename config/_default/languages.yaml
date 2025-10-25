@@ -16,16 +16,46 @@ ko:
        url: "/"
        weight: 10
      - name: "자기소개"
-       url: "/about/"        # ← 절대경로 + 끝에 /
+       url: "/about/"
        weight: 20
      - name: "프로젝트"
        url: "/project/"
+       identifier: project
        weight: 30
-     - name: 미래 계획
-       url: /goals/
+     - name: "전체"
+       url: "/project/"
+       parent: project
+       weight: 31
+     - name: "보안"
+       url: "/project/#SEC"
+       parent: project
+       weight: 32
+     - name: "네트워크"
+       url: "/project/#NET"
+       parent: project
+       weight: 33
+     - name: "웹/앱"
+       url: "/project/#WEB"
+       parent: project
+       weight: 34
+     - name: "인공지능 AI활용"
+       url: "/project/#AI"
+       parent: project
+       weight: 35
+     - name: "미래 계획"
+       url: "/goals/"
+       identifier: goals
        weight: 40
-     - name: 연락
-       url: /contact/
+     - name: "로드맵"
+       url: "/goals/#roadmap"
+       parent: goals
+       weight: 41
+     - name: "자격증"
+       url: "/goals/#certs"
+       parent: goals
+       weight: 42
+     - name: "연락"
+       url: "/contact/"
        weight: 50
 
 en:
@@ -37,21 +67,51 @@ en:
     description: "Computer Science student at JBNU"
   menu:
     main:
-      - name: Home
+      - name: "Home"
         url: "/en/"
         weight: 10
       - name: "About"
-        url: "/en/about"
+        url: "/en/about/"
         weight: 20
       - name: "Projects"
         url: "/en/project/"
+        identifier: project
         weight: 30
+      - name: "All"
+        url: "/en/project/"
+        parent: project
+        weight: 31
+      - name: "Security"
+        url: "/en/project/#SEC"
+        parent: project
+        weight: 32
+      - name: "Network"
+        url: "/en/project/#NET"
+        parent: project
+        weight: 33
+      - name: "Web/App"
+        url: "/en/project/#WEB"
+        parent: project
+        weight: 34
+      - name: "AI"
+        url: "/en/project/#AI"
+        parent: project
+        weight: 35
+      - name: "Future Plans"
+        url: "/en/goals/"
+        identifier: goals
+        weight: 40
+      - name: "Roadmap"
+        url: "/en/goals/#roadmap"
+        parent: goals
+        weight: 41
+      - name: "Certificates"
+        url: "/en/goals/#certs"
+        parent: goals
+        weight: 42
       - name: "Contact"
         url: "/en/contact/"
         weight: 50
-      - name: "Future Plans"
-        url: "/goals/"
-        weight: 40
 
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en

@@ -280,3 +280,18 @@ body:not(.dark) .home-section.wg-portfolio .isotope-filters .nav.nav-pills > .na
 .home-section.wg-portfolio .isotope-filters{
   margin: 1rem 0 1.25rem !important;
 }
+
+/* ===== Include custom overrides ===== */
+@import "custom";
+
+/* ===== Widen Blank widget container for rows like Contact cards ===== */
+@media (min-width: 992px) {
+  .home-section.wg-blank .container {
+    max-width: 1080px; /* allow 3 small cards in one row */
+  }
+}
+@media (min-width: 1200px) {
+  .home-section.wg-blank .container {
+    max-width: 1080px;
+  }
+}
