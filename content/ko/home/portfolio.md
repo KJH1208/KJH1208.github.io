@@ -30,8 +30,6 @@ content:
       tag: '*'
     - name: 보안
       tag: SEC
-    - name: 네트워크
-      tag: NET
     - name: 웹/앱
       tag: WEB
     - name: 인공지능 AI활용
