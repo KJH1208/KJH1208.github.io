@@ -26,13 +26,13 @@ content:
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
-    - name: 전체
+    - name: All
       tag: '*'
-    - name: 보안
+    - name: Security
       tag: SEC
-    - name: 웹/앱
+    - name: Web/App
       tag: WEB
-    - name: 인공지능 AI활용
+    - name: AI
       tag: AI
 
 design:
@@ -45,10 +45,10 @@ design:
 <br>
 <div class="kjh-timeline-wrap">
   <div class="kjh-timeline">
-    {{< kcard href="/goals/roadmap" title="활동 연혁" desc="2023~2025 주요 참여 기록" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
+    {{< kcard href="/goals/roadmap" title="Activity Timeline" desc="Major participation records from 2023 to 2025" image="/media/timeline.jpg" badge="Timeline" variant="horizontal">}}
   </div>
   <div class="kjh-timeline">
-    {{< kcard href="/goals/certs" title="자격증 현황" desc="취득 및 예정 자격증 정리" image="/media/certificate.jpg" badge="Certifications" variant="horizontal">}}
+    {{< kcard href="/goals/certs" title="Certification Status" desc="Summary of acquired and planned certifications" image="/media/certificate.jpg" badge="Certifications" variant="horizontal">}}
   </div>
 </div>
 
