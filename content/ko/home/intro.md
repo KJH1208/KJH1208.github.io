@@ -26,3 +26,23 @@ author: admin
 
 Check out my [resumé](/about/) and portfolio below 
 
+<style>
+/* 🌙 다크모드 전용 — 글씨 흰색으로 변경 */
+.dark .wg-about,
+[data-theme="dark"] .wg-about {
+  color: #ffffff !important;
+}
+
+.dark .wg-about a,
+[data-theme="dark"] .wg-about a {
+  color: #9BE8FF !important; /* 링크는 은은한 하늘색 */
+}
+
+.dark .wg-about strong {
+  color: #fff !important;
+}
+
+.dark .wg-about em {
+  color: #f0f0f0 !important;
+}
+</style>
