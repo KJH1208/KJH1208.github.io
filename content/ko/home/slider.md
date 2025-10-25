@@ -314,7 +314,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">연락</h1>
           <p class="lead">언제든 연락을 환영합니다.</p>
-          <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
+          <a class="btn btn-primary btn-lg" href="/contact/">연락처</a>
         </div>
       </div>
     </div>
