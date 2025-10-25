@@ -154,7 +154,7 @@ share: false
     <article class="cert-card">
       <div class="cert-icon">💡</div>
       <div class="cert-body">
-        <h3><a href="https://www.q-net.or.kr/" target="_blank">Engineer Information Processing</a> <span class="chip pending">예정</span></h3>
+        <h3><a href="https://www.q-net.or.kr/" target="_blank">Engineer Information Processing</a> <span class="chip pending">Planned</span></h3>
         <ul class="cert-meta">
           <li>Organization: Human Resources Development Service of Korea (HRD Korea)</li>
           <li>Expected Acquisition: First half of 2026</li>
@@ -163,6 +163,18 @@ share: false
       </div>
     </article>
 
+<article class="cert-card">
+    <div class="cert-icon">💡</div>
+    <div class="cert-body">
+      <h3><a href="https://www.topcit.or.kr/" target="_blank">TOPCIT Level 2</a> <span class="chip done">Acquired</span></h3>
+      <ul class="cert-meta">
+        <li>Organization: National IT Industry Promotion Agency (NIPA)</li>
+        <li>Date Acquired: First half of 2023</li>
+      </ul>
+      <p class="cert-desc">Achieved Level 2 in software development, data management, and ICT problem-solving competency assessment.</p>
+    </div>
+  </article>
+  
 <article class="cert-card">
     <div class="cert-icon">💡</div>
     <div class="cert-body">
