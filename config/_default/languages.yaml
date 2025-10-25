@@ -45,7 +45,7 @@ ko:
        weight: 40
      - name: 전체
        url: /goals/
-       identifier: goals
+       parent: goals
        weight: 41    
      - name: "로드맵"
        url: "/goals/roadmap"
@@ -100,7 +100,7 @@ en:
         weight: 40
       - name: All
         url: /en/goals/
-        identifier: goals
+        parent: goals
         weight: 41
       - name: "Roadmap"
         url: "/en/goals/roadmap"
