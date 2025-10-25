@@ -29,7 +29,6 @@ share: false
   font-size: 1.6rem; font-weight: 700; color: var(--navy); 
   margin: 1.2rem 0 1rem; letter-spacing: .2px;
 }
-
 /* Card list */
 .kjh-certs .cert-list{ display: grid; gap: 14px; }
 .kjh-certs .cert-card{
@@ -43,7 +42,6 @@ share: false
   box-shadow: 0 10px 24px rgba(13,27,42,.08);
   border-color: rgba(58,134,255,.35);
 }
-
 /* Icon */
 .kjh-certs .cert-icon{ 
   width: 56px; height: 56px; border-radius: 12px; 
@@ -52,7 +50,6 @@ share: false
   color: var(--navy);
   align-self: center;
 }
-
 /* Body */
 .kjh-certs .cert-body h3{
   margin: 2px 0 6px;
@@ -74,7 +71,6 @@ share: false
   margin: 2px 0 0;
   text-align: justify; /* ← 양쪽 정렬 추가 */
 }
-
 /* Chips */
 .kjh-certs .chip{
   display: inline-flex;
@@ -100,24 +96,15 @@ share: false
   color: #06D6A0;
   background: rgba(6,214,160,.08);
 }
-
 @media (max-width: 640px){
   .kjh-certs .cert-card{ grid-template-columns: 48px 1fr; padding: 12px 12px; }
   .kjh-certs .cert-icon{ width: 48px; height: 48px; font-size: 24px; }
 }
-</style>
-
-/* ===== Dark Mode Styling ===== */
-.dark .kjh-certs .page-subtitle {
-  color: #ffffff !important;
-}
-.dark .kjh-certs .cert-body h3 a {
-  color: #ffffff !important;
-}
+/* ===== Dark Mode Styling (moved inside <style>) ===== */
+.dark .kjh-certs .page-subtitle { color: #ffffff !important; }
+.dark .kjh-certs .cert-body h3 a { color: #ffffff !important; }
 .dark .kjh-certs .cert-desc,
-.dark .kjh-certs .cert-meta li {
-  color: #d1d5db !important; /* 밝은 회색 */
-}
+.dark .kjh-certs .cert-meta li { color: #d1d5db !important; }
 .dark .kjh-certs .cert-icon {
   background: linear-gradient(135deg, rgba(58,134,255,.25), rgba(6,214,160,.25));
   color: #ffffff;
@@ -127,6 +114,7 @@ share: false
   color: #ffffff;
   border-color: rgba(255,255,255,0.2);
 }
+</style>
 
 <div class="kjh-certs">
   <h2 class="page-subtitle"> 자격증 목록</h2>
