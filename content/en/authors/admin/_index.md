@@ -74,13 +74,12 @@ social:
 #email: ""
 ---
 
-안녕하세요, **전북대학교 컴퓨터공학과**에 재학중인 **강주현**입니다.<br>
-보안과 네트워크 관리 관심이 있으며, 꾸준함과 책임감을 바탕으로 <br> 신뢰받는 전산 전문가로 성장하고자 합니다.  
+Hello, I’m **Kang Juhyeon**, a student majoring in **Computer Engineering at Jeonbuk National University**.
+I’m particularly interested in network management and cybersecurity, and I aim to grow into a trusted IT professional based on consistency and a strong sense of responsibility.
 
 
-- 관심사 : 보안과 네트워크 분야에 관심이 많습니다. 이를 중심으로 공부하고 있으며, 관련 자격증 취득을 위해 준비 중입니다.
-- 희망 진로 : 공기업 전산직으로 진출하여, 공공기관의 정보시스템을 효율적이고 안전하게 운영하는 일을 하고 싶습니다.
-- 목표 : 기술적 전문성과 책임감을 바탕으로, 사회에 신뢰받는 전산 전문가로 성장하는 것을 목표로 하고 있습니다.
-
+- Interests: I’m highly interested in the fields of security and networking. I’m currently studying these areas and preparing to obtain related certifications.
+- areer Goal: I aspire to work as a public institution IT officer, contributing to the efficient and secure operation of information systems in the public sector.
+- Objective: My goal is to become a reliable and skilled IT professional who earns trust through technical expertise and responsibility.
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
