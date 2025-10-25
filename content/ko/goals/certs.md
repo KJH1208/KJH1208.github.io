@@ -107,6 +107,27 @@ share: false
 }
 </style>
 
+/* ===== Dark Mode Styling ===== */
+.dark .kjh-certs .page-subtitle {
+  color: #ffffff !important;
+}
+.dark .kjh-certs .cert-body h3 a {
+  color: #ffffff !important;
+}
+.dark .kjh-certs .cert-desc,
+.dark .kjh-certs .cert-meta li {
+  color: #d1d5db !important; /* 밝은 회색 */
+}
+.dark .kjh-certs .cert-icon {
+  background: linear-gradient(135deg, rgba(58,134,255,.25), rgba(6,214,160,.25));
+  color: #ffffff;
+}
+.dark .kjh-certs .chip {
+  background: rgba(255,255,255,0.1);
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.2);
+}
+
 <div class="kjh-certs">
   <h2 class="page-subtitle"> 자격증 목록</h2>
 
