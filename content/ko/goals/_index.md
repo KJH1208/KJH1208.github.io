@@ -4,7 +4,7 @@ summary: "미래의 계획과 목표, 달성을 기록합니다."
 sort_by: date
 sort_ascending: false
 image:
-  filename: /media/path.jpg
+  filename: /media/achieve.jpg
   preview_only: false
 cascade:
   show_breadcrumb: true
@@ -15,7 +15,7 @@ cascade:
 .kjh-hero{ position: relative; min-height: 42vh; display: grid; place-items: center; overflow: hidden; border-radius: 16px; }
 .kjh-hero::before{
   content: ""; position:absolute; inset:0;
-  background-image: var(--hero-img, url('/media/goals-hero.jpg'));
+  background-image: var(--hero-img, url('/media/achieve.jpg'));
   background-size: cover; background-position: center; filter: brightness(.55);
 }
 .kjh-hero::after{ /* 위-아래 그라데이션으로 가독성 보강 */
@@ -64,6 +64,11 @@ cascade:
 .dark .kjh-btn:hover{ background:#1b2b40; border-color:rgba(255,255,255,.28); }
 </style>
 
-<section class="kjh-hero"></section>
+<section class="kjh-hero" style="--hero-img:url('/media/path.jpg')">
+  <div class="kjh-hero__inner">
+    <h1>Goals</h1>
+    <p>미래의 계획과 목표, 달성을 기록합니다.</p>
+  </div>
+</section>
 
 <div class="kjh-sep"><span>OVERVIEW</span></div>
