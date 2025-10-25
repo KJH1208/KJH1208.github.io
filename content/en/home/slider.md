@@ -284,7 +284,7 @@ design:
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"></button>
     </div>
 
-    <div class="carousel-inner">
+  <div class="carousel-inner">
       <div class="carousel-item active" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/desk.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Kang Juhyeon’s Portfolio</h1>
@@ -293,7 +293,7 @@ design:
         </div>
       </div>
 
-      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/labtab.jpg');">
+  <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/labtab.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Projects</h1>
           <p class="lead">A record of completed and ongoing projects.</p>
@@ -301,7 +301,7 @@ design:
         </div>
       </div>
 
-      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/path.jpg');">
+  <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/path.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Activities</h1>
           <p class="lead">Recording past activities, future plans, and goals.</p>
@@ -309,7 +309,7 @@ design:
         </div>
       </div>
 
-      <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
+  <div class="carousel-item" style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/media/contact.jpg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Contact</h1>
           <p class="lead">Feel free to reach out anytime.</p>
@@ -318,7 +318,7 @@ design:
       </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden"></span>
     </button>
