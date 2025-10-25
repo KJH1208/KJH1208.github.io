@@ -13,9 +13,10 @@ role: '전북대학교 | 컴퓨터공학과'
 #icon:
 
 # Organizations/Affiliations
-#organizations:
-#- name: 腾讯
-#  url: ""
+organizations:
+- name: "전북대학교"
+  url: "https://www.jbnu.ac.kr"
+superuser: true
 
 # Short bio (displayed in user profile at end of posts)
 bio: 보안과 네트워크에 관심이 있으며, 최근에는 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
