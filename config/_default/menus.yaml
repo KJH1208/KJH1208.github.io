@@ -41,11 +41,11 @@ main:
  - name: 로드맵
    url: /goals/roadmap/
    parent: goals
-   weight: 41
+   weight: 42
  - name: 자격증
    url: /goals/certs/
    parent: goals
-   weight: 42
+   weight: 43
  - name: 연락
    url: /contact/
    weight: 50
