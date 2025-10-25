@@ -12,11 +12,11 @@ design:
 <ul style="list-style:none; padding:0; margin:0;">
   <li style="margin-bottom:1rem; text-align:justify;">
     <strong style="background:linear-gradient(90deg,#3A86FF,#06D6A0); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:800;">▪️ 전공:</strong><br>
-    전북대학교 컴퓨터공학부 재학 중으로, 시스템 보안과 네트워크 구조를 중심으로 학습 중입니다.
+    전북대학교 컴퓨터공학부 재학 중입니다.
   </li>
   <li style="margin-bottom:1rem; text-align:justify;">
     <strong style="background:linear-gradient(90deg,#3A86FF,#06D6A0); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:800;">▪️ 관심분야:</strong><br>
-    서버 자동화, DevOps, 보안 및 데이터 파이프라인 구축에 꾸준히 탐구 중입니다.
+    보안 및 네트워크 관리, 웹/앱 개발에 꾸준히 관심을 가지고 공부중입니다.
   </li>
   <li style="margin-bottom:1rem; text-align:justify;">
     <strong style="background:linear-gradient(90deg,#3A86FF,#06D6A0); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:800;">▪️ 진로:</strong><br>
