@@ -1,5 +1,5 @@
 ---
-title: "📄자격증"
+title: "📄 자격증"
 type: page
 summary: "최근 취득 및 준비 중인 자격증"
 image:
@@ -79,11 +79,11 @@ share: false
 </style>
 
 <div class="kjh-certs">
-  <h2 class="page-subtitle">🧾 자격증 목록</h2>
+  <h2 class="page-subtitle"> 자격증 목록</h2>
 
   <div class="cert-list">
     <article class="cert-card">
-      <div class="cert-icon">🧠</div>
+      <div class="cert-icon">💡</div>
       <div class="cert-body">
         <h3><a href="https://www.q-net.or.kr/" target="_blank">정보처리기사</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
@@ -107,7 +107,7 @@ share: false
     </article>
 
 <article class="cert-card">
-      <div class="cert-icon">📜</div>
+      <div class="cert-icon">💡</div>
       <div class="cert-body">
         <h3><a href="https://www.historyexam.go.kr/" target="_blank">한국사능력검정시험</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
@@ -119,7 +119,7 @@ share: false
     </article>
 
 <article class="cert-card">
-      <div class="cert-icon">🧾</div>
+      <div class="cert-icon">💡</div>
       <div class="cert-body">
         <h3><a href="https://license.korcham.net/" target="_blank">컴퓨터활용능력 1급</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
@@ -131,7 +131,7 @@ share: false
     </article>
 
 <article class="cert-card">
-      <div class="cert-icon">💾</div>
+      <div class="cert-icon">💡</div>
       <div class="cert-body">
         <h3><a href="https://www.dataq.or.kr/" target="_blank">SQLD (SQL 개발자)</a> <span class="chip pending">예정</span></h3>
         <ul class="cert-meta">
