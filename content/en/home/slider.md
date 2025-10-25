@@ -289,7 +289,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Kang Juhyeon’s Portfolio</h1>
           <p class="lead">A Computer Engineering student at Jeonbuk National University, studying networking and cybersecurity.</p>
-          <a class="btn btn-primary btn-lg" href="en/about/">View Introduction</a>
+          <a class="btn btn-primary btn-lg" href="/about/">View Introduction</a>
         </div>
       </div>
 
@@ -297,7 +297,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Projects</h1>
           <p class="lead">A record of completed and ongoing projects.</p>
-          <a class="btn btn-primary btn-lg" href="en/project/">View Projects</a>
+          <a class="btn btn-primary btn-lg" href="/project/">View Projects</a>
         </div>
       </div>
 
@@ -305,7 +305,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Activities</h1>
           <p class="lead">Recording past activities, future plans, and goals.</p>
-          <a class="btn btn-primary btn-lg" href="en/goals/">View Activities</a>
+          <a class="btn btn-primary btn-lg" href="/goals/">View Activities</a>
         </div>
       </div>
 
@@ -313,7 +313,7 @@ design:
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold" style="color: #fff;">Contact</h1>
           <p class="lead">Feel free to reach out anytime.</p>
-          <a class="btn btn-primary btn-lg" href="en/contact/">Contact</a>
+          <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
         </div>
       </div>
     </div>
