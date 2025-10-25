@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 강주현의 포트폴리오
+title: 강주현
 
 # Is this the primary user of the site?
 superuser: true
@@ -19,8 +19,9 @@ organizations:
 superuser: true
 
 # Short bio (displayed in user profile at end of posts)
-bio: 보안과 네트워크에 관심이 있으며, 최근에는 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
+bio: 전북대학교 컴퓨터공학과 재학 중이며, 보안과 네트워크에 관심이 있습니다. 최근에는 GitHub Pages와 Hugo를 활용해 정적 웹 배포 자동화를 실습하고 있습니다.
 
+keywords: ["전북대학교", "전북대", "Jeonbuk National University", "컴퓨터공학과", "강주현", "포트폴리오"]
 
 #interests:
 #- Artificial Intelligence
@@ -70,7 +71,7 @@ social:
 #email: ""
 ---
 
-안녕하세요, 전북대학교 컴퓨터공학과에 재학중인 **강주현**입니다.<br>
+안녕하세요, **전북대학교 컴퓨터공학과**에 재학중인 **강주현**입니다.<br>
 보안과 네트워크 관리 관심이 있으며, 꾸준함과 책임감을 바탕으로 <br> 신뢰받는 전산 전문가로 성장하고자 합니다.  
 
 
